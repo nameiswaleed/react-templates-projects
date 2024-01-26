@@ -1,0 +1,417 @@
+<!-- Breadscrumb Section -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">Add Listing</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Add Listing</li>
+                    </ol>
+                </nav>							
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadscrumb Section -->
+
+<!-- Profile Content -->
+<div class="dashboard-content">		
+    <div class="container">
+        <div class="">			        
+            <ul class="dashborad-menus">
+                <li>
+                    <a [routerLink]="routes.dashboard">
+                        <i class="feather-grid"></i> <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.profile">
+                        <i class="fa-solid fa-user"></i> <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.mylisting">
+                        <i class="feather-list"></i> <span>My Listing</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.bookmarks">
+                        <i class="fas fa-solid fa-heart"></i> <span>Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.messages">
+                        <i class="fa-solid fa-comment-dots"></i> <span>Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.reviews">
+                        <i class="fas fa-solid fa-star"></i> <span>Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.login">
+                        <i class="fas fa-light fa-circle-arrow-left"></i> <span>Logout</span>
+                    </a>
+                </li>
+            </ul>											
+        </div>
+        <div class="profile-content">
+            <div class="messages-form">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Basic information</h4>							
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="col-form-label">Listing Title <span>*</span></label>								    
+                            <input type="text" class="form-control pass-input" placeholder="Title">									   
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Listing Description <span>*</span></label>
+                               <textarea rows="6" class="form-control listingdescription" placeholder="Message"></textarea>												
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label label-heading">Category </label>
+                               <div class="row category-listing">
+                                <div class="col-lg-4">
+                                     <ul>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="wireless-internet">
+                                                <span class="checkmark"></span> Automotive
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="accept-credit-card">
+                                                <span class="checkmark"></span> Electronics 
+                                             </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="Coupouns">
+                                                <span class="checkmark"></span> Fashion Style
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="parking-street">
+                                                <span class="checkmark"></span> Health Care
+                                            </label>
+                                        </li>												
+                                    </ul>											
+                                </div>		
+                                 <div class="col-lg-4">
+                                     <ul>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="wireless-internet">
+                                                <span class="checkmark"></span> Job board
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="accept-credit-card">
+                                                <span class="checkmark"></span> Education
+                                             </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="Coupouns">
+                                                <span class="checkmark"></span> Real Estate
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="parking-street">
+                                                <span class="checkmark"></span> Travel
+                                            </label>
+                                        </li>												
+                                    </ul>								
+                                </div>
+                                 <div class="col-lg-4">
+                                     <ul>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="wireless-internet">
+                                                <span class="checkmark"></span> Sports & Game
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="accept-credit-card">
+                                                <span class="checkmark"></span> Magazines 
+                                             </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="Coupouns">
+                                                <span class="checkmark"></span> Pet & Animal
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom_check">
+                                                <input type="checkbox" name="parking-street">
+                                                <span class="checkmark"></span> Household
+                                            </label>
+                                        </li>												
+                                    </ul>									
+                                </div>																
+                            </div>															
+                        </div>
+                        <div class="form-group formlast-input">
+                            <label class="col-form-label label-heading">Tagline</label>								    
+                            <textarea rows="2" class="form-control tagline" placeholder=""></textarea>									   
+                        </div>					
+                    </div>   							
+                </div>	
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Basic information</h4>							
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="col-form-label">Price Range</label>								    
+                            <input type="text" class="form-control pass-input" placeholder="$$$">									   
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group formlast-input">
+                                    <label class="col-form-label">Price From</label>
+                                    
+                                    <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" name="food" placeholder="65">
+                                        <mat-option *ngFor="let food of foods" [value]="food.value">
+                                          {{food.viewValue}}
+                                        </mat-option>
+                                    </mat-select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group formlast-input formlast-input-inner">
+                                    <label class="col-form-label">Price To</label>
+                                    
+                                    <mat-select [(ngModel)]="selectedValue"[ngModelOptions]="{standalone: true}"  class="form-control select" name="price"placeholder="120">
+                                        <mat-option *ngFor="let price of prices" [value]="price.value">
+                                          {{price.viewValue}}
+                                        </mat-option>
+                                    </mat-select>	
+                                </div>
+                            </div>											
+                        </div>
+                    </div>
+                </div>	
+                 <div class="card">
+                    <div class="card-header">
+                        <h4>Features information</h4>							
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group featuresform-list mb-0">
+                            <ul>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="wireless-internet">
+                                        <span class="checkmark"></span> Accepts Credit Cards
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="accept-credit-card">
+                                        <span class="checkmark"></span> Bike Parking 
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="Coupouns">
+                                        <span class="checkmark"></span> Parking Street
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="parking-street">
+                                        <span class="checkmark"></span> Pets Friendly
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="Coupouns">
+                                        <span class="checkmark"></span> Wheelchair Accessible
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="parking-street">
+                                        <span class="checkmark"></span> Wireless Internet
+                                    </label>
+                                </li>										
+                            </ul>	
+                            <div class="clearfix"></div>   									
+                        </div>								
+                    </div>
+                </div>					
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Location information</h4>							
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="col-form-label">Location</label>								    
+                            <input type="text" class="form-control" value="$$$">									   
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Address</label>								    
+                            <input type="text" class="form-control" value="8697-8747 Stirling Rd, Florida">									   
+                        </div> 
+                        <div class="form-group">
+                            <label class="col-form-label">Map Address</label>								    
+                            <input type="text" class="form-control" value="8697-8747 Stirling Rd, Florida">									   
+                        </div> 	
+                        <div class="listing-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.6461688381!2d-80.26548188573862!3d26.045130803169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a862f9831459%3A0xafcb9384c02e8b75!2s8697%20Stirling%20Rd%2C%20Cooper%20City%2C%20FL%2033328%2C%20USA!5e0!3m2!1sen!2sin!4v1671519522101!5m2!1sen!2sin" width="100" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>								
+                        </div>	
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">									     
+                                <div class="form-group formlast-input lat-input">
+                                    <input type="text" class="form-control" value="26.045197767574102">									   
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">									     
+                                  <div class="form-group formlast-input">
+                                    <input type="text" class="form-control" value="-80.26095677163161">									   
+                                </div>
+                            </div>
+                        </div>								
+                    </div>
+                </div>	
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Contact Information </h4>							
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="col-form-label">Email </label>								    
+                            <input type="text" class="form-control pass-input" placeholder="">									   
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Website </label>
+                               <input type="text" class="form-control pass-input" placeholder="">												
+                        </div>
+                        <div class="form-group formlast-input">
+                            <label class="col-form-label">Phone </label>
+                               <input type="text" class="form-control pass-input" placeholder="">												
+                        </div>								
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Social Information </h4>							
+                    </div>
+                    <div class="card-body">
+                        <div class="row social-info">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Facebook</label>
+                                    <div class="pass-group group-img">
+                                        <span class="lock-icon"><i class="fab fa-facebook-f"></i></span>
+                                        <input type="text" class="form-control" value="http://facebook.com">												
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                               <div class="form-group">
+                                    <label class="col-form-label">Twitter</label>
+                                    <div class="pass-group group-img">
+                                        <span class="lock-icon"><i class="fab fa-twitter"></i></span>
+                                        <input type="text" class="form-control" value="http://twitter.com">												
+                                    </div>
+                                </div>
+                            </div>											
+                        </div>	
+                        <div class="row social-info">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group formlast-input lat-input">
+                                    <label class="col-form-label">Google+</label>
+                                    <div class="pass-group group-img">
+                                        <span class="lock-icon"><i class="fa-brands fa-google-plus-g"></i></span>
+                                        <input type="text" class="form-control" value="http://google.com">												
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group formlast-input">
+                                    <label class="col-form-label">Instagram</label>
+                                    <div class="pass-group group-img">
+                                        <span class="lock-icon"><i class="fab fa-instagram"></i></span>
+                                        <input type="text" class="form-control" value="http://instagram.com">												
+                                    </div>
+                                </div>
+                            </div>											
+                        </div>								
+                    </div>
+                </div>					
+                <div class="card media-section">
+                    <div class="card-header">
+                        <h4>Media Information </h4>							
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 featured-img1">
+                                <h6 class="media-title">Featured Image</h6>
+                                <div class="media-image ">
+                                    <img src="assets/img/mediaimg-2.jpg" alt="">										
+                                </div>
+                                <div class="settings-upload-btn">
+                                    <input type="file" accept="image/*" name="image" class="hide-input image-upload" id="file">
+                                    <label for="file" class="file-upload">Upload File</label>												
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 featured-img2">
+                                <h6 class="Featured image">Logo</h6>
+                                <div class="media-image">
+                                    <img src="assets/img/mediaimg-1.jpg" alt="">										
+                                </div>
+                                <div class="settings-upload-btn">
+                                    <input type="file" accept="image/*" name="image" class="hide-input image-upload" id="file1">
+                                    <label for="file1" class="file-upload">Upload File</label>												
+                                </div>
+                            </div>											
+                        </div>
+                        <div class="gallery-media">
+                            <h6 class="media-title">Gallery</h6>
+                            <div class="galleryimg-upload">
+                                 <div class="gallery-upload">
+                                    <img src="assets/img/gallery/gallerymedia-1.jpg" class="img-fluid" alt="">
+                                    <a href="javascript:void(0)" class="profile-img-del"><i class="feather-trash-2"></i></a>
+                                 </div>
+                                 <div class="gallery-upload">
+                                    <img src="assets/img/gallery/gallerymedia-2.jpg" class="img-fluid" alt="">
+                                    <a href="javascript:void(0)" class="profile-img-del"><i class="feather-trash-2"></i></a>
+                                 </div>
+                                 <div class="gallery-upload">
+                                    <img src="assets/img/gallery/gallerymedia-3.jpg" class="img-fluid" alt="">
+                                    <a href="javascript:void(0)" class="profile-img-del"><i class="feather-trash-2"></i></a>
+                                 </div>
+                                 <div class="gallery-upload">
+                                    <img src="assets/img/gallery/gallerymedia-4.jpg" class="img-fluid" alt="">
+                                    <a href="javascript:void(0)" class="profile-img-del"><i class="feather-trash-2"></i></a>
+                                 </div>
+                                 <div class="gallery-upload">
+                                    <img src="assets/img/gallery/gallerymedia-5.jpg" class="img-fluid" alt="">
+                                    <a href="javascript:void(0)" class="profile-img-del"><i class="feather-trash-2"></i></a>
+                                 </div>
+                            </div>	
+                            <div class="settings-upload-btn">
+                                <input type="file" accept="image/*" name="image" class="hide-input image-upload" id="file2">
+                                <label for="file2" class="file-upload">Upload File</label>												
+                            </div>									
+                        </div>								
+                    </div>
+                </div>	
+                <button class="btn btn-primary" type="submit"> Submit</button>						
+            </div>			
+        </div>
+    </div>		
+</div>		
+<!-- /Profile Content -->

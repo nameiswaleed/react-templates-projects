@@ -1,0 +1,1841 @@
+<app-header-three></app-header-three>
+<!-- Home Banner -->
+<section class="banner-section banner-three">
+  <div class="container">
+    <div class="row">
+      <div class="banner-info-blk">
+        <div class="row">
+          <div class="col-md-12 col-lg-5">
+            <div class="banner-content-blk">
+              <h1>We Take Care of<br />Your Trip</h1>
+              <h5>Discover amazing places at exclusive deals</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-images">
+        <div class="ban-image">
+          <img src="assets/img/bg/balloon-img.png" alt="" />
+        </div>
+        <div class="ban-image-01">
+          <img src="assets/img/bg/cloud-01.png" alt="" class="cloud-one" />
+          <img src="assets/img/bg/cloud-02.png" alt="" class="cloud-two" />
+        </div>
+        <div class="ban-image-02">
+          <img src="assets/img/banner-02.png" alt="" />
+        </div>
+        <div class="ban-image-03">
+          <img src="assets/img/bg/plane.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="banner-btm-img-blk">
+          <img src="assets/img/banner-btm-img.png" alt="" />
+        </div>
+        <div class="banner-btm">
+          <div class="search-tab-col">
+            <form  method="post">
+              <div class="row align-items-center search-form">
+                <div class="col-12 col-lg-10 datepicker-col search-group">
+                  <ul class="gap-3 d-flex">
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <div class="icon-blk rounded-circle">
+                            <span class="material-symbols-outlined"
+                              >location_on</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <span class="label">Location</span>
+                          <input
+                            type="text"
+                            name="name"
+                            class="border-0 text-truncate px-0 form-control"
+                            placeholder="Where are you go?"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <div class="icon-blk rounded-circle">
+                            <span class="material-symbols-outlined"
+                              >calendar_today</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <span class="label">Check in</span>
+                          <input
+                            type="text"
+                            name="checkin"
+                            class="border-0 text-truncate px-0 form-control datetimepicker"
+                            placeholder="Jan 05, 2023"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <div class="icon-blk rounded-circle">
+                            <span class="material-symbols-outlined"
+                              >calendar_today</span
+                            >
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <span class="label">Check out</span>
+                          <input
+                            type="text"
+                            name="checkout"
+                            class="border-0 text-truncate px-0 form-control datetimepicker"
+                            placeholder="Jan 06, 2023"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <div class="icon-blk rounded-circle">
+                            <span class="material-symbols-outlined">group</span>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <span class="label">Guest</span>
+                          <input
+                            type="text"
+                            name="mobile"
+                            class="border-0 text-truncate px-0 form-control"
+                            placeholder="2 adults - 1 children"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-2 search-group">
+                  <ul class="p-0">
+                    <li>
+                      <button (click)="path()" class="btn theme-btn">
+                        Search <i class="feather-search ms-1"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Home Banner -->
+
+<!-- Destination Banner -->
+<section class="section-blk destination-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-blk">
+          <div class="title-left">
+            <h2>Popular Destinations</h2>
+            <h5>These popular destinations have a lot to offer</h5>
+          </div>
+          <div class="theme-btn">
+            <a [routerLink]="routes.servicedetails" class="search-btn">
+              view all destination
+              <span>
+                <i class="feather-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="destination-carousel">
+          <div class="destination-slider">
+            <owl-carousel-o [options]="destinationOwlOptions">
+              <ng-container *ngFor="let slide of destination">
+                <ng-template carouselSlide>
+                  <div class="destination-widget">
+                    <a href="javascript:;" class="desti-link">
+                      <img
+                        [src]="slide.img"
+                        class="img-fluid"
+                        alt="find your destination"
+                      />
+                      <div class="desti-country-list">
+                        <span class="desti-btn">{{ slide.desticity }}</span>
+                      </div>
+                    </a>
+                    <div class="overlay-blk">
+                      <h3>{{ slide.city }}</h3>
+                      <p>{{ slide.description }}</p>
+                      <div class="theme-btn">
+                        <a
+                          [routerLink]="routes.servicedetails"
+                          class="search-btn"
+                        >
+                          {{ slide.details }}
+                          <span>
+                            <i class="feather-arrow-right"></i>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Destination Banner -->
+
+<!-- Service Banner -->
+<section class="section-blk service-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="service-info-card d-flex align-items-center">
+          <div class="flex-shrink-0">
+            <div class="img-blk">
+              <img
+                src="assets/img/service-img.png"
+                class="img-fluid"
+                alt="Dreamstrip Services"
+              />
+            </div>
+          </div>
+          <div class="service-content flex-grow-1">
+            <h2>Our Services</h2>
+            <div class="body-content">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+
+            <ul class="service-list d-flex">
+              <li>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <div class="icon-blk rounded-circle">
+                      <img
+                        src="assets/img/services/icon-1.png"
+                        alt="Service Feature 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-2">
+                    <h6>trip adviser</h6>
+                    <p>Lorem Ipsum</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <div class="icon-blk rounded-circle">
+                      <img
+                        src="assets/img/services/icon-2.png"
+                        alt="Service Feature 2"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-2">
+                    <h6>accommodation</h6>
+                    <p>Lorem Ipsum</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <div class="icon-blk rounded-circle">
+                      <img
+                        src="assets/img/services/icon-3.png"
+                        alt="Service Feature 3"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-2">
+                    <h6>guide</h6>
+                    <p>Lorem Ipsum</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <div class="icon-blk rounded-circle">
+                      <img
+                        src="assets/img/services/icon-4.png"
+                        alt="Service Feature 4"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-2">
+                    <h6>trip planner</h6>
+                    <p>Lorem Ipsum</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Service Banner -->
+
+<!-- Recommended Banner -->
+<section class="section-blk recommended-blk style1-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-blk justify-content-center text-center">
+          <h2>Recommended</h2>
+          <h5>These popular destinations have a lot to offer</h5>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="recommended-tabs-blk">
+              <ul class="nav tabs-style gap-3" data-bs-tabs="tabs">
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'hotels'"
+                    aria-current="true"
+                    data-bs-toggle="tab"
+                    href="#hotels"
+                    (click)="activeTab[0] = 'hotels'"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-01.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    hotel
+                  </a>
+                </li>
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'restaurants'"
+                    (click)="activeTab[0] = 'restaurants'"
+                    data-bs-toggle="tab"
+                    href="#restaurants"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-02.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    Restaurants
+                  </a>
+                </li>
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'shops'"
+                    (click)="activeTab[0] = 'shops'"
+                    data-bs-toggle="tab"
+                    href="#shops"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-03.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    shops
+                  </a>
+                </li>
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'business'"
+                    (click)="activeTab[0] = 'business'"
+                    data-bs-toggle="tab"
+                    href="#business"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-04.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    business
+                  </a>
+                </li>
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'lifestyle'"
+                    (click)="activeTab[0] = 'lifestyle'"
+                    data-bs-toggle="tab"
+                    href="#lifestyle"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-05.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    lifestyle
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-body tab-content">
+          <div
+            class="tab-pane"
+            [ngClass]="activeTab[0] == 'hotels' ? 'active' : 'fade'"
+            *ngIf="activeTab[0] == 'hotels'"
+            id="hotels"
+          >
+            <div class="recommended-carousel">
+              <owl-carousel-o [options]="recommendedBlogOwlOptions">
+                <ng-container *ngFor="let slide of recommendedBlog">
+                  <ng-template carouselSlide>
+                    <div class="recommended-slider owl-theme">
+                      <div class="recommended-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.servicedetails"
+                            ><img
+                              [src]="slide.img"
+                              [title]="slide.title"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                          <div
+                            [ngClass]="{
+                              p: slide.title === 'best seller',
+                              'top-rated-style': slide.title === 'top rated',
+                              'bf-style': slide.title === 'Break Fast Included'
+                            }"
+                            class="top-blk"
+                          >
+                            <p>{{ slide.title }}</p>
+                          </div>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.servicedetails">{{
+                              slide.servicedetails
+                            }}</a>
+                          </p>
+                          <div class="loc-blk">
+                            <i class="feather-map-pin"></i>
+                            <p>{{ slide.mappin }}</p>
+                          </div>
+                          <div class="detail-blk">
+                            <p>
+                              {{ slide.details }}<span>{{ slide.amount }}</span>
+                            </p>
+                            <div class="detail-btm-blk">
+                              <div class="rating-badge">
+                                <span class="material-icons">star</span>
+                                {{ slide.rating }}
+                              </div>
+                              <small>{{ slide.review }}</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane"
+            [ngClass]="activeTab[0] == 'restaurants' ? 'active' : 'fade'"
+            *ngIf="activeTab[0] == 'restaurants'"
+            id="restaurants"
+          >
+            <div class="recommended-carousel">
+              <owl-carousel-o [options]="restaurantsOwlOptions">
+                <ng-container *ngFor="let slide of restaurants">
+                  <ng-template carouselSlide>
+                    <div class="recommended-slider owl-theme">
+                      <div class="recommended-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.servicedetails"
+                            ><img
+                              [src]="slide.img"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                          <div
+                            [ngClass]="{
+                              p: slide.title === 'best seller',
+                              'top-rated-style': slide.title === 'Break Fast Included',
+                              'bf-style': slide.title === 'top rated'
+                            }"
+                            class="top-blk"
+                          >
+                            <p>{{ slide.title }}</p>
+                          </div>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.servicedetails">{{
+                              slide.servicedetails
+                            }}</a>
+                          </p>
+                          <div class="loc-blk">
+                            <i class="feather-map-pin"></i>
+                            <p>{{ slide.mappin }}</p>
+                          </div>
+                          <div class="detail-blk">
+                            <p>
+                              {{ slide.details }}<span>{{ slide.amount }}</span>
+                            </p>
+                            <div class="detail-btm-blk">
+                              <div class="rating-badge">
+                                <span class="material-icons">star</span>
+                                {{ slide.rating }}
+                              </div>
+                              <small>{{ slide.review }}</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane"
+            [ngClass]="activeTab[0] == 'shops' ? 'active' : 'fade'"
+            *ngIf="activeTab[0] == 'shops'"
+            id="shops"
+          >
+            <div class="recommended-carousel">
+              <owl-carousel-o [options]="shopOwlOptions">
+                <ng-container *ngFor="let slide of shop">
+                  <ng-template carouselSlide>
+                    <div class="recommended-slider owl-theme">
+                      <div class="recommended-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.servicedetails"
+                            ><img
+                              [src]="slide.img"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                          <div [ngClass]="{
+                            p: slide.title === 'best seller',
+                            'top-rated-style': slide.title === 'top rated',
+                            'bf-style': slide.title === 'Break Fast Included'
+                          }"
+                          class="top-blk" class="top-blk">
+                            <p>{{ slide.title }}</p>
+                          </div>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.servicedetails">{{
+                              slide.servicedetails
+                            }}</a>
+                          </p>
+                          <div class="loc-blk">
+                            <i class="feather-map-pin"></i>
+                            <p>{{ slide.mappin }}</p>
+                          </div>
+                          <div class="detail-blk">
+                            <p>
+                              {{ slide.details }}
+                              <span>{{ slide.amount }}</span>
+                            </p>
+                            <div class="detail-btm-blk">
+                              <div class="rating-badge">
+                                <span class="material-icons">star</span>
+                                {{ slide.rating }}
+                              </div>
+                              <small>{{ slide.review }}</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+          </div>
+          <div
+            class="tab-pane"
+            [ngClass]="activeTab[0] == 'business' ? 'active' : 'fade'"
+            *ngIf="activeTab[0] == 'business'"
+            id="business"
+          >
+            <div class="recommended-carousel">
+              <owl-carousel-o [options]="businessOwlOptions">
+                <ng-container *ngFor="let slide of business">
+                  <ng-template carouselSlide>
+                    <div class="recommended-slider owl-theme">
+                      <div class="recommended-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.servicedetails"
+                            ><img
+                              [src]="slide.img"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                          <div [ngClass]="{
+                            p: slide.title === 'best seller',
+                            'top-rated-style': slide.title === 'top rated',
+                            'bf-style': slide.title === 'Break Fast Included'
+                          }"
+                          class="top-blk"class="top-blk">
+                            <p>{{ slide.title }}</p>
+                          </div>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.servicedetails">{{
+                              slide.servicedetails
+                            }}</a>
+                          </p>
+                          <div class="loc-blk">
+                            <i class="feather-map-pin"></i>
+                            <p>{{ slide.mappin }}</p>
+                          </div>
+                          <div class="detail-blk">
+                            <p>
+                              {{ slide.details }}
+                              <span>{{ slide.amount }}</span>
+                            </p>
+                            <div class="detail-btm-blk">
+                              <div class="rating-badge">
+                                <span class="material-icons">star</span>
+                                {{ slide.rating }}
+                              </div>
+                              <small>{{ slide.review }}</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </ng-container>
+              </owl-carousel-o>
+            </div>
+          </div>
+          <div
+            class="tab-pane"
+            [ngClass]="activeTab[0] == 'lifestyle' ? 'active' : 'fade'"
+            *ngIf="activeTab[0] == 'lifestyle'"
+            id="lifestyle"
+          >
+            <div class="recommended-carousel">
+              <div class="recommended-slider owl-theme">
+                <owl-carousel-o [options]="lifestyleOwlOptions">
+                  <ng-container *ngFor="let slide of lifestyle">
+                    <ng-template carouselSlide>
+                      <div class="recommended-slider owl-theme">
+                        <div class="recommended-widget">
+                          <div class="img-blk">
+                            <a [routerLink]="routes.servicedetails"
+                              ><img
+                                [src]="slide.img"
+                                class="img-fluid"
+                                alt="List 1"
+                            /></a>
+                            <div [ngClass]="{
+                              p: slide.title === 'best seller',
+                              'top-rated-style': slide.title === 'top rated',
+                              'bf-style': slide.title === 'Break Fast Included'
+                            }"
+                            class="top-blk" class="top-blk">
+                              <p>{{ slide.title }}</p>
+                            </div>
+                          </div>
+                          <div class="content-blk">
+                            <p>
+                              <a [routerLink]="routes.servicedetails">{{
+                                slide.servicedetails
+                              }}</a>
+                            </p>
+                            <div class="loc-blk">
+                              <i class="feather-map-pin"></i>
+                              <p>{{ slide.mappin }}</p>
+                            </div>
+                            <div class="detail-blk">
+                              <p>
+                                {{ slide.details }}
+                                <span>{{ slide.amount }}</span>
+                              </p>
+                              <div class="detail-btm-blk">
+                                <div class="rating-badge">
+                                  <span class="material-icons">star</span>
+                                  {{ slide.rating }}
+                                </div>
+                                <small>{{ slide.review }}</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Recommended Banner -->
+
+<!-- Offer Banner -->
+<section class="section-blk offer-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="box-style sm-mb-23">
+          <img
+            src="assets/img/designation-img1.jpg"
+            class="img-fluid"
+            alt="Dreamstrip Offers"
+          />
+          <div class="btm-box-style">
+            <div>
+              <p>Enjoy Summer Deals</p>
+              <h3>Up to 30% Discount!</h3>
+            </div>
+            <div>
+              <div class="theme-btn">
+                <a [routerLink]="routes.categories" class="btn">
+                  learn more
+                  <span>
+                    <i class="feather-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box-style">
+          <img
+            src="assets/img/designation-img2.jpg"
+            class="img-fluid"
+            alt="Dreamstrip Offers"
+          />
+          <div class="btm-box-style">
+            <div>
+              <p>Enjoy Summer Deals</p>
+              <h3>Up to 30% Discount!</h3>
+            </div>
+            <div>
+              <div class="theme-btn">
+                <a [routerLink]="routes.categories" class="btn">
+                  learn more
+                  <span>
+                    <i class="feather-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Offer Banner -->
+
+<!-- Recommended Banner -->
+<section class="section-blk recommended-blk style2-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-blk justify-content-center text-center">
+          <h2>Top Guide Recommentation</h2>
+          <h5>These popular destinations have a lot to offer</h5>
+        </div>
+        <div class="recommended-carousel">
+          <div class="recommended-slider">
+            <owl-carousel-o [options]="guiderecommandedOwlOptions">
+              <ng-container *ngFor="let slide of guiderecommandeddata">
+                <ng-template carouselSlide>
+                  <div class="recommended-widget">
+                    <div class="img-blk">
+                      <a href="javascript:void(0);"
+                        ><img [src]="slide.img" class="img-fluid" alt="List 1"
+                      /></a>
+                      <div
+                        [ngClass]="{
+                          p: slide.type === 'Adventure',
+                          'top-rated-style': slide.type === 'Hunting',
+                          'gray-bg-style': slide.type === 'Brandon Christophe',
+                          'bf-style': slide.type === 'Tour'
+                        }"
+                        class="top-blk"
+                      >
+                        <p>{{ slide.type }}</p>
+                      </div>
+                    </div>
+                    <div class="content-blk">
+                      <p>
+                        <a href="javascript:void(0);">{{ slide.name }}</a>
+                      </p>
+                      <div class="loc-blk">
+                        <i class="feather-map-pin"></i>
+                        <p>{{ slide.mappin }}</p>
+                      </div>
+                      <div class="detail-blk mt-15">
+                        <p>
+                          {{ slide.amount }} <span>{{ slide.hour }}</span>
+                        </p>
+                        <div class="detail-btm-blk">
+                          <div class="rating-blk">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                          </div>
+                          <small>{{ slide.reviews }}</small>
+                        </div>
+                        <p class="my-10 exp-style">{{ slide.experience }}</p>
+                        <div class="tags-blk">
+                          <a href="javscript:;" class="tag-style">{{
+                            slide.taglanguage
+                          }}</a>
+                          <a href="javscript:;" class="tag-style">{{
+                            slide.taglanguage1
+                          }}</a>
+                          <a href="javscript:;" class="tag-style">{{
+                            slide.taglanguage2
+                          }}</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Recommended Banner -->
+
+<!-- Promo Banner -->
+<section class="section-blk promo-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="promo-style">
+          <div class="flex-style">
+            <div>
+              <h3>Save Time : Create a Trip & Get Offers</h3>
+              <div class="list-style">
+                <ul>
+                  <li>
+                    <span class="position-style">01</span>
+                    <span class="count-style">01</span>
+                    Create Trip
+                  </li>
+                  <li>
+                    <span class="position-style">02</span>
+                    <span class="count-style">02</span>
+                    Get offers
+                  </li>
+                  <li>
+                    <span class="position-style">03</span>
+                    <span class="count-style">03</span>
+                    Search Guide
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="btn-style2">
+              <a href="javascript:;">
+                <span class="text-style">Create a Trip</span>
+                <span class="shape-bg">
+                  <span class="material-icons">arrow_forward</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Promo Banner -->
+
+<!-- Blog Banner -->
+<section class="section-blk blog-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-blk justify-content-center text-center">
+          <h2>Get inspiration for your next trip</h2>
+          <h5>Lorem Ipsum is simply dummy text of the printing</h5>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="recommended-tabs-blk">
+              <ul class="nav tabs-style gap-3" data-bs-tabs="tabs">
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'hotels'"
+                    aria-current="true"
+                    data-bs-toggle="tab"
+                    href="#hotels"
+                    (click)="activeTab[0] = 'hotels'"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-01.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    hotel
+                  </a>
+                </li>
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'restaurants'"
+                    (click)="activeTab[0] = 'restaurants'"
+                    data-bs-toggle="tab"
+                    href="#restaurants"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-02.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    Restaurants
+                  </a>
+                </li>
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'shops'"
+                    (click)="activeTab[0] = 'shops'"
+                    data-bs-toggle="tab"
+                    href="#shops"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-03.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    shops
+                  </a>
+                </li>
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'business'"
+                    (click)="activeTab[0] = 'business'"
+                    data-bs-toggle="tab"
+                    href="#business"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-04.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    business
+                  </a>
+                </li>
+                <li>
+                  <a
+                    [class.active]="activeTab[0] == 'lifestyle'"
+                    (click)="activeTab[0] = 'lifestyle'"
+                    data-bs-toggle="tab"
+                    href="#lifestyle"
+                  >
+                    <span>
+                      <img
+                        src="assets/img/icons/trip-icon-05.svg"
+                        alt="Dreamstrip Recommended"
+                      />
+                    </span>
+                    lifestyle
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body tab-content">
+          <div class="tab-pane active" id="Bloghotel">
+            <div class="recommended-carousel">
+              <div class="recommended-slider">
+                <owl-carousel-o [options]="tripdataOwlOptions">
+                  <ng-container *ngFor="let slide of tripdata">
+                    <ng-template carouselSlide>
+                      <div class="blog-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.blogdetails"
+                            ><img
+                              [src]="slide.img"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.blogdetails">{{
+                              slide.description
+                            }}</a>
+                          </p>
+                          <div class="date-blk">
+                            <p>{{ slide.data }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Blogrestaurants">
+            <div class="recommended-carousel">
+              <div class="recommended-slider owl-theme">
+                <owl-carousel-o [options]="restauranttripdataOwlOptions">
+                  <ng-container *ngFor="let slide of restauranttripdata">
+                    <ng-template carouselSlide>
+                      <div class="blog-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.blogdetails"
+                            ><img
+                              [src]="slide.img"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.blogdetails">{{
+                              slide.description
+                            }}</a>
+                          </p>
+                          <div class="date-blk">
+                            <p>{{ slide.data }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Blogshops">
+            <div class="recommended-carousel">
+              <div class="recommended-slider owl-carousel owl-theme">
+                <owl-carousel-o [options]="restauranttripdataOwlOptions">
+                  <ng-container *ngFor="let slide of restauranttripdata">
+                    <ng-template carouselSlide>
+                      <div class="blog-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.blogdetails"
+                            ><img
+                              [src]="slide.img"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.blogdetails">{{
+                              slide.description
+                            }}</a>
+                          </p>
+                          <div class="date-blk">
+                            <p>{{ slide.data }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Blogbusiness">
+            <div class="recommended-carousel">
+              <div class="recommended-slider owl-carousel owl-theme">
+                <owl-carousel-o [options]="restauranttripdataOwlOptions">
+                  <ng-container *ngFor="let slide of restauranttripdata">
+                    <ng-template carouselSlide>
+                      <div class="blog-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.blogdetails"
+                            ><img
+                              [src]="slide.img"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.blogdetails">{{
+                              slide.description
+                            }}</a>
+                          </p>
+                          <div class="date-blk">
+                            <p>{{ slide.data }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Bloglifestyle">
+            <div class="recommended-carousel">
+              <div class="recommended-slider owl-carousel owl-theme">
+                <owl-carousel-o [options]="restauranttripdataOwlOptions">
+                  <ng-container *ngFor="let slide of restauranttripdata">
+                    <ng-template carouselSlide>
+                      <div class="blog-widget">
+                        <div class="img-blk">
+                          <a [routerLink]="routes.blogdetails"
+                            ><img
+                              [src]="slide.img"
+                              class="img-fluid"
+                              alt="List 1"
+                          /></a>
+                        </div>
+                        <div class="content-blk">
+                          <p>
+                            <a [routerLink]="routes.blogdetails">{{
+                              slide.description
+                            }}</a>
+                          </p>
+                          <div class="date-blk">
+                            <p>{{ slide.data }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Blog Banner -->
+
+<!-- Testimonial Banner -->
+<section class="section-blk testi-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-blk">
+          <div class="title-left">
+            <h2>What our customers are saying us?</h2>
+            <h5>These popular destinations have a lot to offer</h5>
+          </div>
+
+          <div class="theme-btn">
+            <a [routerLink]="routes.servicedetails" class="btn">
+              View All Destinations
+              <span class="material-icons">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+        <div class="testi-carousel">
+          <div class="testim-slider">
+            <owl-carousel-o [options]="feedbackdataOwlOptions">
+              <ng-container *ngFor="let slide of feedbackdata">
+                <ng-template carouselSlide>
+                  <div class="testi-widget">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <div class="icon-blk rounded-circle overflow-hidden">
+                          <img
+                            [src]="slide.img"
+                            alt="Dreamstrip Testimonials"
+                          />
+                        </div>
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h4>{{ slide.name }}</h4>
+                        <p class="text-gray-style">{{ slide.city }}</p>
+                      </div>
+                    </div>
+                    <div class="testi-info-blk">
+                      <p>{{ slide.review }}</p>
+                    </div>
+                    <hr class="custom-hr" />
+                    <div class="testi-btm-blk">
+                      <div class="circle-grp">
+                        <img [src]="slide.customerimg1" alt="" />
+                        <img [src]="slide.customerimg2" alt="" />
+                        <img [src]="slide.customerimg3" alt="" />
+                        <img [src]="slide.customerimg4" alt="" />
+                      </div>
+                      <div class="circle-right">
+                        <img [src]="slide.earth" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Testimonial Banner -->
+
+<!-- FAQ Banner -->
+<section class="section-blk faq-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-blk justify-content-center text-center">
+          <h2>Frequently asked Questions</h2>
+          <h5>Have questions? We're here to help.</h5>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="faq-tabs-blk mb-50">
+              <ul class="nav tabs-style gap-3" data-bs-tabs="tabs">
+                <li>
+                  <a
+                    class="active"
+                    aria-current="true"
+                    data-bs-toggle="tab"
+                    href="#FAQhotels"
+                  >
+                    hotels
+                  </a>
+                </li>
+                <li>
+                  <a data-bs-toggle="tab" href="#FAQpayments"> Payments </a>
+                </li>
+                <li>
+                  <a data-bs-toggle="tab" href="#FAQtrip"> trip </a>
+                </li>
+                <li>
+                  <a data-bs-toggle="tab" href="#FAQguide"> guide </a>
+                </li>
+                <li>
+                  <a data-bs-toggle="tab" href="#FAQcancel"> cancel </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-body tab-content">
+          <div class="tab-pane active" id="FAQhotels">
+            <div class="row">
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How to book a tour?</h5>
+                  <p class="text-gray-style">
+                    To book a tour to India, we suggest you that you view the
+                    India Journeys Page on the website, which include many tours
+                    that are being taken by most of the tourists coming to
+                    India. If you intend to make any changes, or customize your
+                    travel itinerary, you can request a quote by filling our
+                    online query form or sending us an e mail at:
+                    bookings@journey.com
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How will I be picked up from the Airport ?</h5>
+                  <p class="text-gray-style">
+                    You will be picked up by our representative at the arrival
+                    hall of the particular International Airport of India. You
+                    should not leave Air Port without our representative if you
+                    are to be picked up. Pioneer Journeys representative would
+                    be holding a welcome board with your name on it. If you are
+                    part of a group, the name of the group will be mentioned on
+                    the welcome board.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="FAQpayments">
+            <div class="row">
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How to book a tour?</h5>
+                  <p class="text-gray-style">
+                    To book a tour to India, we suggest you that you view the
+                    India Journeys Page on the website, which include many tours
+                    that are being taken by most of the tourists coming to
+                    India. If you intend to make any changes, or customize your
+                    travel itinerary, you can request a quote by filling our
+                    online query form or sending us an e mail at:
+                    bookings@journey.com
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How will I be picked up from the Airport ?</h5>
+                  <p class="text-gray-style">
+                    You will be picked up by our representative at the arrival
+                    hall of the particular International Airport of India. You
+                    should not leave Air Port without our representative if you
+                    are to be picked up. Pioneer Journeys representative would
+                    be holding a welcome board with your name on it. If you are
+                    part of a group, the name of the group will be mentioned on
+                    the welcome board.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="FAQtrip">
+            <div class="row">
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How to book a tour?</h5>
+                  <p class="text-gray-style">
+                    To book a tour to India, we suggest you that you view the
+                    India Journeys Page on the website, which include many tours
+                    that are being taken by most of the tourists coming to
+                    India. If you intend to make any changes, or customize your
+                    travel itinerary, you can request a quote by filling our
+                    online query form or sending us an e mail at:
+                    bookings@journey.com
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How will I be picked up from the Airport ?</h5>
+                  <p class="text-gray-style">
+                    You will be picked up by our representative at the arrival
+                    hall of the particular International Airport of India. You
+                    should not leave Air Port without our representative if you
+                    are to be picked up. Pioneer Journeys representative would
+                    be holding a welcome board with your name on it. If you are
+                    part of a group, the name of the group will be mentioned on
+                    the welcome board.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="FAQguide">
+            <div class="row">
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How to book a tour?</h5>
+                  <p class="text-gray-style">
+                    To book a tour to India, we suggest you that you view the
+                    India Journeys Page on the website, which include many tours
+                    that are being taken by most of the tourists coming to
+                    India. If you intend to make any changes, or customize your
+                    travel itinerary, you can request a quote by filling our
+                    online query form or sending us an e mail at:
+                    bookings@journey.com
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How will I be picked up from the Airport ?</h5>
+                  <p class="text-gray-style">
+                    You will be picked up by our representative at the arrival
+                    hall of the particular International Airport of India. You
+                    should not leave Air Port without our representative if you
+                    are to be picked up. Pioneer Journeys representative would
+                    be holding a welcome board with your name on it. If you are
+                    part of a group, the name of the group will be mentioned on
+                    the welcome board.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="FAQcancel">
+            <div class="row">
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How to book a tour?</h5>
+                  <p class="text-gray-style">
+                    To book a tour to India, we suggest you that you view the
+                    India Journeys Page on the website, which include many tours
+                    that are being taken by most of the tourists coming to
+                    India. If you intend to make any changes, or customize your
+                    travel itinerary, you can request a quote by filling our
+                    online query form or sending us an e mail at:
+                    bookings@journey.com
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex">
+                <div class="faq-shadow-blk flex-fill">
+                  <h5>How will I be picked up from the Airport ?</h5>
+                  <p class="text-gray-style">
+                    You will be picked up by our representative at the arrival
+                    hall of the particular International Airport of India. You
+                    should not leave Air Port without our representative if you
+                    are to be picked up. Pioneer Journeys representative would
+                    be holding a welcome board with your name on it. If you are
+                    part of a group, the name of the group will be mentioned on
+                    the welcome board.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btm-style">
+          <a href="javascript:void(0);" class="price-down">
+            <span>
+              <i class="feather-arrow-down"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /FAQ Banner -->
+
+<!-- Price Section -->
+<section class="section-blk price-section" id="price">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <div class="title-blk justify-content-center text-center">
+          <h2>Our Pricing Plan</h2>
+          <h5>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 d-flex col-md-6">
+        <div class="price-card price-three flex-fill">
+          <div class="price-head">
+            <div class="price-level">
+              <h6>Intro</h6>
+            </div>
+          </div>
+          <div class="price-body">
+            <p>For most business that want to optimize web queries</p>
+            <ul>
+              <li class="active">Basic listing submission</li>
+              <li class="inactive">One Listing</li>
+              <li class="inactive">30 days Availabilty</li>
+              <li class="inactive">Limited Support</li>
+              <li class="inactive">Edit your listing</li>
+            </ul>
+            <h4>$10 <span>/ month</span></h4>
+            <div>
+              <a [routerLink]="routes.login" class="btn viewdetails-btn"
+                >Choose</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 d-flex col-md-6">
+        <div class="price-card price-three flex-fill">
+          <div class="price-head">
+            <div class="price-level">
+              <h6>Basic</h6>
+            </div>
+          </div>
+          <div class="price-body">
+            <p>For most business that want to optimize web queries</p>
+            <ul>
+              <li class="active">Basic listing submission</li>
+              <li class="active">One Listing</li>
+              <li class="inactive">30 days Availabilty</li>
+              <li class="inactive">Limited Support</li>
+              <li class="inactive">Edit your listing</li>
+            </ul>
+            <h4>$25 <span>/ month</span></h4>
+            <div>
+              <a routerLink="routes.login" class="btn viewdetails-btn"
+                >Choose</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 d-flex col-md-6">
+        <div class="price-card price-three flex-fill">
+          <div class="price-head">
+            <div class="price-level">
+              <h6>Pro</h6>
+              <span>Save $40</span>
+            </div>
+          </div>
+          <div class="price-body">
+            <p>For most business that want to optimize web queries</p>
+            <ul>
+              <li class="active">Basic listing submission</li>
+              <li class="active">One Listing</li>
+              <li class="active">30 days Availabilty</li>
+              <li class="inactive">Limited Support</li>
+              <li class="inactive">Edit your listing</li>
+            </ul>
+            <h4>$50 <span>/ month</span></h4>
+            <div>
+              <a [routerLink]="routes.login" class="btn viewdetails-btn"
+                >Choose</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 d-flex col-md-6">
+        <div class="price-card price-three flex-fill">
+          <div class="price-head">
+            <div class="price-level">
+              <h6>Enterprise</h6>
+            </div>
+          </div>
+          <div class="price-body">
+            <p>For most business that want to optimize web queries</p>
+            <ul>
+              <li class="active">Basic listing submission</li>
+              <li class="active">One Listing</li>
+              <li class="active">30 days Availabilty</li>
+              <li class="inactive">Limited Support</li>
+              <li class="inactive">Edit your listing</li>
+            </ul>
+            <h4>$100 <span>/ month</span></h4>
+            <div>
+              <a [routerLink]="routes.login" class="btn viewdetails-btn"
+                >Choose</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Price Section -->
+
+<!-- Blog Section -->
+<section class="section-blk blog-block">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <div class="title-blk justify-content-center text-center">
+          <h2>Latest Blog</h2>
+          <h5>Lorem Ipsum is simply dummy text of the printing</h5>
+        </div>
+        <div class="testim-slider">
+          <owl-carousel-o [options]="tripblogOwlOptions">
+            <ng-container *ngFor="let slide of tripblog">
+              <ng-template carouselSlide>
+                <div class="blog-slide">
+                  <div class="blog grid-blog">
+                    <div class="blog-image">
+                      <a [routerLink]="routes.blogdetails"
+                        ><img
+                          class="img-fluid"
+                          [src]="slide.img"
+                          alt="Post Image"
+                      /></a>
+                      <div
+                        [ngClass]="{
+                          p: slide.title === 'Adventure',
+                          'top-rated-style': slide.title === 'Adventure'
+                        }"
+                        class="top-blk"
+                      >
+                        <p>{{ slide.title }}</p>
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <ul class="entry-meta meta-item mb-0">
+                        <li>
+                          <div class="post-author">
+                            <div class="post-author-img">
+                              <img [src]="slide.img2" alt="Post Author" />
+                            </div>
+                            <a href="javascript:void(0);" class="mb-0">
+                              <span> {{ slide.name }} </span></a
+                            >
+                          </div>
+                        </li>
+                        <li class="date-icon">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          {{ slide.date }}
+                        </li>
+                      </ul>
+                      <h3 class="blog-title">
+                        <a [routerLink]="routes.blogdetails">{{
+                          slide.blogdetails
+                        }}</a>
+                      </h3>
+                      <p class="blog-description">{{ slide.describtion }}</p>
+                      <p class="viewlink">
+                        <a [routerLink]="routes.blogdetails"
+                          >{{ slide.details }}
+                          <i class="feather-arrow-right"></i
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Blog Section -->
+
+<!-- Subscribe Banner -->
+<section class="section-blk subscribe-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="subscribe-style">
+          <div class="row align-items-center">
+            <div class="col-md-6 d-sm-none d-md-block">
+              <div class="banner-blk">
+                <img
+                  src="assets/img/subscribe-bg.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="banner-info">
+                <h2>Your Travel Journey Starts Here</h2>
+                <p>Sign up and we'll send the best deals to you</p>
+                <div class="row justify-content-center">
+                  <div class="col-md-10">
+                    <div class="subscribe-blk bg-white">
+                      <div class="input-group align-items-center">
+                        <span
+                          class="input-group-text material-icons"
+                          id="basic-addon1"
+                          >mail_outline</span
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter your email here"
+                          aria-label="email"
+                          aria-describedby="basic-addon1"
+                        />
+                        <div class="subscribe-btn-grp">
+                          <input type="submit" class="btn" value="Subscribe" />
+                          <img src="assets/img/mail-check.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Subscribe Banner -->
+
+<!-- Activities Banner -->
+<section class="section-blk activities-blk">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-blk justify-content-center text-center">
+          <h2 class="m-0">Top destinations with Activities</h2>
+        </div>
+        <div class="row row-gap-14">
+          <div class="col-sm-6 col-lg-3">
+            <div class="shadow-box d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-blk rounded-circle overflow-hidden">
+                  <img
+                    src="assets/img/activity-1.jpg"
+                    alt="Dreamstrip Activities"
+                  />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h4>Paris</h4>
+                <p>755 Tours & Activities</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="shadow-box d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-blk rounded-circle overflow-hidden">
+                  <img
+                    src="assets/img/activity-2.jpg"
+                    alt="Dreamstrip Activities"
+                  />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h4>Dubai</h4>
+                <p>60 Tours & Activities</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="shadow-box d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-blk rounded-circle overflow-hidden">
+                  <img
+                    src="assets/img/activity-3.jpg"
+                    alt="Dreamstrip Activities"
+                  />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h4>London</h4>
+                <p>140 Tours & Activities</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="shadow-box d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-blk rounded-circle overflow-hidden">
+                  <img
+                    src="assets/img/activity-4.jpg"
+                    alt="Dreamstrip Activities"
+                  />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h4>New York</h4>
+                <p>75 Tours & Activities</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="shadow-box d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-blk rounded-circle overflow-hidden">
+                  <img
+                    src="assets/img/activity-5.jpg"
+                    alt="Dreamstrip Activities"
+                  />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h4>Amsterdam</h4>
+                <p>60 Tours & Activities</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="shadow-box d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-blk rounded-circle overflow-hidden">
+                  <img
+                    src="assets/img/activity-6.jpg"
+                    alt="Dreamstrip Activities"
+                  />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h4>New Orleans</h4>
+                <p>120 Tours & Activities</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="shadow-box d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-blk rounded-circle overflow-hidden">
+                  <img
+                    src="assets/img/activity-7.jpg"
+                    alt="Dreamstrip Activities"
+                  />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h4>Rome</h4>
+                <p>35 Tours & Activities</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="shadow-box d-flex">
+              <div class="flex-shrink-0">
+                <div class="icon-blk rounded-circle overflow-hidden">
+                  <img
+                    src="assets/img/activity-1.jpg"
+                    alt="Dreamstrip Activities"
+                  />
+                </div>
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h4>Paris</h4>
+                <p>75 Tours & Activities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Activities Banner -->
+<app-footer-three></app-footer-three>

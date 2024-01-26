@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "image": "gallery-1.jpg",
+        "class": "top-blk",
+        "badge": "best seller",
+        "title": "America – Grand canyon, Golden Gate",
+        "location": "Westminster , London",
+        "text": "Starting from ",
+        "price": "US$42",
+        "rating": "4.9",
+        "review": "(2,312 Reviews)"
+    },
+    {
+        "id": "2",
+        "image": "gallery-2.jpg",
+        "class": "top-blk top-rated-style",
+        "badge": "top Rated",
+        "title": "Argentina – Great Diving Trip",
+        "location": "Westminster , London",
+        "text": "Starting from ",
+        "price": "US$62",
+        "rating": "4.9",
+        "review": "(2,312 Reviews)"
+    },
+    {
+        "id": "3",
+        "image": "gallery-3.jpg",
+        "class": "top-blk",
+        "badge": "best seller",
+        "title": "Brazil – Rio de Janeiro",
+        "location": "Westminster , London",
+        "text": "Starting from ",
+        "price": "US$32",
+        "rating": "4.9",
+        "review": "(1,612 Reviews)"
+    },
+    {
+        "id": "4",
+        "image": "gallery-4.jpg",
+        "class": "top-blk bf-style",
+        "badge": "Break Fast Included",
+        "title": "India – Mumbai, New Delhi",
+        "location": "Westminster , London",
+        "text": "Starting from ",
+        "price": "US$82",
+        "rating": "4.9",
+        "review": "(2,612 Reviews)"
+    },
+    {
+        "id": "5",
+        "image": "gallery-1.jpg",
+        "class": "top-blk",
+        "badge": "best seller",
+        "title": "Lorem Ipsum is simply dummy text of the printing",
+        "location": "Westminster , London",
+        "text": "Starting from ",
+        "price": "US$72",
+        "rating": "4.9",
+        "review": "(3,012 Reviews)"
+    }
+]

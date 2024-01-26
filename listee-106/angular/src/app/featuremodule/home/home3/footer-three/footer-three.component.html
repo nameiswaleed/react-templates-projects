@@ -1,0 +1,228 @@
+<!-- Footer Banner -->
+<footer class="section-blk footer-blk footer-three">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="top-foo-widget">
+          <div class="help-info">
+            <p>Toll Free Customer Care +(1) 123 456 7890</p>
+            <p>Need live support? contact@example.com</p>
+          </div>
+          <div class="social-info">
+            <ul class="d-flex">
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="middle-foo-widget">
+          <div class="row sm-row-gap-23">
+            <div class="col-md-7">
+              <div class="links-blk">
+                <div class="row sm-row-gap-23">
+                  <div class="col-auto col-md-3">
+                    <div class="col-style">
+                      <h5>About us</h5>
+                      <ul>
+                        <li>
+                          <a [routerLink]="routes.about">Our product</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Documentation</a>
+                        </li>
+                        <li>
+                          <a [routerLink]="routes.servicedetails">Our Services</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Get Started Us</a>
+                        </li>
+                        <li>
+                          <a [routerLink]="routes.contact">Contact Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-auto col-md-3">
+                    <div class="col-style">
+                      <h5>Quick links</h5>
+                      <ul>
+                        <li>
+                          <a href="javascript:void(0)">Market Place</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Documentation</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Customers</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Carriers</a>
+                        </li>
+                        <li>
+                          <a [routerLink]="routes.bloglist">Our Blog</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-auto col-md-3">
+                    <div class="col-style">
+                      <h5>Services</h5>
+                      <ul>
+                        <li><a [routerLink]="routes.servicedetails">Hotel</a></li>
+                        <li>
+                          <a [routerLink]="routes.servicedetails">Activity Finder</a>
+                        </li>
+                        <li>
+                          <a [routerLink]="routes.servicedetails">Flight finder</a>
+                        </li>
+                        <li>
+                          <a [routerLink]="routes.servicedetails">Holiday Rental</a>
+                        </li>
+                        <li>
+                          <a [routerLink]="routes.servicedetails">Travel Agents</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-auto col-md-3">
+                    <div class="col-style">
+                      <h5>Destinations</h5>
+                      <ul>
+                        <li>
+                          <a href="javascript:void(0)">Manhatten</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Los Angeles</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Houston</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Chicago</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)">Alabama</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="drop-blk">
+                <h5>Gallery</h5>
+                <ul class="gallery-blk d-flex align-items-center">
+                  <li>
+                    <a
+                      href="assets/img/gallery/galleryimg-1.jpg"
+                      data-fancybox="gallery1"
+                    >
+                      <img src="assets/img/gallery/galleryimg-1.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="assets/img/gallery/galleryimg-2.jpg"
+                      data-fancybox="gallery1"
+                    >
+                      <img src="assets/img/gallery/galleryimg-2.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="assets/img/gallery/galleryimg-9.jpg"
+                      data-fancybox="gallery1"
+                    >
+                      <img src="assets/img/gallery/galleryimg-9.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="assets/img/gallery/galleryimg-10.jpg"
+                      data-fancybox="gallery1"
+                    >
+                      <img src="assets/img/gallery/galleryimg-10.jpg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav selection-list mt-4">
+                  <li class="nav-item dropdown">
+                    <div class="lang-select">
+                      <span class="select-icon"
+                        ><i class="feather-globe"></i
+                      ></span>
+                      <mat-select [(ngModel)]="country" [ngModelOptions]="{standalone: true}" class="select">
+                        <mat-option value="India">India</mat-option>
+                        <mat-option value="UK">UK</mat-option>
+                        <mat-option value="Japan">Japan</mat-option>
+                      </mat-select>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <div class="lang-select">
+                      <span class="select-icon"
+                        ><i class="fa-solid fa-coins"></i
+                      ></span>
+                      <mat-select [(ngModel)]="currency" [ngModelOptions]="{standalone: true}" class="select">
+                        <mat-option value="USD">USD</mat-option>
+                        <mat-option value="Euro">Euro</mat-option>
+                      </mat-select>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btm-foo-widget">
+          <div class="copy-info">
+            <p>Copyright © 2023 Listee. All rights are reserved.</p>
+          </div>
+          <div class="payment-info">
+            <ul class="d-flex">
+              <li>
+                <img
+                  class="img-fluid"
+                  src="assets/img/icons/visa-01.svg"
+                  alt="visa"
+                />
+              </li>
+              <li>
+                <img
+                  class="img-fluid"
+                  src="assets/img/icons/master-01.svg"
+                  alt="paycard"
+                />
+              </li>
+              <li>
+                <img
+                  class="img-fluid"
+                  src="assets/img/icons/discover.svg"
+                  alt="spay"
+                />
+              </li>
+              <li>
+                <img
+                  class="img-fluid"
+                  src="assets/img/icons/stripe.svg"
+                  alt="spay"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

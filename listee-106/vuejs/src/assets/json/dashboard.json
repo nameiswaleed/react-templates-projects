@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "image": "verified.svg",
+        "title": "Active Listing",
+        "count": "500"
+    },
+    {
+        "id": "2",
+        "image": "rating.svg",
+        "title": "Total Reviews",
+        "count": "15230"
+    },
+    {
+        "id": "3",
+        "image": "chat.svg",
+        "title": "Messages",
+        "count": "15"
+    },
+    {
+        "id": "4",
+        "image": "bookmark.svg",
+        "title": "Bookmark",
+        "count": "30"
+    }
+]

@@ -1,0 +1,880 @@
+<app-header-five></app-header-five>
+<!-- Banner Section -->
+<section class="banner-section banner-five">
+    <div class="container">
+        <div class="home-banner">		
+            <div class="row align-items-center">					    
+                <div class="col-lg-8 mx-auto">
+                    <div class="section-search aos" data-aos="fade-up" data-aos-duration="1200">
+                        <h1>Discover your amazing city</h1>
+                        <p>20 cities, 10 categories, 5662 listings.</p>
+                        <div class="search-box">
+                            <form action="listing-grid-sidebar.html" class="form-block d-flex"> 
+                                <div class="search-input line">											
+                                    <div class="form-group mb-0">
+                                        <mat-form-field class="mat-custom-select">
+                                            <mat-label *ngIf="selectedCategory == ''">
+                                              Choose Category</mat-label
+                                            >
+                                            <mat-select [(ngModel)]="selectedCategory" [ngModelOptions]="{standalone: true}">
+                                                
+                                              <mat-option disabled class="search-input-option">
+                                                <input
+                                                  [(ngModel)]="searchInputCategory"
+                                                  (ngModelChange)="
+                                                    searchCategory(searchInputCategory)
+                                                  "
+                                                  class="search-input"
+                                                  type="text"
+                                                />
+                                              </mat-option>
+                                              <mat-option
+                                                [value]="item.categoryName"
+                                                *ngFor="let item of categories"
+                                                >{{ item.categoryName }}</mat-option
+                                              >
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="search-input">											
+                                    <div class="form-group mb-0">											
+                                        <div class="group-img">
+                                            <mat-form-field class="mat-custom-select">
+                                                <mat-label *ngIf="selectedCategory == ''">
+                                                  Choose Location</mat-label
+                                                >
+                                                <mat-select [(ngModel)]="selectedCategory" [ngModelOptions]="{standalone: true}">
+                                                    
+                                                  <mat-option disabled class="search-input-option">
+                                                    <input
+                                                      [(ngModel)]="searchInputCategory"
+                                                      (ngModelChange)="
+                                                        searchCategory(searchInputCategory)
+                                                      "
+                                                      class="search-input"
+                                                      type="text"
+                                                    />
+                                                  </mat-option>
+                                                  <mat-option
+                                                    [value]="item.categoryName"
+                                                    *ngFor="let item of categories"
+                                                    >{{ item.categoryName }}</mat-option
+                                                  >
+                                                </mat-select>
+                                            </mat-form-field>
+                                            <i class="feather-map-pin"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-btn">
+                                    <button class="btn btn-primary" type="submit"><i class="fa fa-search m-0" aria-hidden="true"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>	
+    </div>
+</section>
+<!-- /Banner Section -->
+
+<!-- Category Section -->
+<section class="category-five-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading heading-five aos" data-aos="fade-up">
+                    <h2>Our Categories</h2>
+                </div>	
+            </div>
+            <div class="col-md-12">
+                <ul class="category-items text-center">
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-18.svg" class="img-fluid" alt="img"></span>
+                                <h6>Restaurant</h6>
+                                <p>09 Ads</p>
+                            </div> 
+                        </div> 
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-19.svg" class="img-fluid" alt="img"></span>
+                                <h6>Beauty & Care</h6>
+                                <p>09 Ads</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-20.svg" class="img-fluid" alt="img"></span>
+                                <h6>Fitness</h6>
+                                <p>09 Ads</p>
+                            </div> 
+                        </div> 
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-21.svg" class="img-fluid" alt="img"></span>
+                                <h6>Night Life</h6>
+                                <p>09 Ads</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-22.svg" class="img-fluid" alt="img"></span>
+                                <h6>Shopping</h6>
+                                <p>09 Ads</p>
+                            </div> 
+                        </div> 
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-23.svg" class="img-fluid" alt="img"></span>
+                                <h6>Cinema</h6>
+                                <p>09 Ads</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="category-items cate-row2">
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-24.svg" class="img-fluid" alt="img"></span>
+                                <h6>Lodging</h6>
+                                <p>09 Ads</p>
+                            </div> 
+                        </div> 
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-25.svg" class="img-fluid" alt="img"></span>
+                                <h6>Outdoors</h6>
+                                <p>09 Ads</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-26.svg" class="img-fluid" alt="img"></span>
+                                <h6>Automotive</h6>
+                                <p>09 Ads</p>
+                            </div> 
+                        </div> 
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-27.svg" class="img-fluid" alt="img"></span>
+                                <h6>Marketing</h6>
+                                <p>09 Ads</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="aos" data-aos="fade-up">
+                        <div class="categories-box">
+                            <div class="categories-info">
+                                <span><img src="assets/img/icons/category-28.svg" class="img-fluid" alt="img"></span>
+                                <h6>Child Care</h6>
+                                <p>09 Ads</p>
+                            </div> 
+                        </div> 
+                    </li>
+                </ul>
+            </div>		   
+        </div>		   
+    </div>		
+</section>		
+<!-- /Category Section -->
+
+<!-- Business Section -->
+<section class="business-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading heading-five aos" data-aos="fade-up">
+                    <h2>Trending Business Places</h2>
+                </div>	
+            </div>
+        </div>
+        <div class="business-slider grid-view">
+             <owl-carousel-o [options]="trendingplaceOwlOptions">
+                <ng-container *ngFor="let slide of trendingplace">
+                    <ng-template carouselSlide> 
+                        <div class="card business-card aos" data-aos="fade-up">
+                            <div class="blog-widget">
+                                <div class="blog-img">
+                                    <a [routerLink]="routes.servicedetails">
+                                        <img [src]="slide.img" class="img-fluid" alt="blog-img">
+                                    </a>
+                                    <div class="fav-item  justify-content-end">
+                                        <a href="javascript:void(0)" class="fav-icon">
+                                            <i class="feather-heart"></i>
+                                        </a>										
+                                    </div>	
+                                </div>
+                                <div class="bloglist-content">
+                                    <div class="card-body">
+                                        <span class="Featured-text">{{slide.title}}</span>
+                                        <div class="grid-author">
+                                            <img [src]="slide.img2" alt="author">
+                                        </div>					
+                                        <div class="blogfeaturelink">									
+                                            <div class="blog-features">
+                                               <a href="javascript:void(0)"><span>  <i class="fa-regular fa-circle-stop"></i> {{slide.subtitle1}}</span></a>
+                                            </div>																	  
+                                            <div class="blog-author text-end"> 
+                                                <span><i class="feather-map-pin"></i>{{slide.subtitle2}}</span>
+                                            </div>
+                                        </div> 
+                                        <h6><a [routerLink]="routes.servicedetails">{{slide.place}}</a></h6>
+                                        <div class="amount-details">
+                                            <div class="amount">
+                                                <span class="validrate">{{slide.currentamount}}</span>
+                                                <span>{{slide.oldamount}}</span>
+                                            </div>
+                                            <div class="ratings">
+                                                <span>{{slide. rating}}</span> {{slide.rating1}}
+                                            </div>														
+                                        </div>	
+                                    </div>	
+                                </div>			 
+                            </div>
+                        </div>
+                    </ng-template>
+                </ng-container>
+            </owl-carousel-o>	
+            
+            
+        </div>			   
+    </div>		
+</section>		
+<!-- /Business Section -->
+
+<!-- Cities Section -->
+<section class="feature-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading heading-five aos" data-aos="fade-up">
+                    <h2>Featured Cities</h2>
+                </div>	
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="city-box aos" data-aos="fade-up">
+                    <div class="citi-img">
+                        <a href="#">
+                            <img src="assets/img/city/city-01.jpg" class="img-fluid" alt="img">
+                        </a>
+                    </div>
+                    <div class="city-overlay">
+                        <div class="city-name">
+                            <h5>New York</h5>
+                            <ul>
+                                <li><i class="feather-map-pin"></i> 10 Cities</li>
+                                <li><i class="feather-map"></i> 30+ Listing</li>
+                            </ul>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div> 
+                </div> 
+            </div>	
+            <div class="col-md-3">
+                <div class="city-box aos" data-aos="fade-up">
+                    <div class="citi-img">
+                        <a href="#">
+                            <img src="assets/img/city/city-02.jpg" class="img-fluid" alt="img">
+                        </a>
+                    </div>
+                    <div class="city-overlay">
+                        <div class="city-name">
+                            <h5>London</h5>
+                            <ul>
+                                <li><i class="feather-map-pin"></i> 15 Cities</li>
+                                <li><i class="feather-map"></i> 23+ Listing</li>
+                            </ul>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div> 
+                </div> 
+            </div>	
+            <div class="col-md-3">
+                <div class="city-box aos" data-aos="fade-up">
+                    <div class="citi-img">
+                        <a href="#">
+                            <img src="assets/img/city/city-03.jpg" class="img-fluid" alt="img">
+                        </a>
+                    </div>
+                    <div class="city-overlay">
+                        <div class="city-name">
+                            <h5>Korea</h5>
+                            <ul>
+                                <li><i class="feather-map-pin"></i> 12 Cities</li>
+                                <li><i class="feather-map"></i> 32+ Listing</li>
+                            </ul>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div> 
+                </div> 
+            </div>	
+            <div class="col-md-3">
+                <div class="city-box aos" data-aos="fade-up">
+                    <div class="citi-img">
+                        <a href="#">
+                            <img src="assets/img/city/city-04.jpg" class="img-fluid" alt="img">
+                        </a>
+                    </div>
+                    <div class="city-overlay">
+                        <div class="city-name">
+                            <h5>Malaysia</h5>
+                            <ul>
+                                <li><i class="feather-map-pin"></i> 18 Cities</li>
+                                <li><i class="feather-map"></i> 24+ Listing</li>
+                            </ul>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div> 
+                </div> 
+            </div>							
+        </div>			   
+    </div>		
+</section>		
+<!-- /Cities Section -->
+
+<!-- Space Section -->
+<section class="adventure-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-0 aos" data-aos="fade-up">
+                <div class="featuring-img">
+                    <img src="assets/img/feature.png" class="img-fluid" alt="">	
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 aos" data-aos="fade-up">
+                <div class="adventure-info">							
+                    <div class="section-heading heading-five aos" data-aos="fade-up">
+                        <h6>Why Choose Us</h6>
+                        <h2>Its Time For New Adventures Escapes thrills & experiences</h2>
+                    </div>
+                    <div class="advent-info">							
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                    <a [routerLink]="routes.servicedetails" class="btn btn-grey">Get Started <i class="feather-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>	   
+    </div>		
+</section>		
+<!-- /Space Section -->
+
+<!-- City Section -->
+<section class="gallery-section-five">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading heading-five aos" data-aos="fade-up">
+                    <h2>Best Place on Earth</h2>
+                </div>	
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 aos" data-aos="fade-up">
+                <div class="gal-wrap">
+                    <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="img">
+                    <div class="city-overlay city-five-overlay">
+                        <div class="city-name">
+                            <h5>Oceania / Africa / US </h5>
+                            <p>The collection of the Department of Africa.</p>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div> 
+            </div>	
+            <div class="col-md-3 col-sm-6 aos" data-aos="fade-up">
+                <div class="gal-wrap">
+                    <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="img">
+                    <div class="city-overlay city-five-overlay">
+                        <div class="city-name">
+                            <h5>Oceania</h5>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div> 
+                <div class="gal-wrap">
+                    <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="img">	
+                    <div class="city-overlay city-five-overlay">
+                        <div class="city-name">
+                            <h5>Africa </h5>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div> 
+            </div>	
+            <div class="col-md-3 col-sm-6 aos" data-aos="fade-up">
+                <div class="gal-wrap">
+                    <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="img">
+                    <div class="city-overlay city-five-overlay">
+                        <div class="city-name">
+                            <h5>Oceania </h5>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div> 
+                <div class="gal-wrap">
+                    <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="img">	
+                    <div class="city-overlay city-five-overlay">
+                        <div class="city-name">
+                            <h5>Africa / US </h5>
+                        </div>
+                        <div class="rating d-flex">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div> 
+            </div>						
+        </div>		   
+    </div>	
+    
+</section>		
+<!-- /Space Section -->	
+
+<!-- Latest Ads -->
+<section class="business-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading heading-five aos" data-aos="fade-up">
+                    <h2>Latest Ads</h2>
+                </div>	
+            </div>
+        </div>
+        <div class="business-slider grid-view">
+            <owl-carousel-o
+            [options]="businesssliderOwlOptions"
+            >
+            <ng-container *ngFor="let slide of businessslider">
+                <ng-template carouselSlide>
+                    <div class="card business-card aos" data-aos="fade-up">
+                        <div class="blog-widget">
+                            <div class="blog-img">
+                                <a [routerLink]="routes.servicedetails">
+                                    <img [src]="slide.img" class="img-fluid" alt="blog-img">
+                                </a>
+                                <div class="fav-item  justify-content-end">
+                                    <a href="javascript:void(0)" class="fav-icon">
+                                        <i class="feather-heart"></i>
+                                    </a>										
+                                </div>	
+                            </div>
+                            <div class="bloglist-content">
+                                <div class="card-body">
+                                    <span class="Featured-text">{{slide.title}}</span>
+                                    <div class="grid-author">
+                                        <img [src]="slide.img2" alt="author">
+                                    </div>					
+                                    <div class="blogfeaturelink">									
+                                        <div class="blog-features">
+                                           <a href="javascript:void(0)"><span>  <i class="fa-regular fa-circle-stop"></i> {{slide.subtitle1}}</span></a>
+                                        </div>																	  
+                                        <div class="blog-author text-end"> 
+                                            <span><i class="feather-map-pin"></i> {{slide.subtitle2}}</span>
+                                        </div>
+                                    </div> 
+                                    <h6><a [routerLink]="routes.servicedetails">{{slide.place}}</a></h6>
+                                    <div class="amount-details">
+                                        <div class="amount">
+                                            <span class="validrate">{{slide.currentamount}}</span>
+                                            <span>{{slide.oldamount}}</span>
+                                        </div>
+                                        <div class="ratings">
+                                            <span>{{slide.rating}}</span> {{slide.rating1}}
+                                        </div>														
+                                    </div>	
+                                </div>	
+                            </div>			 
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+          
+           
+          
+        </div>			   
+    </div>		
+</section>		
+<!-- /Business Section -->
+
+<!-- Pricing  Plan -->
+<section class="pricing-plan"> 
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading heading-five price-head-five aos" data-aos="fade-up">
+                    <h2>Our Pricing  Plan</h2>
+                </div>	
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 d-flex col-md-6">
+                <div class="price-card price-three price-five flex-fill">
+                    <div class="price-head">
+                        <div class="price-level">
+                            <h6>Intro</h6>
+                        </div>						
+                    </div>	
+                    <div class="price-body">
+                        <ul>
+                            <li class="active">Upload Video up to 720p Resolution</li>
+                            <li class="inactive">Attachment & Post Scheduling</li>
+                            <li class="inactive">Set your rates</li>
+                            <li class="inactive">Exclusive Deals</li>
+                            <li class="inactive">Advanced Statistics</li>
+                        </ul>
+                        <h4>$123 <span>/ month</span></h4>		
+                        <div>
+                            <a [routerLink]="routes.login" class="btn viewdetails-btn">Choose Plan <i class="feather-arrow-right ms-2"></i></a>
+                        </div>							
+                    </div>							
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex col-md-6">
+                <div class="price-card price-three price-five flex-fill">
+                    <div class="price-head">
+                        <div class="price-level">
+                            <h6>Basic</h6>
+                        </div>								
+                    </div>	
+                    <div class="price-body">
+                        <ul>
+                            <li class="active">Upload Video up to 720p Resolution</li>
+                            <li class="active">Attachment & Post Scheduling</li>
+                            <li class="active">Set your rates</li>
+                            <li class="inactive">Exclusive Deals</li>
+                            <li class="inactive">Advanced Statistics</li>
+                        </ul>
+                        <h4>$123 <span>/ month</span></h4>		
+                        <div>
+                            <a [routerLink]="routes.login" class="btn viewdetails-btn">Choose Plan <i class="feather-arrow-right ms-2"></i></a>
+                        </div>							
+                    </div>							
+                </div>	
+            </div>
+            <div class="col-lg-3 d-flex col-md-6">
+                <div class="price-card price-three price-five flex-fill active">
+                    <div class="price-head">
+                        <div class="price-level">
+                            <h6>Popular</h6>
+                            <span>Save $40</span>
+                        </div>								
+                    </div>	
+                    <div class="price-body">
+                        <ul>
+                            <li class="active">Upload Video up to 720p Resolution</li>
+                            <li class="active">Attachment & Post Scheduling</li>
+                            <li class="active">Set your rates</li>
+                            <li class="active">Exclusive Deals</li>
+                            <li class="inactive">Advanced Statistics</li>
+                        </ul>
+                        <h4>$123 <span>/ month</span></h4>	
+                        <div>
+                            <a [routerLink]="routes.login" class="btn viewdetails-btn">Choose Plan <i class="feather-arrow-right ms-2"></i></a>
+                        </div>								
+                    </div>							
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex col-md-6">
+                 <div class="price-card price-three price-five flex-fill">
+                    <div class="price-head">
+                        <div class="price-level">
+                            <h6>Enterprise</h6>
+                        </div>								
+                    </div>	
+                    <div class="price-body">
+                        <ul>
+                            <li class="active">Upload Video up to 720p Resolution</li>
+                            <li class="active">Attachment & Post Scheduling</li>
+                            <li class="active">Set your rates</li>
+                            <li class="active">Exclusive Deals</li>
+                            <li class="active">Advanced Statistics</li>
+                        </ul>
+                        <h4>$123 <span>/ month</span></h4>		
+                        <div>
+                            <a [routerLink]="routes.login" class="btn viewdetails-btn">Choose Plan <i class="feather-arrow-right ms-2"></i></a>
+                        </div>							
+                    </div>							
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Pricing  Plan -->
+
+<!-- Client Testimonilas Section -->
+<section class="testimonial-five-section"> 
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading heading-five aos" data-aos="fade-up">
+                    <h2>Our Customer’s Says</h2>
+                </div>	
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <owl-carousel-o
+          [options]="customersaysOwlOptions"
+          
+        >  <ng-container *ngFor="let slide of customersays">
+            <ng-template carouselSlide>
+                <div class="testi-five-slider">
+                    <div class="testimonial-info testi-four testi-five aos" data-aos="fade-up">
+                        <div class="testimonialslider-content">
+                            <span><i class="fa-solid fa-quote-left"></i></span>
+                            <h6>{{slide.heading}}</h6>
+                            <p>{{slide.para}}</p>
+                        </div>
+                        <div class="testimonialslider-heading d-flex">
+                            <div class="testi-img">
+                                <img [src]="slide.img1" class="img-fluid" alt="testi-img">
+                             </div>
+                             <div class="testi-author">
+                                  <h6>{{slide.name}}</h6>
+                             </div>									
+                        </div>
+                    </div>
+                  
+                </div>
+            </ng-template>
+           </ng-container></owl-carousel-o>
+               
+            </div>
+        </div>
+    </div>	
+</section>		
+<!-- /Client Testimonilas Section -->
+
+<!-- Our Latest Blog -->
+<section class="latest-blog-five"> 
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading heading-five aos" data-aos="fade-up">
+                    <h2>Our Latest Blog</h2>
+                </div>	
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 d-flex aos" data-aos="fade-up">
+                <div class="articles-grid w-100">
+                    <div class="articles-info">
+                        <div class="articles-left">
+                            <a href="javascript:void(0);">
+                                <div class="articles-img">
+                                    <img src="assets/img/blog/blog-16.jpg" class="img-fluid" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="articles-right">
+                            <div class="articles-content">
+                                <ul class="articles-list nav">
+                                    <li>
+                                        <i class="feather-user"></i> John Doe
+                                    </li>
+                                    <li>
+                                        <i class="feather-calendar"></i> 13 Aug, 2023
+                                    </li>
+                                </ul>
+                                <h4>
+                                    <a href="javascript:void(0);">Lorem ipsum dolor amet, adipiscing ut labore </a>
+                                </h4>
+                                <p>Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                <a href="javascript:void(0);" class="btn articles-read-more">Read More<i class="feather-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex aos" data-aos="fade-up">
+                <div class="articles-grid w-100">
+                    <div class="articles-info">
+                        <div class="articles-left">
+                            <a href="javascript:void(0);">
+                                <div class="articles-img">
+                                    <img src="assets/img/blog/blog-17.jpg" class="img-fluid" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="articles-right">
+                            <div class="articles-content">
+                                <ul class="articles-list nav">
+                                    <li>
+                                        <i class="feather-user"></i> Darren Elder
+                                    </li>
+                                    <li>
+                                        <i class="feather-calendar"></i> 10 Sep, 2023
+                                    </li>
+                                </ul>
+                                <h4>
+                                    <a href="javascript:void(0);">Lorem ipsum dolor amet, adipiscing ut labore </a>
+                                </h4>
+                                <p>Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                <a href="javascript:void(0);" class="btn articles-read-more">Read More<i class="feather-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex aos" data-aos="fade-up">
+                <div class="articles-grid w-100">
+                    <div class="articles-info">
+                        <div class="articles-left">
+                            <a href="javascript:void(0);">
+                                <div class="articles-img">
+                                    <img src="assets/img/blog/blog-18.jpg" class="img-fluid" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="articles-right">
+                            <div class="articles-content">
+                                <ul class="articles-list nav">
+                                    <li>
+                                        <i class="feather-user"></i> Ruby Perrin
+                                    </li>
+                                    <li>
+                                        <i class="feather-calendar"></i> 30 Oct, 2023
+                                    </li>
+                                </ul>
+                                <h4>
+                                    <a href="javascript:void(0);">Lorem ipsum dolor amet, adipiscing ut labore </a>
+                                </h4>
+                                <p>Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                                <a href="javascript:void(0);" class="btn articles-read-more">Read More<i class="feather-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex aos" data-aos="fade-up">
+                <div class="articles-grid w-100">
+                    <div class="articles-info">
+                        <div class="articles-left">
+                            <a href="javascript:void(0);">
+                                <div class="articles-img">
+                                    <img src="assets/img/blog/blog-19.jpg" class="img-fluid" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="articles-right">
+                            <div class="articles-content">
+                                <ul class="articles-list nav">
+                                    <li>
+                                        <i class="feather-user"></i> John Doe
+                                    </li>
+                                    <li>
+                                        <i class="feather-calendar"></i> 22 Sep 2023
+                                    </li>
+                                </ul>
+                                <h4>
+                                    <a href="javascript:void(0);">Lorem ipsum dolor consectetur adipiscing  </a>
+                                </h4>
+                                <p>Sed perspiciatis unde omnis iste voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                                <a href="javascript:void(0);" class="btn articles-read-more">Read More<i class="feather-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>	
+</section>	
+<!-- Our Latest Blog -->
+
+<!-- Stay Tuned -->
+<section class="stay-tuned stay-turn-five">
+    <div class="container">
+        <div class="stay-with-us">
+            <h3>Stay Tuned With Us</h3>
+            <p>Subcribe to our newletter and never miss our latest news and promotions. Our newsletter is sent once a week, every thursday.</p>
+            <form>
+                <div class="form-group">
+                    <div class="group-img">
+                        <i class="feather-mail"></i>
+                        <input type="text" class="form-control" placeholder="Enter Email Address">
+                    </div>							
+                </div>
+                <button class="btn btn-primary" type="submit"> Subscribe</button>	 						
+            </form>					
+        </div>
+    </div>
+</section>
+<!-- Stay Tuned -->
+<app-footer-five></app-footer-five>
+

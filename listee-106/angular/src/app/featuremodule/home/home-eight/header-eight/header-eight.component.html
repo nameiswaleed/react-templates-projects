@@ -1,0 +1,207 @@
+<!-- Header -->
+<header class="header header-eight" [class.fixed]="scrollPosition > 0">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg header-nav">
+            <div class="navbar-header">
+                <a (click)="toggleSidebar()" id="mobile_btn" href="javascript:void(0);">
+                    <span class="bar-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <a [routerLink]="routes.home" class="navbar-brand logo">
+                    <img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+                </a>
+            </div>
+            <div class="main-menu-wrapper">
+                <div class="menu-header">
+                    <a [routerLink]="routes.home" class="menu-logo">
+                        <img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+                    </a>
+                    <a id="menu_close" (click)="hideSidebar()"class="menu-close" href="javascript:void(0);"> <i
+                            class="fas fa-times"></i></a>
+                </div>
+                <ul class="main-nav">
+                    <li class="has-submenu megamenu active">
+                        <a [routerLink]="routes.home"><i class="feather-home"></i> Home</a>
+                        <ul class="submenu mega-submenu">
+                            <li>
+                                <div class="megamenu-wrapper">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <div class="single-demo">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home1"><img src="assets/img/home-01.jpg" class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home1">Classified Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="single-demo">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home2"><img src="assets/img/home-02.jpg" class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home3">Wedding Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="single-demo">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home4"><img src="assets/img/home-03.jpg" class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home3">Tour Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="single-demo">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home4"><img src="assets/img/home-04.jpg" class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home4" >Workspace Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="single-demo">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home5"><img src="assets/img/home-05.jpg"
+                                                            class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home5">Business Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="single-demo">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home6"><img src="assets/img/home-06.jpg"
+                                                            class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home6">Car Rentals Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="single-demo">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home7"><img src="assets/img/home-07.jpg"
+                                                            class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home7">Restaurant Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="single-demo active">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home8"><img src="assets/img/home-08.jpg"
+                                                            class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home8">Job Listing Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="single-demo">
+                                                <div class="demo-img">
+                                                    <a [routerLink]="routes.home9"><img src="assets/img/home-09.jpg"
+                                                            class="img-fluid" alt="img"></a>
+                                                </div>
+                                                <div class="demo-info">
+                                                    <a [routerLink]="routes.home9">Realestate Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>							
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href=""><i class="feather-search"></i> Find Jobs</a>
+                        <ul class="submenu">
+                            <li><a [routerLink]="routes.listinggrid">Listing Grid</a></li>
+                            <li><a [routerLink]="routes.listinggridsidebar">Listing Grid Sidebar</a></li>
+                            <li><a [routerLink]="routes.listinglistsidebar">Listing List Sidebar</a></li>
+                            <li><a [routerLink]="routes.listingmaplist">Listing List Map</a></li>
+                            <li><a [routerLink]="routes.listingmapgrid">Listing Grid Map</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href=""><i class="feather-list"></i> Services </a>
+                        <ul class="submenu">
+                            <li><a [routerLink]="routes.about">About Us</a></li>
+                            <li><a [routerLink]="routes.servicedetails">Service Details </a></li>
+                            <li><a [routerLink]="routes.pricing">Pricing</a></li>
+                            <li><a [routerLink]="routes.faq">FAQ</a></li>
+                            <li><a [routerLink]="routes.gallery">Gallery</a></li>
+                            <li><a [routerLink]="routes.categories">Category</a></li>
+                            <li><a [routerLink]="routes.howitworks">How it Works</a></li>
+                            <li><a [routerLink]="routes.termscondition">Terms & Conditions</a></li>
+                            <li><a [routerLink]="routes.privacypolicy">Privacy Policy</a></li>
+                            <li><a [routerLink]="routes.error404">404 Error</a></li>
+                            <li><a [routerLink]="routes.error500">500 Error</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href=""><i class="feather-edit"></i> Blog </a>
+                        <ul class="submenu">
+                            <li><a [routerLink]="routes.bloglist">Blog List</a></li>
+                            <li><a [routerLink]="routes.bloggrid">Blog Grid</a></li>
+                            <li><a [routerLink]="routes.blogdetails">Blog Details</a></li>
+                            <li><a [routerLink]="routes.bloglistsidebar">Blog List Sidebar</a></li>
+                            <li><a [routerLink]="routes.bloggridsidebar">Blog Grid Sidebar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href=""><i class="feather-info"></i> About</a>
+                        <ul class="submenu">
+                            <li><a [routerLink]="routes.dashboard">Dashboard</a></li>
+                            <li><a [routerLink]="routes.profile">Profile</a></li>
+                            <li><a [routerLink]="routes.mylisting">My Listing</a></li>
+                            <li><a [routerLink]="routes.bookmarks">Bookmarks</a></li>
+                            <li><a [routerLink]="routes.messages">Messages</a></li>
+                            <li><a [routerLink]="routes.reviews">Reviews</a></li>
+                            <li><a [routerLink]="routes.addlisting">Add Listing</a></li>
+                        </ul>
+                    </li>
+                    <li><a [routerLink]="routes.contact"><i class="feather-send"></i> Contact</a></li>
+                    <li class="login-link">
+                        <a [routerLink]="routes.login"> Login</a>
+                    </li>
+                    <li class="login-link">
+                        <a [routerLink]="routes.signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav header-navbar-rht">
+                <li class="nav-item">
+                    <a class="nav-link header-reg" [routerLink]="routes.login"><i class="feather-unlock"></i> Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header-reg" [routerLink]="routes.signup"><i class="feather-user"></i> Sign
+                        Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header-login add-listing" [routerLink]="routes.addlisting"> Post a job</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- /Header -->
+

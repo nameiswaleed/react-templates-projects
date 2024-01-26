@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "title": "Automotive",
+        "text": "09 Ads",
+        "img": "category-1.svg"
+    },
+    {
+        "id": "2",
+        "title": "Electronics",
+        "text": "09 Ads",
+        "img": "category-2.svg"
+    },
+    {
+        "id": "3",
+        "title": "Fashion Style",
+        "text": "09 Ads",
+        "img": "category-3.svg"
+    },
+    {
+        "id": "4",
+        "title": "Health Care",
+        "text": "09 Ads",
+        "img": "category-4.svg"
+    },
+    {
+        "id": "5",
+        "title": "Job Board",
+        "text": "09 Ads",
+        "img": "category-5.svg"
+    },
+    {
+        "id": "6",
+        "title": "Education",
+        "text": "09 Ads",
+        "img": "category-6.svg"
+    },
+    {
+        "id": "7",
+        "title": "Real Estate",
+        "text": "09 Ads",
+        "img": "category-7.svg"
+    },
+    {
+        "id": "8",
+        "title": "Travel",
+        "text": "09 Ads",
+        "img": "category-8.svg"
+    },
+    {
+        "id": "9",
+        "title": "Sports & Game",
+        "text": "09 Ads",
+        "img": "category-9.svg"
+    },
+    {
+        "id": "10",
+        "title": "Magazines",
+        "text": "09 Ads",
+        "img": "category-10.svg"
+    },
+    {
+        "id": "11",
+        "title": "Pet & Animal",
+        "text": "09 Ads",
+        "img": "category-11.svg"
+    },
+    {
+        "id": "12",
+        "title": "House Hold",
+        "text": "09 Ads",
+        "img": "category-12.svg"
+    }
+]

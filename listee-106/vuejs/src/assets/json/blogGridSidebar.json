@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "img1": "blog-1.jpg",
+        "img2": "avatar-13.jpg",
+        "name": "Mary",
+        "date": "October 6, 2022",
+        "title": "The Best Spa Saloons for your relaxations?",
+        "content": "Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type ...",
+        "button": "View Details"
+    },
+    {
+        "id": "2",
+        "img1": "blog-4.jpg",
+        "img2": "avatar-14.jpg",
+        "name": "Barbara",
+        "date": "October 6, 2022",
+        "title": "The Best Spa Saloons for your relaxations?",
+        "content": "Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type ...",
+        "button": "View Details"
+    },
+    {
+        "id": "3",
+        "img1": "blog-1.jpg",
+        "img2": "avatar-13.jpg",
+        "name": "Mary",
+        "date": "October 6, 2022",
+        "title": "The Best Spa Saloons for your relaxations?",
+        "content": "Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type ...",
+        "button": "View Details"
+    },
+    {
+        "id": "4",
+        "img1": "blog-4.jpg",
+        "img2": "avatar-14.jpg",
+        "name": "Barbara",
+        "date": "October 6, 2022",
+        "title": "The Best Spa Saloons for your relaxations?",
+        "content": "Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type ...",
+        "button": "View Details"
+    },
+    {
+        "id": "5",
+        "img1": "blog-1.jpg",
+        "img2": "avatar-13.jpg",
+        "name": "Mary",
+        "date": "October 6, 2022",
+        "title": "The Best Spa Saloons for your relaxations?",
+        "content": "Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type ...",
+        "button": "View Details"
+    },
+    {
+        "id": "6",
+        "img1": "blog-4.jpg",
+        "img2": "avatar-14.jpg",
+        "name": "Barbara",
+        "date": "October 6, 2022",
+        "title": "The Best Spa Saloons for your relaxations?",
+        "content": "Dimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dumy text ever since the 1500s, when an unknown printer took a galley of type ...",
+        "button": "View Details"
+    }
+]

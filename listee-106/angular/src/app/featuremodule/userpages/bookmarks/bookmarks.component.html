@@ -1,0 +1,155 @@
+<!-- Breadscrumb Section -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">Bookmarks</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Bookmarks</li>
+                    </ol>
+                </nav>							
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadscrumb Section -->
+
+<!-- Bookmark Content -->
+<div class="dashboard-content">		
+    <div class="container">
+        <div class="">			        
+            <ul class="dashborad-menus">
+                <li>
+                    <a [routerLink]="routes.dashboard">
+                        <i class="feather-grid"></i> <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.profile">
+                        <i class="fa-solid fa-user"></i> <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.mylisting">
+                        <i class="feather-list"></i> <span>My Listing</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a [routerLink]="routes.bookmarks">
+                        <i class="fas fa-solid fa-heart"></i> <span>Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.messages">
+                        <i class="fa-solid fa-comment-dots"></i> <span>Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.reviews">
+                        <i class="fas fa-solid fa-star"></i> <span>Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.login">
+                        <i class="fas fa-light fa-circle-arrow-left"></i> <span>Logout</span>
+                    </a>
+                </li>
+            </ul>											
+        </div>
+        <div class="bookmarks-content grid-view featured-slider">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 " *ngFor="let data of Bookmarksdata">
+                    <div class="card aos aos-init aos-animate" data-aos="fade-up">
+                        <div class="blog-widget">
+                            <div class="blog-img">
+                                <a [routerLink]="routes.servicedetails">
+                                    <img [src]="data. img1" class="img-fluid" alt="blog-img">
+                                </a>
+                                <div class="fav-item">
+                                    <span class="Featured-text">{{data.headline}}</span>
+                                        <a href="javascript:void(0)" class="fav-icon">
+                                            <i class="feather-heart"></i>
+                                        </a>										
+                                </div>	
+                            </div>
+                            <div class="bloglist-content">
+                                <div class="card-body">
+                                    <div class="blogfeaturelink">
+                                        <div class="grid-author">
+                                        <img  [src]="data.img2" alt="author">	
+                                        </div>
+                                        <div class="blog-features">
+                                           <a href="javascript:void(0)"><span> <i class="fa-regular fa-circle-stop"></i> {{data. select}}</span></a>
+                                        </div>																	  
+                                        <div class="blog-author text-end"> 
+                                            <span>  <img [src]="data.eye" alt="electronics">{{data.search}}  </span>
+                                        </div>
+                                    </div> 
+                                    <h6><a [routerLink]="routes.servicedetails">{{data.details}}</a></h6>																	 
+                                    <div class="blog-location-details">
+                                        <div class="location-info">
+                                           <i class="feather-map-pin"></i> {{data. map}}
+                                        </div>
+                                        <div class="location-info">
+                                            <i class="fa-solid fa-calendar-days"></i> {{data.date}}
+                                        </div>
+                                    </div>
+                                    <div class="amount-details">
+                                        <div class="amount">
+                                            <span class="validrate">{{data.amount}}</span>
+                                            <span>{{data.oldamount}}</span>
+                                        </div>
+                                        <div class="ratings">
+                                            <span>{{data. rating}}</span> {{data.rating1}}
+                                        </div>												
+                                    </div>	
+                                </div>	
+                            </div>			 
+                        </div> 
+                    </div>
+                </div>
+             
+                
+                 <!--Pagination--> 
+                <div class="blog-pagination">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item previtem">
+                                <a class="page-link" href="javascript:void(0)"><i class="fas fa-regular fa-arrow-left"></i> Prev</a>
+                            </li>
+                            <li class="justify-content-center pagination-center"> 
+                                <div class="pagelink">
+                                    <ul>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0)">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="javascript:void(0)">2 <span class="visually-hidden">(current)</span></a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0)">3</a>
+                                       </li>
+                                       <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0)">...</a>
+                                       </li>
+                                       <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0)">14</a>
+                                       </li>
+                                   </ul>
+                                </div>													
+                            </li>													
+                            <li class="page-item nextlink">
+                                <a class="page-link" href="javascript:void(0)">Next <i class="fas fa-regular fa-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--/Pagination-->	
+                
+            </div>						
+        </div>
+    </div>		
+</div>		
+<!-- /Bookmark Content -->

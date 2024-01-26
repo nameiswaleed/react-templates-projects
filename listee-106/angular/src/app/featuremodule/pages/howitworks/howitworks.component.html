@@ -1,0 +1,95 @@
+<!-- Breadscrumb Section -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">How it Works</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">How it Works</li>
+                    </ol>
+                </nav>							
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadscrumb Section -->
+
+<!-- How It Works section -->
+<section class="work-section">
+    <div class="container">
+        <div class="work-heading">
+            <h4>Steps to improve your Business</h4>
+            <p class="description">Add your business to Listee, so customers can easily find</p>				
+        </div>			    
+        <div class="row">
+             <div class="col-lg-4 col-md-4 d-flex">
+                  <div class="work-info card">
+                      <img src="assets/img/icons/work1.jpg" class="img-fluid" alt="">
+                      <h5>01</h5>
+                      <h6>Create Account</h6>
+                      <p>Morbi nisi justo, venenatis ac nibh at, bibendum mattis risus. Maecenas tincidunt, ligula sed congue tempus, magna augue cursus ipsum, in malesuada justo risus nec lorem. Nam augue augue, mollis nec condimentum euismod, lacinia ultricies leo.</p>
+                  </div>
+             </div>
+              <div class="col-lg-4 col-md-4 d-flex">
+                  <div class="work-info card">
+                      <h5 class="mt-0">02</h5>
+                      <h6>Post An Ad </h6>
+                      <p>Morbi nisi justo, venenatis ac nibh at, bibendum mattis risus. Maecenas tincidunt, ligula sed congue tempus, magna augue cursus ipsum, in malesuada justo risus nec lorem. Nam augue augue, mollis nec condimentum euismod, lacinia ultricies leo.</p>
+                      <img src="assets/img/icons/work2.jpg" class="img-fluid" alt="">							  
+                  </div>
+             </div>
+              <div class="col-lg-4 col-md-4 d-flex">
+                  <div class="work-info card">
+                      <img src="assets/img/icons/work3.jpg" class="img-fluid" alt="">
+                      <h5>03</h5>
+                      <h6>Find, Buy and Own Dreams</h6>
+                      <p>Morbi nisi justo, venenatis ac nibh at, bibendum mattis risus. Maecenas tincidunt, ligula sed congue tempus, magna augue cursus ipsum, in malesuada justo risus nec lorem. Nam augue augue, mollis nec condimentum euismod, lacinia ultricies leo.</p>
+                  </div>
+             </div>
+        </div>				
+    </div>		    
+</section>		
+<!-- /How It Works section -->
+
+<!-- Pricing Plan Section -->
+<section class="pricingplan-section how-work">
+         <div class="section-heading">
+                <div class="container">				
+                     <div class="row text-center">
+                            <h2>Our Pricing <span>Pla</span>n</h2>
+                            <p>You can set to charge users for Packages, Subscriptions, Hybrid or Free</p>
+                     </div>									 
+                </div>	 
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-flex col-md-6" *ngFor="let data of pricingList">
+                    <div class="price-card flex-fill">
+                        <div class="price-head">
+                            <div class="price-level">
+                                <h6>{{data.title}}</h6>
+                            </div>
+                            <h4>{{data.pricedate}} <span>{{data.pricemonth}}</span></h4>								
+                        </div>	
+                        <div class="price-body">
+                            <p>{{data.pricebody}}</p>
+                            <ul>
+                                <li class="active">{{data.pricebodyList}}</li>
+                                <li class="active">{{data.pricebodyList1}}</li>
+                                <li class="active">{{data.pricebodyList2}}</li>
+                                <li class="inactive">{{data.pricebodyList3}}</li>
+                                <li class="inactive">{{data.pricebodyList4}}</li>
+                            </ul>
+                            <div>
+                                <a [routerLink]="routes.login" class="btn viewdetails-btn">View details</a>
+                            </div>							
+                        </div>							
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+</section>
+<!-- /Pricing Plan Section -->

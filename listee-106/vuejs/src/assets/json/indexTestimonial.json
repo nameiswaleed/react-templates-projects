@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "image": "blog-1.jpg",
+        "title": "Contrary to popular belief, Lorem Ipsum is not simply",
+        "date": "December 30,2022"
+    },
+    {
+        "id": "2",
+        "image": "blog-2.jpg",
+        "title": "Contrary to popular belief, Lorem Ipsum is not simply",
+        "date": "Jan 30,2023"
+    },
+    {
+        "id": "3",
+        "image": "blog-3.jpg",
+        "title": "Contrary to popular belief, Lorem Ipsum is not simply",
+        "date": "Jan 26, 2023"
+    },
+    {
+        "id": "4",
+        "image": "blog-4.jpg",
+        "title": "Contrary to popular belief, Lorem Ipsum is not simply",
+        "date": "Jan 25, 2023"
+    },
+    {
+        "id": "5",
+        "image": "blog-1.jpg",
+        "title": "Contrary to popular belief, Lorem Ipsum is not simply",
+        "date": "Jan 28, 2023"
+    }
+]

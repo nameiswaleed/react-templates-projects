@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "img1": "bloglistingimg-1.jpg",
+        "img2": "avatar-13.jpg",
+        "name": "Mary",
+        "date": "October 6, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard",
+        "button": "View Details"
+    },
+    {
+        "id": "2",
+        "img1": "bloglistingimg-2.jpg",
+        "img2": "avatar-14.jpg",
+        "name": "Barbara",
+        "date": "October 9, 2022",
+        "title": "Great Business Tips in 2022",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard",
+        "button": "View Details"
+    },
+    {
+        "id": "3",
+        "img1": "bloglistingimg-3.jpg",
+        "img2": "avatar-12.jpg",
+        "name": "Darryl",
+        "date": "October 7, 2022",
+        "title": "8 Amazing Tricks About Business",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard",
+        "button": "View Details"
+    }
+]

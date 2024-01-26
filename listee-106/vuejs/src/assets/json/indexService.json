@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "icon": "icon-1.png",
+        "title": "trip adviser",
+        "text": "Lorem Ipsum"
+    },
+    {
+        "id": "2",
+        "Icon": "icon-2.png",
+        "title": "accommodation",
+        "text": "Lorem Ipsum"
+    },
+    {
+        "id": "3",
+        "Icon": "icon-3.png",
+        "title": "guide",
+        "text": "Lorem Ipsum"
+    },
+    {
+        "id": "4",
+        "Icon": "icon-4.png",
+        "title": "trip planner",
+        "text": "Lorem Ipsum"
+    }
+]

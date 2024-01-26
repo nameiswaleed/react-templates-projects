@@ -1,0 +1,90 @@
+<!-- Breadscrumb Section -->
+		<div class="breadcrumb-bar">
+			<div class="container">
+				<div class="row align-items-center text-center">
+					<div class="col-md-12 col-12">
+		    		   <h2 class="breadcrumb-title">Listings-Blog</h2>
+			    		<nav aria-label="breadcrumb" class="page-breadcrumb">
+							<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Blog</li>
+				    		</ol>
+						</nav>							
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Breadscrumb Section -->
+	
+		<!-- Blog List -->
+		<div class="bloglist-section blog-gridpage">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-lg-4 col-md-4 d-lg-flex" *ngFor="let slide of bloggrid">
+				      <div class="blog grid-blog">
+						<div class="blog-image">
+		    				<a [routerLink]="routes.blogdetails"><img class="img-fluid" [src]="slide.img" alt="Post Image"></a>
+					    </div>
+			   		    <div class="blog-content">
+						    <p class="blog-category">
+							 <a href="javascript:void(0)"><span>{{slide.category1}}</span></a><a href="javascript:void(0)"><span>{{slide.category2}}</span></a>
+							</p>
+							<ul class="entry-meta meta-item">
+							    <li>
+								    <div class="post-author">
+									 <div class="post-author-img">
+									      <img [src]="slide.img1" alt="author">
+									</div>
+									 <a href="javascript:void(0)"> <span> {{slide. name}} </span></a>
+									</div>
+								</li>
+								<li class="date-icon"><i class="fa-solid fa-calendar-days"></i> {{slide.date}}</li>
+							</ul>
+							<h3 class="blog-title"><a [routerLink]="routes.blogdetails">{{slide.content}}</a></h3>
+								<p class="blog-description">{{slide.description}}</p>
+								<div class="viewlink"><a [routerLink]="routes.blogdetails">{{slide.details}} <i class="feather-arrow-right"></i></a></div>
+						</div>
+					  </div>
+					</div>
+					   
+				</div>
+						   
+				<!--Pagination--> 
+				<div class="blog-pagination">
+					<nav>
+						<ul class="pagination">
+							<li class="page-item previtem">
+							<a class="page-link" href="javascript:void(0)"><i class="fas fa-regular fa-arrow-left"></i> Prev</a>
+				        	</li>
+							<li class="justify-content-center pagination-center"> 
+								<div class="pagelink">
+								    <ul>
+										<li class="page-item">
+											<a class="page-link" href="javascript:void(0)">1</a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link" href="javascript:void(0)">2 <span class="visually-hidden">(current)</span></a>
+										</li>
+						     			<li class="page-item">
+							    			<a class="page-link" href="javascript:void(0)">3</a>
+									   </li>
+									   <li class="page-item">
+							    			<a class="page-link" href="javascript:void(0)">...</a>
+									   </li>
+									   <li class="page-item">
+							    			<a class="page-link" href="javascript:void(0)">14</a>
+									   </li>
+								    </ul>
+								</div>													
+							</li>													
+							<li class="page-item nextlink">
+								<a class="page-link" href="javascript:void(0)">Next <i class="fas fa-regular fa-arrow-right"></i></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				 <!--/Pagination-->
+				 
+			</div>				   
+		</div>			
+		<!-- /Blog List -->

@@ -1,0 +1,198 @@
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg header-nav">
+      <div class="navbar-header">
+        <a  (click)="toggleSidebar()" id="mobile_btn" href="javascript:void(0);">
+          <span class="bar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+        <a [routerLink]="routes.home" class="navbar-brand logo">
+          <img src="assets/img/logo.svg" class="img-fluid" alt="Logo" />
+        </a>
+      </div>
+      <div class="main-menu-wrapper">
+        <div class="menu-header">
+          <a [routerLink]="routes.home" class="menu-logo">
+            <img src="assets/img/logo.svg" class="img-fluid" alt="Logo" />
+          </a>
+          <a id="menu_close"(click)="hideSidebar()" class="menu-close" href="javascript:void(0);">
+            <i class="fas fa-times"></i
+          ></a>
+        </div>
+        <ul class="main-nav">
+          <ng-container *ngFor="let mainMenus of header">
+            <ng-container *ngIf="mainMenus.separateRoute == true">
+              <li [class.active]="base === mainMenus.base ">
+                <a [routerLink]="mainMenus.route">{{ mainMenus.tittle }}</a>
+              </li>
+            </ng-container>
+            <ng-container *ngIf="mainMenus.separateRoute == false">
+              <li
+                class="has-submenu"
+                [ngClass]="{
+                  megamenu: mainMenus.tittle == 'Home',
+                  active: base == mainMenus.base || (base == 'home-one' && mainMenus.tittle == 'Home')
+                }"
+              >
+                <a
+                  href="javascript:void(0);"
+                  (click)="mainMenus.showAsTab = !mainMenus.showAsTab"
+                  >{{ mainMenus.tittle }} <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul
+                  class="submenu"
+                  [ngClass]="{
+                    'show-sub-menu': mainMenus.showAsTab == true,
+                    'mega-submenu': mainMenus.tittle == 'Home'
+                  }"
+                >
+                  <ng-container *ngFor="let menu of mainMenus.menu">
+                    <ng-container
+                      *ngIf="
+                        menu.hasSubRoute == false && mainMenus.tittle != 'Home'
+                      "
+                    >
+                      <li
+                        [class.active]="
+                          base === menu.base && page === menu.page
+                        "
+                      >
+                        <a [routerLink]="menu.route">{{ menu.menuValue }}</a>
+                      </li>
+                    </ng-container>
+                    <ng-container *ngIf="menu.hasSubRoute == true">
+                      <li
+                        class="has-submenu"
+                        [class.active]="page === menu.page"
+                      >
+                        <a
+                          (click)="menu.showSubRoute = !menu.showSubRoute"
+                          [routerLink]="menu.route"
+                          >{{ menu.menuValue }}</a
+                        >
+                        <ul
+                          class="submenu"
+                          [ngClass]="{
+                            'show-sub-menu': menu.showSubRoute == true
+                          }"
+                        >
+                          <ng-container *ngFor="let subMenu of menu.subMenus">
+                            <li
+                              [class.active]="
+                                base === subMenu.base &&
+                                page === subMenu.page &&
+                                last === subMenu.last
+                              "
+                            >
+                              <a [routerLink]="subMenu.route">{{
+                                subMenu.menuValue
+                              }}</a>
+                            </li>
+                          </ng-container>
+                        </ul>
+                      </li>
+                    </ng-container>
+
+                    <ng-container
+                      *ngIf="
+                      menu.menuValue == 'Home One'
+                      "
+                    >
+                      <li>
+                        <div class="megamenu-wrapper">
+                          <div class="row">
+                            <ng-container *ngFor="let menu of mainMenus.menu">
+                              <div class="col-lg-2">
+                                <div class="single-demo">
+                                  <div class="demo-img">
+                                    <a [routerLink]="menu.route"
+                                      ><img
+                                        [src]="menu.img"
+                                        class="img-fluid"
+                                        alt="img"
+                                    /></a>
+                                  </div>
+                                  <div class="demo-info">
+                                    <a [routerLink]="menu.route">{{
+                                      menu.menuValue
+                                    }}</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </ng-container>
+                          </div>
+                        </div>
+                      </li>
+                    </ng-container>
+                  </ng-container>
+                </ul>
+              </li>
+            </ng-container>
+          </ng-container>
+        </ul>
+      </div>
+
+
+          <ul class="nav header-navbar-rht "*ngIf="nav == true">
+            <li class="nav-item">
+              <a class="nav-link header-reg" [routerLink]="routes.signup">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-login" [routerLink]="routes.login"> Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link header-login add-listing"
+                [routerLink]="routes.addlisting"
+                ><i class="fa-solid fa-plus"></i> Add Listing</a
+              >
+            </li>
+
+
+          </ul>
+
+
+
+
+          <ul class="nav header-navbar-rht" *ngIf="nav == false">
+            <li class="nav-item">
+              <a
+                class="nav-link header-login add-listing"
+                [routerLink]="routes.addlisting"
+                ><i class="fa-solid fa-plus"></i> Add Listing</a
+              >
+            </li>
+
+
+            <li class="nav-item dropdown has-arrow logged-item">
+            <a href="javascript:void(0);" class="dropdown-toggle profile-userlink" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/profile-img.jpg" alt="">
+              <span>John Doe</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" [routerLink]='routes.dashboard'>Dashboard</a>
+              <a class="dropdown-item" [routerLink]='routes.profile'>Profile Settings</a>
+              <a class="dropdown-item" [routerLink]= 'routes.login'>Logout</a>
+            </div>
+          </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+    </nav>
+  </div>
+</header>
+<!-- /Header -->

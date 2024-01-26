@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "img1": "feature-9.jpg",
+        "img2": "avatar-02.jpg",
+        "text": "Education",
+        "title": "2017 Gulfsteam Ameri-lite",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rateing": "4.7"
+    },
+    {
+        "id": "2",
+        "img1": "feature-2.jpg",
+        "img2": "avatar-05.jpg",
+        "text": "Electronics",
+        "title": "Fashion luxury Men date",
+        "date": "08 Oct, 2022",
+        "offer": "$250",
+        "price": "$350",
+        "rateing": "4.6"
+    },
+    {
+        "id": "3",
+        "img1": "feature-3.jpg",
+        "img2": "avatar-04.jpg",
+        "text": "Electronics",
+        "title": "Apple Iphone6 16GB 4G ltd",
+        "date": "09 Oct, 2022",
+        "offer": "$550",
+        "price": "$400",
+        "rateing": "4.7"
+    },
+    {
+        "id": "4",
+        "img1": "feature-4.jpg",
+        "img2": "avatar-05.jpg",
+        "text": "Gadgets",
+        "title": "Customized Apple Imac",
+        "date": "10 Oct, 2022",
+        "offer": "$450",
+        "price": "$300",
+        "rateing": "4.5"
+    },
+    {
+        "id": "5",
+        "img1": "feature-9.jpg",
+        "img2": "avatar-02.jpg",
+        "text": "Education",
+        "title": "2017 Gulfsteam Ameri-lite",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rateing": "4.7"
+    }
+]

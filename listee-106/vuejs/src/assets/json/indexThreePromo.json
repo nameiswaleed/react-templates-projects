@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "image": "recommand-01.jpg",
+        "badge": "Adventure",
+        "class": "top-blk",
+        "name": "Gordon Evan",
+        "location": "Westminster , London",
+        "price": "US$15",
+        "text": "/ Per Hour",
+        "rating": "4.9",
+        "review": "(2,312 Reviews)",
+        "experience": "5+ Years Experience"
+    },
+    {
+        "id": "2",
+        "image": "recommand-02.jpg",
+        "badge": "Hunting",
+        "class": "top-blk top-rated-style",
+        "name": "Jennifer Bernadette",
+        "location": "NSW , London",
+        "price": "US$20",
+        "text": "/ Per Hour",
+        "rating": "4.9",
+        "review": "(2,612 Reviews)",
+        "experience": "4+ Years Experience"
+    },
+    {
+        "id": "3",
+        "image": "recommand-03.jpg",
+        "badge": "Brandon Christopher",
+        "class": "top-blk gray-bg-style",
+        "name": "Gordon Evan",
+        "location": "Westminster , London",
+        "price": "US$10",
+        "text": "/ Per Hour",
+        "rating": "4.9",
+        "review": "(2,612 Reviews)",
+        "experience": "6+ Years Experience"
+    },
+    {
+        "id": "4",
+        "image": "recommand-04.jpg",
+        "badge": "Tour",
+        "class": "top-blk bf-style",
+        "name": "Grace",
+        "location": "Texas, UK",
+        "price": "US$10",
+        "text": "/ Per Hour",
+        "rating": "4.9",
+        "review": "(2,612 Reviews)",
+        "experience": "2+ Years Experience"
+    }
+]

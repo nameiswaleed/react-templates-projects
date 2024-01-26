@@ -1,0 +1,1154 @@
+<app-header-two></app-header-two>
+<!-- Banner Section -->
+<section class="banner-section banner-section-two">
+  <img src="assets/img/banner.png" class="img-fluid" alt="bannercircle" />
+  <div class="home-banner-two">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto">
+          <div class="banner-content aos" data-aos="fade-up" data-aos-duration="1200">
+            <h1>Find the Perfect Wedding Vendor</h1>
+            <p>
+              Browse the best wedding vendors in your area — from venues and
+              photographers, to wedding planners, caterers, florists and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-box">
+          <div class="d-flex home-one-serch-box">
+            <div class="searchbox-list">
+              <div class="search-input line">
+                <span class="search-icon">
+                  <i class="feather-navigation"></i>
+                </span>
+                <div class="form-group mb-0">
+                  <label>Choose Vendor Type</label>
+
+                  <mat-form-field class="mat-custom-select">
+                    <mat-select [(ngModel)]="vendorType" [ngModelOptions]="{standalone: true}">
+                      <mat-option disabled class="search-input-option">
+                        <input
+                          [(ngModel)]="vendorType" 
+                          (ngModelChange)="searchVendor(vendorType)"
+                          class="search-input"
+                          type="text"
+                        />
+                      </mat-option>
+                      <mat-option [value]="item" *ngFor="let item of vendor">{{
+                        item
+                      }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                  
+                </div>
+              </div>
+              <div class="search-input">
+                <span class="search-icon">
+                  <i class="feather-map-pin"></i>
+                </span>
+                <div class="form-group mb-0">
+                  <label>Location</label>
+                  <mat-form-field class="mat-custom-select">
+                    <mat-select [(ngModel)]="selectedLocation">
+                      <mat-option disabled class="search-input-option">
+                        <input
+                          [(ngModel)]="selectedLocation" [ngModelOptions]="{standalone: true}"
+                          (ngModelChange)="searchLocation(selectedLocation)"
+                          class="search-input"
+                          type="text"
+                        />
+                      </mat-option>
+                      <mat-option
+                        [value]="item"
+                        *ngFor="let item of location"
+                        >{{ item }}</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="search-input">
+                <span class="search-icon">
+                  <i class="feather-user"></i>
+                </span>
+                <div class="form-group mb-0">
+                  <label>Number of Guest</label>
+                  <mat-form-field class="mat-custom-select">
+                    <mat-select [(ngModel)]="selectedNoGuest">
+                      <mat-option disabled class="search-input-option">
+                        <input
+                          [(ngModel)]="selectedNoGuest" [ngModelOptions]="{standalone: true}"
+                          (ngModelChange)="
+                            searchNoOfGuest(this.selectedNoGuest)
+                          "
+                          class="search-input"
+                          type="text"
+                        />
+                      </mat-option>
+                      <mat-option
+                        [value]="item"
+                        *ngFor="let item of noOfGuest"
+                        >{{ item }}</mat-option
+                      >
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+            <div class="search-btn">
+              <button (click)="direction()" class="btn btn-primary" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Banner Section -->
+
+<!-- Popular Search Section -->
+<section class="popular-section">
+  <div class="container">
+    <div class="section-heading-two text-center">
+      <div class="row">
+        <div class="col-md-12 aos aos-init aos-animate" data-aos="fade-up">
+          <p>Loved One</p>
+          <h2>Popular Searches</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="search-slider">
+      <owl-carousel-o [options]="popularOwlOptions">
+        <ng-container *ngFor="let slide of popular">
+          <ng-template carouselSlide>
+            <div class="item">
+              <div class="popular-wrap">
+                <div class="popular-img">
+                  <img [src]="slide.img" alt="icons" />
+                  <a [routerLink]="routes.listinggridsidebar" class="btn">{{
+                    slide.title
+                  }}</a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- /Popular Search Section -->
+
+<!-- Celebrating Section -->
+<section class="celebrate-section">
+  <div class="container">
+    <div class="section-heading-two text-center">
+      <div class="row">
+        <div class="col-md-12 aos" data-aos="fade-up">
+          <p>Loved One</p>
+          <h2>Celebrating Your Love</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <owl-carousel-o [options]="lovedataOwlOptions">
+      <ng-container *ngFor="let slide of lovedata">
+        <ng-template carouselSlide>
+          <div class="celebrate-slider">
+            <div class="item">
+              <div class="celebrate-wrap aos" data-aos="fade-up">
+                <div class="celebrate-img">
+                  <img [src]="slide.img" alt="img" />
+                  <div class="play-btn">
+                    <a
+                      href="https://youtu.be/txNwby8qPlg"
+                      data-fancybox=""
+                      class="play-icon"
+                      ><i class="fa-solid fa-play"></i
+                    ></a>
+                    <span class="animate-circle"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</section>
+<!-- /Celebrating Section -->
+
+<!-- Wedding Section -->
+<section class="wedding-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 aos" data-aos="fade-up" data-aos-duration="1200">
+        <div class="section-heading-two text-center">
+          <p>Loved One</p>
+          <h2>Wedding Categories</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-md-6">
+        <!-- Category -->
+        <div class="wedding-wrap aos" data-aos="fade-up" data-aos-duration="1200">
+          <div class="wedding-img">
+            <a [routerLink]="routes.categories"
+              ><img
+                class="img-fluid"
+                src="assets/img/service/category-01.jpg"
+                alt="locations"
+            /></a>
+          </div>
+          <div class="wedding-content">
+            <h6><a [routerLink]="routes.categories">Venues</a></h6>
+            <p>
+              Banquet Halls, Lawns / Farmhouses, Resorts, Small Function / Party
+              Halls, Destination Wedding, Kalyan Mandapam, 4 Star & Above Hotels
+            </p>
+            <a [routerLink]="routes.categories"
+              >Explore <i class="feather-arrow-right-circle"></i
+            ></a>
+          </div>
+        </div>
+        <!-- /Category -->
+
+        <!-- Category -->
+        <div class="wedding-wrap aos" data-aos="fade-up" data-aos-duration="1200">
+          <div class="wedding-img">
+            <a [routerLink]="routes.categories"
+              ><img
+                class="img-fluid"
+                src="assets/img/service/category-02.jpg"
+                alt="locations"
+            /></a>
+          </div>
+          <div class="wedding-content">
+            <h6><a href="routes.categories">Photographers</a></h6>
+            <p>
+              Engagement, Pre Wedding, Wedding, Post Wedding, Couples Shoot,
+              Outdoor
+            </p>
+            <a [routerLink]="routes.categories"
+              >Explore <i class="feather-arrow-right-circle"></i
+            ></a>
+          </div>
+        </div>
+        <!-- /Category -->
+
+        <!-- Category -->
+        <div class="wedding-wrap aos" data-aos="fade-up" data-aos-duration="1200">
+          <div class="wedding-img">
+            <a [routerLink]="routes.categories"
+              ><img
+                class="img-fluid"
+                src="assets/img/service/category-03.jpg"
+                alt="locations"
+            /></a>
+          </div>
+          <div class="wedding-content">
+            <h6>
+              <a [routerLink]="routes.categories">Groom and Bridal Makeup</a>
+            </h6>
+            <p>
+              Bridal Makeup, Airbrush Makeup, Party Makeup, Engagement Makeup,
+              Hairstyling, Draping, False Lashes
+            </p>
+            <a [routerLink]="routes.categories"
+              >Explore <i class="feather-arrow-right-circle"></i
+            ></a>
+          </div>
+        </div>
+        <!-- /Category -->
+      </div>
+      <div class="col-lg-2 wedding-wrap-img aos" data-aos="fade-up" data-aos-duration="1200">
+        <img
+          class="img-fluid"
+          src="assets/img/service/category-img.png"
+          alt="locations"
+        />
+      </div>
+      <div class="col-lg-5 col-md-6 aos" data-aos="fade-up" data-aos-duration="1200">
+        <!-- Category -->
+        <div class="wedding-wrap wedding-align">
+          <div class="wedding-content">
+            <h6>
+              <a [routerLink]="routes.categories">Groom and Bride Wear</a>
+            </h6>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+            <a [routerLink]="routes.categories"
+              >Explore <i class="feather-arrow-right-circle"></i
+            ></a>
+          </div>
+          <div class="wedding-img align-right">
+            <a [routerLink]="routes.categories"
+              ><img
+                class="img-fluid"
+                src="assets/img/service/category-04.jpg"
+                alt="locations"
+            /></a>
+          </div>
+        </div>
+        <!-- /Category -->
+
+        <!-- Category -->
+        <div class="wedding-wrap wedding-align aos" data-aos="fade-up">
+          <div class="wedding-content">
+            <h6><a [routerLink]="routes.categories">Mehandi</a></h6>
+            <p>
+              Banquet Halls, Lawns / Farmhouses, Resorts, Small Function / Party
+              Halls, Destination Wedding, Kalyan Mandapam, 4 Star & Above Hotels
+            </p>
+            <a [routerLink]="routes.categories"
+              >Explore <i class="feather-arrow-right-circle"></i
+            ></a>
+          </div>
+          <div class="wedding-img align-right">
+            <a [routerLink]="routes.categories"
+              ><img
+                class="img-fluid"
+                src="assets/img/service/category-05.jpg"
+                alt="locations"
+            /></a>
+          </div>
+        </div>
+        <!-- /Category -->
+
+        <!-- Category -->
+        <div class="wedding-wrap wedding-align aos" data-aos="fade-up">
+          <div class="wedding-content">
+            <h6><a [routerLink]="routes.categories">Catering</a></h6>
+            <p>
+              Banquet Halls, Lawns / Farmhouses, Resorts, Small Function / Party
+              Halls, Destination Wedding, Kalyan Mandapam, 4 Star & Above Hotels
+            </p>
+            <a [routerLink]="routes.categories"
+              >Explore <i class="feather-arrow-right-circle"></i
+            ></a>
+          </div>
+          <div class="wedding-img align-right">
+            <a [routerLink]="routes.categories"
+              ><img
+                class="img-fluid"
+                src="assets/img/service/category-06.jpg"
+                alt="locations"
+            /></a>
+          </div>
+        </div>
+        <!-- /Category -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Wedding Section -->
+
+<!-- Vendor Section -->
+<section class="offer-section">
+  <div class="container">
+    <div class="offer-sec">
+      <h3>Lets Celebrate Your Love</h3>
+      <img class="img-fluid" src="assets/img/celebrate-img.png" alt="img" />
+      <p>20% Off Special Offer</p>
+      <a [routerLink]="routes.contact" class="btn btn-grey">Contact Now</a>
+      <div class="offer-img">
+        <div class="offer-img-left">
+          <img class="img-fluid" src="assets/img/bg/celebrate.png" alt="img" />
+        </div>
+        <div class="offer-img-right">
+          <img
+            class="img-fluid"
+            src="assets/img/bg/celebration-bg-01.png"
+            alt="img"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Vendor Section -->
+
+<!-- Blog  Section -->
+<section class="venue-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading-two text-center">
+          <p>Look at this</p>
+          <h2>Wedding Venues</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+        <div class="venue-slider">
+          <owl-carousel-o [options]="venusOwlOptions">
+            <ng-container *ngFor="let slide of venus">
+              <ng-template carouselSlide>
+                <div class="venue-item aos" data-aos="fade-up">
+                  <div class="venue-image">
+                    <a [routerLink]="routes.servicedetails"
+                      ><img class="img-fluid" [src]="slide.img" alt="Image"
+                    /></a>
+                  </div>
+                  <div class="venue-content">
+                    <h3>
+                      <a [routerLink]="routes.servicedetails">{{
+                        slide.service
+                      }}</a>
+                    </h3>
+                    <p><i class="feather-map-pin"></i> {{ slide.mappin }}</p>
+                    <div class="price-review">
+                      <h6>
+                        <span
+                          ><i class="fa-solid fa-star"></i>
+                          {{ slide.review }}</span
+                        >{{ slide.rating }}
+                      </h6>
+                      <p>{{ slide.amount }}</p>
+                    </div>
+                    <ul>
+                      <li>
+                        <span><i class="feather-user"></i></span>
+                        <p>{{ slide.guest }}</p>
+                      </li>
+                      <li>
+                        <span><i class="fa-solid fa-mug-hot"></i></span>
+                        <p>{{ slide.dish }}</p>
+                      </li>
+                      <li>
+                        <span><i class="feather-home"></i></span>
+                        <p>{{ slide.rooms }}</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Blog  Section -->
+
+<!-- Package Section -->
+<section class="package-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 aos" data-aos="fade-up">
+        <div class="section-heading-two white-text text-center">
+          <p>Loved One</p>
+          <h2>Wedding Packages</h2>
+          <img
+            src="assets/img/title-img-white.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div
+        class="col-lg-4 col-md-6 d-flex aos"
+        data-aos="fade-up"
+        *ngFor="let data of weddingpackagedata"
+      >
+        <div class="package-wrap flex-fill">
+          <div class="section-heading-two text-center">
+            <h2>{{ data.category }}</h2>
+            <p>{{ data.amount }}</p>
+            <img [src]="data.img" class="img-fluid" alt="title-img" />
+          </div>
+          <ul>
+            <li>{{ data.packagelist }}</li>
+            <li>{{ data.list2 }}</li>
+            <li>{{ data.list3 }}</li>
+            <li>{{ data.list4 }}</li>
+            <li>{{ data.list5 }}</li>
+            <li>{{ data.list6 }}</li>
+          </ul>
+          <a [routerLink]="routes.login" class="btn btn-primary">{{
+            data.select
+          }}</a>
+          <div class="couple-img">
+            <img [src]="data.coupleimg" class="img-fluid" alt="title-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Package Section -->
+
+<!-- Success Section -->
+<section class="success-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 aos" data-aos="fade-up">
+        <div class="success-img">
+          <img src="assets/img/success-img.png" class="img-fluid" alt="img" />
+        </div>
+      </div>
+      <div class="col-md-7 aos" data-aos="fade-up">
+        <div class="success-wrap">
+          <div class="section-heading-two text-center">
+            <p>Who we are</p>
+            <h2>Our Success Story</h2>
+            <img
+              src="assets/img/title-img.png"
+              class="img-fluid"
+              alt="title-img"
+            />
+          </div>
+          <div class="success-sec">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 aos" data-aos="fade-up">
+                <div class="success-item">
+                  <img
+                    src="assets/img/icons/wed-icon-01.svg"
+                    class="img-fluid"
+                    alt="title-img"
+                  />
+                  <h6>180+Wedding Venues & Vendors</h6>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 aos" data-aos="fade-up">
+                <div class="success-item">
+                  <img
+                    src="assets/img/icons/wed-icon-02.svg"
+                    class="img-fluid"
+                    alt="title-img"
+                  />
+                  <h6>350+ Real Wedding Event Success</h6>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 aos" data-aos="fade-up">
+                <div class="success-item">
+                  <img
+                    src="assets/img/icons/wed-icon-03.svg"
+                    class="img-fluid"
+                    alt="title-img"
+                  />
+                  <h6>More than 65+ Cities Available</h6>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    text.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Celebrating Section -->
+
+<!-- Category  Section -->
+<section class="categories-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading-two text-center">
+          <p>Try This</p>
+          <h2>Venues by Category</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="category-item aos" data-aos="fade-up">
+              <div class="category-img">
+                <img
+                  src="assets/img/category/category-01.jpg"
+                  class="img-fluid"
+                  alt="img"
+                />
+                <a [routerLink]="routes.categories" class="btn"
+                  >Banquet halls</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="category-item aos" data-aos="fade-up">
+                  <div class="category-img">
+                    <img
+                      src="assets/img/category/category-02.jpg"
+                      class="img-fluid"
+                      alt="img"
+                    />
+                    <a [routerLink]="routes.categories" class="btn">Outdoors</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="category-item aos" data-aos="fade-up">
+                  <div class="category-img">
+                    <img
+                      src="assets/img/category/category-03.jpg"
+                      class="img-fluid"
+                      alt="img"
+                    />
+                    <a [routerLink]="routes.categories" class="btn"
+                      >Beaches and Islands
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="category-item aos" data-aos="fade-up">
+                  <div class="category-img">
+                    <img
+                      src="assets/img/category/category-04.jpg"
+                      class="img-fluid"
+                      alt="img"
+                    />
+                    <a [routerLink]="routes.categories" class="btn">Hotels</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="category-item aos" data-aos="fade-up">
+                  <div class="category-img">
+                    <img
+                      src="assets/img/category/category-05.jpg"
+                      class="img-fluid"
+                      alt="img"
+                    />
+                    <a [routerLink]="routes.categories" class="btn">House</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Category  Section -->
+
+<!-- Portfolio  Section -->
+<section class="portfolio-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading-two text-center">
+          <p>Portfolio</p>
+          <h2>Our Amazing Work</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+        <owl-carousel-o [options]="amazingworkOwlOptions">
+          <ng-container *ngFor="let slide of amazingwork">
+            <ng-template carouselSlide>
+              <div class="portfolio-slider">
+                <div class="portfolio-wrap">
+                  <div class="row gx-2 bg-white port-wrap">
+                    <div class="col-md-3 col-sm-6">
+                      <div class="portfolio-item">
+                        <div class="portfolio-img">
+                          <img
+                            [src]="slide.img"
+                            class="img-fluid"
+                            alt="img"
+                           
+                          />
+                        </div>
+                        <div class="portfolio-overlay-item">
+                          <a
+                          href="javascript:void(0)"
+                          (click)="openAll()"
+                          >
+                            <div class="portfolio-overlay">
+                              <h6>{{ slide.overlay1 }}</h6>
+                              <p>{{ slide.overlay2 }}</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="portfolio-item">
+                        <div class="portfolio-img">
+                          <img [src]="slide.img2" class="img-fluid" alt="img" />
+                        </div>
+                        <div class="portfolio-overlay-item">
+                          <a
+                            href="javascript:void(0)"
+                            (click)="openAll()"
+                          >
+                            <div class="portfolio-overlay">
+                              <h6>{{ slide.overlay3 }}</h6>
+                              <p>{{ slide.overlay4 }}</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                      <div class="portfolio-item">
+                        <div class="portfolio-img">
+                          <img [src]="slide.img3" class="img-fluid" alt="img" />
+                        </div>
+                        <div class="portfolio-overlay-item">
+                          <a
+                            href="javascript:void(0)"
+                            (click)="openAll()"
+                          >
+                            <div class="portfolio-overlay">
+                              <h6>{{ slide.overlay5 }}</h6>
+                              <p>{{ slide.overlay6 }}</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="row gx-2">
+                        <div class="col-md-6">
+                          <div class="portfolio-item">
+                            <div class="portfolio-img">
+                              <img
+                                [src]="slide.img4"
+                                class="img-fluid"
+                                alt="img"
+                              />
+                            </div>
+                            <div class="portfolio-overlay-item">
+                              <a
+                                href="javascript:void(0)"
+                                (click)="openAll()"
+                              >
+                                <div class="portfolio-overlay">
+                                  <h6>{{ slide.overlay7 }}</h6>
+                                  <p>{{ slide.overlay8 }}</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="portfolio-item">
+                            <div class="portfolio-img">
+                              <img
+                                [src]="slide.img5"
+                                class="img-fluid"
+                                alt="img"
+                              />
+                            </div>
+                            <div class="portfolio-overlay-item">
+                              <a
+                                href="javascript:void(0)"
+                                (click)="openAll()"
+                              >
+                                <div class="portfolio-overlay">
+                                  <h6>{{ slide.overlay9 }}</h6>
+                                  <p>{{ slide.overlay10 }}</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="portfolio-item">
+                            <div class="portfolio-img">
+                              <img
+                                [src]="slide.img6"
+                                class="img-fluid"
+                                alt="img"
+                              />
+                            </div>
+                            <div class="portfolio-overlay-item">
+                              <a
+                                href="javascript:void(0)"
+                                (click)="openAll()"
+                              >
+                                <div class="portfolio-overlay">
+                                  <h6>{{ slide.overlay11 }}</h6>
+                                  <p>{{ slide.overlay12 }}</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+    </div>
+    
+  </div>
+  <!-- </div>
+    </div> -->
+  <!-- </div> -->
+</section>
+<!-- /Portfolio Section -->
+
+<!-- Timeline Section -->
+<section class="timeline-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 aos" data-aos="fade-up">
+        <div class="section-heading-two text-center">
+          <p>How it Works</p>
+          <h2>Wedding Timeline & How it Works</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="timeline-sec">
+      <div class="row">
+        <div class="col-md-12 aos" data-aos="fade-up">
+          <ul class="timeline-wrap">
+            <li class="time-box box-bottom">
+              <div class="date">
+                <img
+                  src="assets/img/icons/timeline-01.svg"
+                  class="img-fluid"
+                  alt="img"
+                />
+              </div>
+              <div class="box-content">
+                <p>4:30<span>Ceremony</span></p>
+              </div>
+            </li>
+            <li class="time-box box-top">
+              <div class="date">
+                <img
+                  src="assets/img/icons/timeline-02.svg"
+                  class="img-fluid"
+                  alt="img"
+                />
+              </div>
+              <div class="box-content">
+                <p>7:30<span>Wedding</span></p>
+              </div>
+            </li>
+            <li class="time-box box-bottom">
+              <div class="date">
+                <img
+                  src="assets/img/icons/timeline-03.svg"
+                  class="img-fluid"
+                  alt="img"
+                />
+              </div>
+              <div class="box-content">
+                <p>10:00<span>Album Time</span></p>
+              </div>
+            </li>
+            <li class="time-box box-top">
+              <div class="date">
+                <img
+                  src="assets/img/icons/timeline-04.svg"
+                  class="img-fluid"
+                  alt="img"
+                />
+              </div>
+              <div class="box-content">
+                <p>12:30<span>Food Lunch</span></p>
+              </div>
+            </li>
+            <li class="time-box box-bottom">
+              <div class="date">
+                <img
+                  src="assets/img/icons/timeline-05.svg"
+                  class="img-fluid"
+                  alt="img"
+                />
+              </div>
+              <div class="box-content">
+                <p>3:30<span>Reception</span></p>
+              </div>
+            </li>
+            <li class="time-box box-top">
+              <div class="date">
+                <img
+                  src="assets/img/icons/timeline-06.svg"
+                  class="img-fluid"
+                  alt="img"
+                />
+              </div>
+              <div class="box-content">
+                <p>6:30<span>Cake Cutting</span></p>
+              </div>
+            </li>
+            <li class="time-box box-bottom">
+              <div class="date">
+                <img
+                  src="assets/img/icons/timeline-07.svg"
+                  class="img-fluid"
+                  alt="img"
+                />
+              </div>
+              <div class="box-content">
+                <p>7:30<span>DJ & Dinner</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Timeline Section -->
+
+<!-- Blog  Section -->
+<section class="feedback-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading-two text-center">
+          <p>Find out</p>
+          <h2>Testimonials from Real Brides</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+        <div class="feedback-slider aos" data-aos="fade-up">
+          <owl-carousel-o [options]="bridesdataOwlOptions">
+            <ng-container *ngFor="let slide of bridesdata">
+              <ng-template carouselSlide>
+                <div class="testimonial-item aos" data-aos="fade-up ">
+                  <div class="testimonial-content">
+                    <p>{{ slide.description }}</p>
+                    <span class="testi-icon"
+                      ><i class="fa-solid fa-quote-left"></i
+                    ></span>
+                  </div>
+                  <div class="testimonial-user-info">
+                    <img class="img-fluid" [src]="slide.Img" alt="Post Image" />
+                    <div class="testimonial-user">
+                      <h6>{{ slide.name }}</h6>
+                      <p>{{ slide.countary }}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Blog  Section -->
+
+<!-- Blog  Section -->
+<section class="blog-section-two">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading-two text-center">
+          <p>Tips and News</p>
+          <h2>Latest Blogs</h2>
+          <img
+            src="assets/img/title-img.png"
+            class="img-fluid"
+            alt="title-img"
+          />
+        </div>
+        <div class="blog-slider">
+          <owl-carousel-o [options]="latestBlogOwlOptions">
+            <ng-container *ngFor="let slide of latestBlog">
+              <ng-template carouselSlide>
+                <div class="blog grid-blog blog-two aos" data-aos="fade-up">
+                  <div class="blog-image">
+                    <a [routerLink]="routes.blog"
+                      ><img
+                        class="img-fluid"
+                        [src]="slide.img"
+                        alt="Post Image"
+                    /></a>
+                  </div>
+                  <div class="blog-content">
+                    <h3 class="blog-title">
+                      <a [routerLink]="routes.blog">{{ slide.headline }}</a>
+                    </h3>
+                    <ul class="entry-meta meta-item">
+                      <li class="date-icon">
+                        <i class="feather-calendar"></i> {{ slide.date }}
+                      </li>
+                      <li class="blog-cat">{{ slide.category }}</li>
+                    </ul>
+                    <p class="blog-description">{{ slide.description }}</p>
+                    <div class="viewlink">
+                      <a [routerLink]="routes.blogdetails"
+                        >{{ slide.detail }}
+                        <i class="feather-arrow-right-circle"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Blog  Section -->
+
+<section class="appointment-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="appointment-sec aos" data-aos="fade-up">
+          <div class="wedding-form">
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-12">
+                  <div class="section-heading-two text-center">
+                    <p>Try This</p>
+                    <h2>Are You Attending?</h2>
+                    <img
+                      src="assets/img/title-img.png"
+                      class="img-fluid"
+                      alt="title-img"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <mat-select  
+                      value="Service"
+                      class="select drop-down form-control"
+                    >
+                      <mat-option disabled value="Service">Service</mat-option>
+                      <mat-option>Hall</mat-option>
+                      <mat-option>Decoration</mat-option>
+                    </mat-select>
+                  </div>
+                  <div class="form-group">
+                    <mat-select
+                      value="Number of Guest"
+                      class="select drop-down form-control"
+                    >
+                      <mat-option value="Number of Guest">
+                        Number of Guest</mat-option
+                      >
+                      <mat-option>100</mat-option>
+                      <mat-option>500</mat-option>
+                    </mat-select>
+                  </div>
+                  <div class="form-group">
+                    <mat-select
+                      value="Meal preference"
+                      class="select drop-down form-control"
+                    >
+                      <mat-option value="Meal preference"
+                        >Meal preference</mat-option
+                      >
+                      <mat-option>Veg</mat-option>
+                      <mat-option>Non veg</mat-option>
+                    </mat-select>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      placeholder="Message"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="submit-section">
+                <button [routerLink]="routes.home2" type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vendor Section -->
+<section class="vendor-section">
+  <div class="container">
+    <div class="vendor-sec">
+      <div class="vendor-info aos" data-aos="fade-up">
+        <h3>Grow your Business with “DreamsWedding”</h3>
+        <a [routerLink]="routes.signup" class="btn btn-grey"
+          >Register as a Vendor</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Vendor Section -->
+<app-footer-two></app-footer-two>

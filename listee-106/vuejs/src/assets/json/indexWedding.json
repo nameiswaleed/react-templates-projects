@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "image": "service-01.jpg",
+        "title": "Venues"
+    },
+    {
+        "id": "2",
+        "image": "service-02.jpg",
+        "title": "Bridal Makeup"
+    },
+    {
+        "id": "3",
+        "image": "service-03.jpg",
+        "title": "Catering Services"
+    },
+    {
+        "id": "4",
+        "image": "service-04.jpg",
+        "title": "Photographers"
+    },
+    {
+        "id": "5",
+        "image": "service-02.jpg",
+        "title": "Venues"
+    }
+]

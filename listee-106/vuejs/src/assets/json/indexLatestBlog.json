@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "image": "blog-6.jpg",
+        "title": "Wedding Tips For Fashion",
+        "date": "7 Jan 2023",
+        "text": "Wedding",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+        "view": "View More"
+    },
+    {
+        "id": "2",
+        "image": "blog-7.jpg",
+        "title": "Pre-Wedding Photoshoot",
+        "date": "15 Jan 2023",
+        "text": "Photography",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+        "view": "View More"
+    },
+    {
+        "id": "3",
+        "image": "blog-8.jpg",
+        "title": "Special Food wedding",
+        "date": "27 Feb 2023",
+        "text": "Catering",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+        "view": "View More"
+    },
+    {
+        "id": "4",
+        "image": "blog-7.jpg",
+        "title": "Pre-Wedding Photoshoot",
+        "date": "28 Feb 2023",
+        "text": "Photography",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+        "view": "View More"
+    }
+]

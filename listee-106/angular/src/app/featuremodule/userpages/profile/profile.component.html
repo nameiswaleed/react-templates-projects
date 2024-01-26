@@ -1,0 +1,204 @@
+<!-- Breadscrumb Section -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">Profile</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                    </ol>
+                </nav>							
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadscrumb Section -->
+
+<!-- Profile Content -->
+<div class="dashboard-content">		
+    <div class="container">
+        <div class="">			        
+            <ul class="dashborad-menus">
+                <li>
+                    <a [routerLink]="routes.dashboard">
+                        <i class="feather-grid"></i> <span>Dashboard</span>
+                    </a>
+                </li>
+                <li  class="active">
+                    <a [routerLink]="routes.profile">
+                        <i class="fa-solid fa-user"></i> <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.mylisting">
+                        <i class="feather-list"></i> <span>My Listing</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.bookmarks">
+                        <i class="fas fa-solid fa-heart"></i> <span>Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.messages">
+                        <i class="fa-solid fa-comment-dots"></i> <span>Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.reviews">
+                        <i class="fas fa-solid fa-star"></i> <span>Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.login">
+                        <i class="fas fa-light fa-circle-arrow-left"></i> <span>Logout</span>
+                    </a>
+                </li>
+            </ul>											
+        </div>
+        <div class="profile-content">
+             <div class="row dashboard-info">
+                <div class="col-lg-9">
+                    <div class="card dash-cards">
+                        <div class="card-header">
+                            <h4>Profile Details</h4>																
+                        </div>
+                        <div class="card-body">
+                            <div class="profile-photo">
+                                <div class="profile-img">
+                                    <div class="settings-upload-img">
+                                         <img src="assets/img/profile-img.jpg" alt="profile">
+                                    </div>										    
+                                     <div class="settings-upload-btn">											    
+                                        <input type="file" accept="image/*" name="image" class="hide-input image-upload" id="file">
+                                        <label for="file" class="file-upload">Upload New photo</label>												
+                                     </div>	
+                                     <span>Max file size: 10 MB</span>
+                                </div>                                        									
+                                <a href="javascript:void(0)" class="profile-img-del"><i class="feather-trash-2"></i></a>										
+                            </div>
+                            <div class="profile-form">
+                                 <form>
+                                    <div class="form-group">
+                                        <label class="col-form-label">Your Full Name</label>
+                                        <div class="pass-group group-img">
+                                            <span class="lock-icon"><i class="feather-user"></i></span>
+                                            <input type="text" class="form-control" value="John Doe">													
+                                        </div>
+                                    </div> 
+                                    <div class="row">
+                                         <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Phone Number</label>
+                                                <div class="pass-group group-img">
+                                                    <span class="lock-icon"><i class="feather-phone-call"></i></span>
+                                                    <input type="tel" class="form-control" value="+44 215346 1223">													
+                                                </div>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Email Address</label>
+                                                <div class="group-img">
+                                                    <i class="feather-mail"></i>
+                                                    <input type="text" class="form-control" value="johndoe@email.com">
+                                                </div>
+                                            </div>
+                                         </div>											
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-form-label">Notes</label>
+                                        <div class="pass-group group-img">
+                                            <textarea rows="4" class="form-control">Mauris vestibulum lorem a condimentum vulputate. Integer vitae turpis turpis. Cras at tincidunt urna. Aenean leo justo, congue et felis a, elementum rutrum felis. Fusce rutrum ipsum eu pretium faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean leo justo, congue et felis a.  Aenean leo justo, congue et felis a.	</textarea>												
+                                        </div>
+                                    </div>
+                                    <div class="row socialmedia-info">
+                                         <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Facebook</label>
+                                                <div class="pass-group group-img">
+                                                    <span class="lock-icon"><i class="fab fa-facebook-f"></i></span>
+                                                    <input type="text" class="form-control" value="https://www.facebook.com/">												
+                                                </div>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="col-form-label">Twitter</label>
+                                                <div class="pass-group group-img">
+                                                    <span class="lock-icon"><i class="fab fa-twitter"></i></span>
+                                                    <input type="text" class="form-control" value="https://twitter.com/">												
+                                                </div>
+                                            </div>
+                                         </div>											
+                                    </div>
+                                    <div class="row socialmedia-info">
+                                         <div class="col-lg-6 col-md-6">
+                                            <div class="form-group formlast-input">
+                                                <label class="col-form-label">Google+</label>
+                                                <div class="pass-group group-img">
+                                                    <span class="lock-icon"><i class="fa-brands fa-google-plus-g"></i></span>
+                                                    <input type="text" class="form-control" value="https://www.google.com/">												
+                                                </div>
+                                            </div>
+                                         </div>
+                                         <div class="col-lg-6 col-md-6">
+                                            <div class="form-group formlast-input">
+                                                <label class="col-form-label">Instagram</label>
+                                                <div class="pass-group group-img">
+                                                    <span class="lock-icon"><i class="fab fa-instagram"></i></span>
+                                                    <input type="text" class="form-control" value="https://www.instagram.com/">												
+                                                </div>
+                                            </div>
+                                         </div>											
+                                    </div>										 
+                                 </form>
+                            </div> 
+                        </div>								
+                    </div>	
+                </div>
+                <div class="col-lg-3">
+                    <div class="profile-sidebar">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Change Password</h4>
+                            </div>	
+                            <div class="card-body">
+                               <form>
+                                    <div class="form-group">
+                                        <label class="col-form-label">Current Password</label>
+                                        <div class="pass-group group-img">
+                                            <span class="lock-icon"><i class="feather-lock"></i></span>
+                                            <input type="password" class="form-control pass-input" placeholder="Password">													
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-form-label">New Password</label>
+                                        <div class="pass-group group-img">
+                                            <span class="lock-icon"><i class="feather-lock"></i></span>
+                                            <input type="password" class="form-control pass-input" value="..............">
+                                            
+                                            <span  [ngClass]="Toggledata == true ? 'toggle-password feather-eye' : 'toggle-password feather-eye-off'"  (click)="iconLogle()"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-form-label">Confirm New Password</label>
+                                        <div class="pass-group group-img">
+                                            <span class="lock-icon"><i class="feather-lock"></i></span>
+                                            <input type="password" class="form-control pass-input" value="..............">
+                                            <span [ngClass]="Toggle == true ? 'toggle-password feather-eye' : 'toggle-password feather-eye-off'" (click)="icon()"></span>
+                                        </div>
+                                    </div>	
+                                    <button class="btn btn-primary" type="submit"> Change Password</button>											
+                               </form>								
+                            </div>  									
+                        </div>							
+                    </div>
+                </div>							
+             </div>				
+        </div>
+    </div>		
+</div>		
+<!-- /Profile Content -->

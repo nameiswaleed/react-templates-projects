@@ -1,0 +1,156 @@
+<!-- Breadscrumb Section -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">My Listing</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">My Listing</li>
+                    </ol>
+                </nav>							
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadscrumb Section -->
+<!-- Dashboard Content -->
+<div class="dashboard-content">		
+    <div class="container">
+        <div class="">			        
+            <ul class="dashborad-menus">
+                <li>
+                    <a [routerLink]="routes.dashboard">
+                        <i class="feather-grid"></i> <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.profile">
+                        <i class="fa-solid fa-user"></i> <span>Profile</span>
+                    </a>
+                </li>
+                <li  class="active">
+                    <a [routerLink]="routes.mylisting">
+                        <i class="feather-list"></i> <span>My Listing</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.bookmarks">
+                        <i class="fas fa-solid fa-heart"></i> <span>Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.messages">
+                        <i class="fa-solid fa-comment-dots"></i> <span>Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.reviews">
+                        <i class="fas fa-solid fa-star"></i> <span>Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.login">
+                        <i class="fas fa-light fa-circle-arrow-left"></i> <span>Logout</span>
+                    </a>
+                </li>
+            </ul>																
+        </div>
+        <div class="dash-listingcontent dashboard-info">
+            <div class="dash-cards card">
+                <div class="card-header">
+                    <h4>My Listings</h4>
+                    <a class="nav-link header-login add-listing" [routerLink]="routes.addlisting"><i class="fa-solid fa-plus"></i> Add Listing</a>									
+                </div>
+                <div class="card-body">
+                    <div class="listing-search">
+                        <div class="filter-content form-group">
+                            <div class="group-img">
+                              <input type="text" class="form-control" placeholder="Search...">
+                              <i class="feather-search"></i>
+                            </div>
+                        </div>
+                        <div class="sorting-div">
+                             <div class="sortbyset">
+                                <span class="sortbytitle">Sort by</span>
+                                <div class="sorting-select">
+                                     <select class="form-control select">
+                                        <option>Newest</option>
+                                        <option>Newest</option>
+                                        <option>Oldest</option>
+                                    </select>
+                                </div>
+                            </div>						
+                        </div>																
+                    </div>
+                    <div class="table-responsive">
+                        <table  matSort (matSortChange)="sortData($event)" class="listing-table datatable" id="listdata-table"  >
+                           <thead>								    
+                            <tr>
+                                <th mat-sort-header="img"class="no-sort" >Image</th>										 
+                                <th mat-sort-header="details"class="no-sort">Details</th>										 
+                                <th mat-sort-header="status">Status</th>										 
+                                <th mat-sort-header="view">Views</th>										 
+                                <th mat-sort-header="Action">Action</th>										 
+                             </tr>	
+                             </thead>
+                             <tbody>									 
+                             <tr *ngFor="let data of electronics">
+                                 <td>
+                                    <div class="listingtable-img"> <a [routerLink]="routes.servicedetails"><img class="img-fluid avatar-img" [src]="data.img" alt=""></a></div>
+                                 </td>
+                                 <td>
+                                     <h6><a [routerLink]="routes.servicedetails">{{data. details}}</a></h6>
+                                     <div class="listingtable-rate"><a href="javascript:void(0)" class="cat-icon"><i class="fa-regular fa-circle-stop"></i> {{data.select}}</a> <span class="discount-amt">{{data.oldamount}}</span><span class="fixed-amt">{{data.newamount}}</span></div>
+                                     <p>{{data.description}}</p>
+                                 </td>
+                                 <td><span [ngClass]="{'unpublish': data.status === 'Un Published' }"
+                                    class="status-text">{{data.status}}</span></td>
+                                 <td><span class="views-count">{{data.view}}</span></td>
+                                 <td>
+                                    <div class="action">
+                                        <a href="javascript:void(0)" class="action-btn btn-view"><i class="feather-eye"></i></a>
+                                        <a href="javascript:void(0)" class="action-btn btn-edit"><i class="feather-edit-3"></i></a>
+                                        <a href="javascript:void(0)" class="action-btn btn-trash"><i class="feather-trash-2"></i></a>
+                                    
+                                    </div>
+                                 </td>
+                             </tr> 
+                          
+                             </tbody>									 
+                        </table>				
+                    </div>
+                    <div class="blog-pagination">
+                        <nav>
+                            <ul class="pagination">
+                                <li class="page-item previtem">
+                                    <a class="page-link" href="javascript:void(0)"><i class="fas fa-regular fa-arrow-left"></i> Prev</a>
+                                </li>
+                                <li class="justify-content-center pagination-center"> 
+                                    <div class="pagelink">
+                                        <ul>
+                                            <li class="page-item">
+                                                <a class="page-link" href="javascript:void(0)">1</a>
+                                            </li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="javascript:void(0)">2 <span class="visually-hidden">(current)</span></a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="javascript:void(0)">3</a>
+                                           </li>
+                                       </ul>
+                                    </div>													
+                                </li>													
+                                <li class="page-item nextlink">
+                                    <a class="page-link" href="javascript:void(0)">Next <i class="fas fa-regular fa-arrow-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>										
+                </div>							
+            </div>                  							
+        </div>							
+    </div>				
+</div>			
+<!-- /Dashboard Content -->

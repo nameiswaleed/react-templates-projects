@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "img": "city-01.jpg",
+        "title": "Chicago",
+        "count": "65",
+        "content": "Spaces"
+    },
+    {
+        "id": "2",
+        "img": "city-02.jpg",
+        "title": "Atlanta",
+        "count": "25",
+        "content": "Spaces"
+    },
+    {
+        "id": "3",
+        "img": "city-03.jpg",
+        "title": "Boston",
+        "count": "45",
+        "content": "Spaces"
+    },
+    {
+        "id": "4",
+        "img": "city-04.jpg",
+        "title": "Los Angeles",
+        "count": "43",
+        "content": "Spaces"
+    },
+    {
+        "id": "5",
+        "img": "city-05.jpg",
+        "title": "San Fancisco",
+        "count": "87",
+        "content": "Spaces"
+    },
+    {
+        "id": "6",
+        "img": "city-06.jpg",
+        "title": "New York",
+        "count": "12",
+        "content": "Spaces"
+    }
+]

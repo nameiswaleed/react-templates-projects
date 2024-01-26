@@ -1,0 +1,186 @@
+<!-- Breadscrumb Section -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">Reviews</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Reviews</li>
+                    </ol>
+                </nav>							
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadscrumb Section -->
+
+<!-- Reviews Content -->
+<div class="dashboard-content">		
+    <div class="container">
+        <div class="">			        
+            <ul class="dashborad-menus">
+                <li>
+                    <a [routerLink]="routes.dashboard">
+                        <i class="feather-grid"></i> <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.profile">
+                        <i class="fa-solid fa-user"></i> <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.mylisting">
+                        <i class="feather-list"></i> <span>My Listing</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.bookmarks">
+                        <i class="fas fa-solid fa-heart"></i> <span>Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.messages">
+                        <i class="fa-solid fa-comment-dots"></i> <span>Messages</span>
+                    </a>
+                </li>
+                <li  class="active">
+                    <a [routerLink]="routes.reviews">
+                        <i class="fas fa-solid fa-star"></i> <span>Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="routes.login">
+                        <i class="fas fa-light fa-circle-arrow-left"></i> <span>Logout</span>
+                    </a>
+                </li>
+            </ul>											
+        </div>	
+        <div class="row dashboard-info reviewpage-content">
+            <div class="col-lg-6 d-flex" *ngFor="let data of reviewdata">
+               <div class="card dash-cards">
+                    <div class="card-header">
+                        <h4>{{data.reviewType}}</h4>
+                        <div class="card-dropdown">
+                            <ul>
+                                <li class="nav-item dropdown has-arrow logged-item">
+                                    <a href="#" class="dropdown-toggle pageviews-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>{{data.dropdown}}</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item" href="javascript:void(0)">{{data.menu}}</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">{{data.menu1}}</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">{{data.menu2}}</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>								
+                    </div>	
+                    <div class="card-body">
+                        <ul class="review-list">
+                            <li class="review-box">
+                                <div class="review-profile">
+                                    <div class="review-img">
+                                        <img [src]="data.reviewimg1" class="img-fluid" alt="img">
+                                    </div>															
+                                </div>
+                                <div class="review-details">
+                                    <h6>{{data.reviewername1}}</h6>
+                                    <div class="rating">
+                                        <div class="rating-star">
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                        </div>							        
+                                        <div><i class="fa-sharp fa-solid fa-calendar-days"></i> {{data.month}}</div>
+                                        <div>{{data.reviewedby}}</div>
+                                    </div>		
+                                    <p>{{data. feedback}}</p>																	
+                                     <ul class="review-gallery">
+                                        <li>
+                                            <img class="img-fluid" alt="Image" [src]="data.reviewgallery">												  
+                                        </li>
+                                        <li>
+                                              <img class="img-fluid" alt="Image" [src]="data.gallery2">
+                                        </li>
+                                        <li>
+                                            <img class="img-fluid" alt="Image" [src]="data.gallery3">
+                                        </li>	
+                                        <li>
+                                           <img class="img-fluid" alt="Image" [src]="data.gallery">
+                                        </li>																			
+                                    </ul> 
+                                </div>
+                            </li>	
+                            <li class="review-box">
+                                <div class="review-profile">
+                                    <div class="review-img">
+                                        <img [src]="data.reviewimg2" class="img-fluid" alt="img">
+                                    </div>															
+                                </div>
+                                <div class="review-details">
+                                    <h6>{{data.reviewername2}}</h6>
+                                    <div class="rating">
+                                        <div class="rating-star">
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                        </div>							        
+                                        <div><i class="fa-sharp fa-solid fa-calendar-days"></i> {{data. month2}}</div>
+                                        <div>{{data.reviewedby1}}</div>
+                                    </div>		
+                                    <p>{{data.feedback2}}</p>																	
+                                </div>
+                            </li>
+                            <li class="review-box">
+                                <div class="review-profile">
+                                    <div class="review-img">
+                                        <img [src]="data.reviewimg3" class="img-fluid" alt="img">
+                                    </div>															
+                                </div>
+                                <div class="review-details">
+                                    <h6>{{data.reviewername3}}</h6>
+                                    <div class="rating">
+                                        <div class="rating-star">
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                           <i class="fas fa-star filled"></i>
+                                        </div>							        
+                                        <div><i class="fa-sharp fa-solid fa-calendar-days"></i> {{data. month3}}</div>
+                                        <div>{{data.reviewedby2}}</div>
+                                    </div>		
+                                    <p>{{data. feedback3}}</p>																	
+                                     <ul class="review-gallery">
+                                        <li>
+                                            <img class="img-fluid" alt="Image" [src]="data.reviewgallery2">												  
+                                        </li>
+                                        <li>
+                                              <img class="img-fluid" alt="Image" [src]="data.gallery4">
+                                        </li>
+                                        <li>
+                                            <img class="img-fluid" alt="Image" [src]="data.gallery5">
+                                        </li>	
+                                        <li>
+                                           <img class="img-fluid" alt="Image" [src]="data.gallery6">
+                                        </li>																			
+                                    </ul> 
+                                </div>
+                            </li>										
+                        </ul>								
+                    </div>							
+                </div>						 
+            </div>
+            				
+        </div> 					
+    </div>		
+</div>		
+<!-- /Reviews Content -->
+

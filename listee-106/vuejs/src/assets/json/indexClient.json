@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "img": "testimonial-1.jpg",
+        "name": "Dev",
+        "title": "Lead Intranet Technician"
+    },
+    {
+        "id": "2",
+        "img": "testimonial-2.jpg",
+        "name": "Esther Hills",
+        "title": "Lead Intranet Technician"
+    }
+]

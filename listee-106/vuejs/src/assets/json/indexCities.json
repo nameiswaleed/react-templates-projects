@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "image": "city-01.jpg",
+        "location": "New York",
+        "city": "10 Cities",
+        "list": "30+ Listing"
+    },
+    {
+        "id": "2",
+        "image": "city-02.jpg",
+        "location": "London",
+        "city": "15 Cities",
+        "list": "23+ Listing"
+    },
+    {
+        "id": "3",
+        "image": "city-03.jpg",
+        "location": "Korea",
+        "city": "12 Cities",
+        "list": "32+ Listing"
+    },
+    {
+        "id": "4",
+        "image": "city-04.jpg",
+        "location": "Malaysia",
+        "city": "18 Cities",
+        "list": "24+ Listing"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "image": "blog-9.jpg",
+        "badge": "Adventure",
+        "class": "top-blk",
+        "profile": "avatar-14.jpg",
+        "name": "Amara",
+        "date": "October 4, 2023",
+        "title": "The Best Spa Saloons for your relaxations?",
+        "content": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur em adipiscing elit,",
+        "detail": "View Details"
+    },
+    {
+        "id": "2",
+        "image": "blog-10.jpg",
+        "badge": "Adventure",
+        "class": "top-blk  top-rated-style",
+        "profile": "avatar-12.jpg",
+        "name": "Darryl",
+        "date": "October 6, 2023",
+        "title": "Three Powerful Tricks For Online Advertising",
+        "content": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur em adipiscing elit,",
+        "detail": "View Details"
+    },
+    {
+        "id": "3",
+        "image": "blog-11.jpg",
+        "badge": "Travel",
+        "class": "top-blk",
+        "profile": "avatar-13.jpg",
+        "name": "Mary",
+        "date": "October 10, 2023",
+        "title": "Competitive Analysis for Enterprerneurs in 20222",
+        "content": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur em adipiscing elit,",
+        "detail": "View Details"
+    },
+    {
+        "id": "4",
+        "image": "blog-10.jpg",
+        "badge": "Adventure",
+        "class": "top-blk  top-rated-style",
+        "profile": "avatar-12.jpg",
+        "name": "Darryl",
+        "date": "October 6, 2023",
+        "title": "Three Powerful Tricks For Online Advertising",
+        "content": "Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur em adipiscing elit,",
+        "detail": "View Details"
+    }
+]

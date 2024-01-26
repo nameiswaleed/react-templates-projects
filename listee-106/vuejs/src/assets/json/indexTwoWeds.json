@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "title": "Groom and Bride Wear",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+        "explore": "Explore",
+        "image": "category-04.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Mehandi",
+        "content": "Banquet Halls, Lawns / Farmhouses, Resorts, Small Function / Party Halls, Destination Wedding, Kalyan Mandapam, 4 Star & Above Hotels",
+        "explore": "Explore",
+        "image": "category-05.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Catering",
+        "content": "Banquet Halls, Lawns / Farmhouses, Resorts, Small Function / Party Halls, Destination Wedding, Kalyan Mandapam, 4 Star & Above Hotels",
+        "explore": "Explore",
+        "image": "category-06.jpg"
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "title": "Intro",
+        "price": "$10",
+        "month": "/ month",
+        "content": "For most business that want to optimize web queries",
+        "basic": "Basic listing submission",
+        "one": "One Listing",
+        "days": "30 days Availabilty",
+        "limit": "Limited Support",
+        "edit": "Edit your listing",
+        "view": "View details"
+    },
+    {
+        "id": "2",
+        "title": "Basic",
+        "price": "$25",
+        "month": "/ month",
+        "content": "For most business that want to optimize web queries",
+        "basic": "Basic listing submission",
+        "one": "One Listing",
+        "days": "30 days Availabilty",
+        "limit": "Limited Support",
+        "edit": "Edit your listing",
+        "view": "View details"
+    },
+    {
+        "id": "3",
+        "title": "Popular",
+        "price": "$50",
+        "month": "/ month",
+        "content": "For most business that want to optimize web queries",
+        "basic": "Basic listing submission",
+        "one": "One Listing",
+        "days": "30 days Availabilty",
+        "limit": "Limited Support",
+        "edit": "Edit your listing",
+        "view": "View details"
+    },
+    {
+        "id": "4",
+        "title": "Enterprise",
+        "price": "$100",
+        "month": "/ month",
+        "content": "For most business that want to optimize web queries",
+        "basic": "Basic listing submission",
+        "one": "One Listing",
+        "days": "30 days Availabilty",
+        "limit": "Limited Support",
+        "edit": "Edit your listing",
+        "view": "View details"
+    }
+]

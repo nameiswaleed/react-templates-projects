@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "img1": "bloglistview-1.jpg",
+        "img2": "avatar-01.jpg",
+        "name": "John Doe",
+        "date": "October 1, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard"
+    },
+    {
+        "id": "2",
+        "img1": "bloglistview-2.jpg",
+        "img2": "avatar-07.jpg",
+        "name": "Mary",
+        "date": "October 2, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard"
+    },
+    {
+        "id": "3",
+        "img1": "bloglistview-3.jpg",
+        "img2": "avatar-04.jpg",
+        "name": "Amara",
+        "date": "October 3, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard"
+    },
+    {
+        "id": "4",
+        "img1": "bloglistview-4.jpg",
+        "img2": "avatar-01.jpg",
+        "name": "John Doe",
+        "date": "October 4, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard"
+    },
+    {
+        "id": "5",
+        "img1": "bloglistview-1.jpg",
+        "img2": "avatar-04.jpg",
+        "name": "Scotty",
+        "date": "October 5, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard"
+    },
+    {
+        "id": "6",
+        "img1": "bloglistview-2.jpg",
+        "img2": "avatar-05.jpg",
+        "name": "Kenneth",
+        "date": "October 7, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard"
+    },
+    {
+        "id": "7",
+        "img1": "bloglistview-3.jpg",
+        "img2": "avatar-01.jpg",
+        "name": "John Doe",
+        "date": "October 8, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard"
+    },
+    {
+        "id": "8",
+        "img1": "bloglistview-4.jpg",
+        "img2": "avatar-06.jpg",
+        "name": "Orlando Diggs",
+        "date": "October 6, 2022",
+        "title": "The Best SPA Salons For Your Relaxation",
+        "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "img1": "work-01.jpg",
+        "img2": "category-13.svg",
+        "title": "Y&M Hamburger Co.",
+        "city": "Clarkrange, US",
+        "img3": "avatar-02.jpg",
+        "rate": "$12/m"
+    },
+    {
+        "id": "2",
+        "img1": "work-02.jpg",
+        "img2": "category-14.svg",
+        "title": "Mech Work Co.",
+        "city": "NSW, London",
+        "img3": "avatar-03.jpg",
+        "rate": "$34/m"
+    },
+    {
+        "id": "3",
+        "img1": "work-03.jpg",
+        "img2": "category-15.svg",
+        "title": "Biconnect Shift",
+        "city": "Texas, Uk",
+        "img3": "avatar-04.jpg",
+        "rate": "$45/m"
+    },
+    {
+        "id": "4",
+        "img1": "work-04.jpg",
+        "img2": "category-13.svg",
+        "title": "Worksion space",
+        "city": "New York, USA",
+        "img3": "avatar-05.jpg",
+        "rate": "$27/m"
+    }
+]

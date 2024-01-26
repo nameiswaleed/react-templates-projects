@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "img1": "blog-12.jpg",
+        "title": "The 8 Most Affordable Michelin Restaurants",
+        "img2": "avatar-14.jpg",
+        "name": "Amara",
+        "date": "Jan 12, 2023",
+        "hotel": "PARIS FOOD"
+    },
+    {
+        "id": "2",
+        "img1": "blog-13.jpg",
+        "title": "The 9 Best Cheap Hotels in New York City",
+        "img2": "avatar-12.jpg",
+        "name": "Darryl",
+        "date": "Feb 10, 2023",
+        "hotel": "NEW YORK Hotel"
+    },
+    {
+        "id": "3",
+        "img1": "blog-14.jpg",
+        "title": "The 7 Best Restaurants to Try Kobe Beef in London",
+        "img2": "avatar-13.jpg",
+        "name": "Mary",
+        "date": "Jan 17, 2023",
+        "hotel": "City Hotel"
+    },
+    {
+        "id": "4",
+        "img1": "blog-15.jpg",
+        "title": "The 15 Best Cheap Hotels in San Fancisco City",
+        "img2": "avatar-10.jpg",
+        "name": "Dasteen",
+        "date": "Mar 10, 2023",
+        "hotel": "Foood Cornel"
+    }
+]

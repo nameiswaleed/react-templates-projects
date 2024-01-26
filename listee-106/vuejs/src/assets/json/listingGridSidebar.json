@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1",
+        "img1": "listgrid-1.jpg",
+        "img2": "avatar-02.jpg",
+        "text": "Vehicle",
+        "content": "2017 Gulfsteam Ameri-lite",
+        "location": "Los Angeles",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "2",
+        "img1": "listgrid-2.jpg",
+        "img2": "avatar-07.jpg",
+        "text": "Construction",
+        "content": "Villa 457 sq.m. In Benidorm Fully Qquipped House",
+        "location": "Los Angeles",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "3",
+        "img1": "listgrid-3.jpg",
+        "img2": "avatar-02.jpg",
+        "text": "Electronics",
+        "content": "Customized Apple iMac 21.5 All-In",
+        "location": "Los Angeles",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "4",
+        "img1": "listgrid-4.jpg",
+        "img2": "avatar-04.jpg",
+        "text": "Electronics",
+        "content": "Fashion Luxury Men Date",
+        "location": "Los Angeles",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "5",
+        "img1": "listgrid-5.jpg",
+        "img2": "avatar-07.jpg",
+        "text": "Jobs",
+        "content": "CDL A OTR Compnay Driver Job-N",
+        "location": "Los Angeles",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "6",
+        "img1": "listgrid-6.jpg",
+        "img2": "avatar-05.jpg",
+        "text": "Vehicles",
+        "content": "2022 Audi R8 GT Spyder Convertible",
+        "location": "Los Angeles",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "7",
+        "img1": "listgrid-8.jpg",
+        "img2": "avatar-03.jpg",
+        "text": "Electronics",
+        "content": "Apple iphone6 16GB 4G LTE",
+        "location": "Los Angeles",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "8",
+        "img1": "listgrid-7.jpg",
+        "img2": "avatar-06.jpg",
+        "text": "Electronics",
+        "content": "HP Gaming 15.6 Touchscreen 12G",
+        "location": "Los Angeles",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    }
+]

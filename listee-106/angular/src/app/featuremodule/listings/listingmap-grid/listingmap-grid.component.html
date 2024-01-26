@@ -1,0 +1,160 @@
+<!-- Main Content Section -->
+<div class="list-content listmap-grid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 listingmappage-content">
+        <div class="listmapgrid-content">
+          <div class="row sorting-div">
+            <div class="col-lg-4 col-md-4 col-sm-4 align-items-center d-flex">
+              <div class="count-search">
+                <p>Showing <span>1-8</span> of 10 Results</p>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 align-items-center">
+              <div class="sortbyset">
+                <span class="sortbytitle">Sort by</span>
+                <div class="sorting-select">
+                  <select class="form-control select">
+                    <option>Default</option>
+                    <option>Price Low to High</option>
+                    <option>Price High to Low</option>
+                  </select>
+                </div>
+              </div>
+              <div class="grid-listview">
+                <ul>
+                  <li>
+                    <a [routerLink]="routes.listingmaplist">
+                      <i class="feather-list"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a [routerLink]="routes.listingmapgrid" class="active">
+                      <i class="feather-grid"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid-view">
+            <div class="row">
+              <div class="col-lg-6 col-md-4" *ngFor="let slide of mapgrid">
+                <div class="card">
+                  <div class="blog-widget">
+                    <div class="blog-img">
+                      <a [routerLink]="routes.servicedetails">
+                        <img
+                          [src]="slide.img1"
+                          class="img-fluid"
+                          alt="blog-img"
+                        />
+                      </a>
+                      <div class="fav-item">
+                        <span class="Featured-text">{{ slide.headline }}</span>
+                        <a href="javascript:void(0)" class="fav-icon">
+                          <i class="feather-heart"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="bloglist-content">
+                      <div class="card-body">
+                        <div class="blogfeaturelink">
+                          <div class="grid-author">
+                            <img [src]="slide.img2" alt="author" />
+                          </div>
+                          <div class="blog-features">
+                            <a href="javascript:void(0)"
+                              ><span>
+                                <i class="fa-regular fa-circle-stop"></i>
+                                {{ slide.select }}</span
+                              ></a
+                            >
+                          </div>
+                          <div class="blog-author text-end">
+                            <span>
+                              <i class="feather-eye"></i>{{ slide.search }}
+                            </span>
+                          </div>
+                        </div>
+                        <h6>
+                          <a [routerLink]="routes.servicedetails">{{
+                            slide.select
+                          }}</a>
+                        </h6>
+                        <div class="blog-location-details">
+                          <div class="location-info">
+                            <i class="feather-map-pin"></i> {{ slide.map }}
+                          </div>
+                          <div class="location-info">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            {{ slide.date }}
+                          </div>
+                        </div>
+                        <div class="amount-details">
+                          <div class="amount">
+                            <span class="validrate">{{ slide.amount }}</span>
+                            <span>{{ slide.oldamount }}</span>
+                          </div>
+                          <div class="ratings">
+                            <span>{{ slide.rating }}</span> {{ slide.rating1 }}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Pagination-->
+          <div class="blog-pagination">
+            <nav>
+              <ul class="pagination">
+                <li class="page-item previtem">
+                  <a class="page-link" href="javascript:void(0)"
+                    ><i class="fas fa-regular fa-arrow-left"></i> Prev</a
+                  >
+                </li>
+                <li class="justify-content-center pagination-center">
+                  <div class="pagelink">
+                    <ul>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">1</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="javascript:void(0)"
+                          >2 <span class="visually-hidden">(current)</span></a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">...</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">14</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="page-item nextlink">
+                  <a class="page-link" href="javascript:void(0)"
+                    >Next <i class="fas fa-regular fa-arrow-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--/Pagination-->
+        </div>
+      </div>
+      <div class="col-lg-6 map-right">
+        <app-list-map></app-list-map>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Main Content Section -->

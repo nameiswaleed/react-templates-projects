@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "image": "activity-1.jpg",
+        "country": "Paris",
+        "content": "755 Tours & Activitie"
+    },
+    {
+        "id": "2",
+        "image": "activity-2.jpg",
+        "country": "Dubai",
+        "content": "60 Tours & Activitie"
+    },
+    {
+        "id": "3",
+        "image": "activity-3.jpg",
+        "country": "London",
+        "content": "140 Tours & Activitie"
+    },
+    {
+        "id": "4",
+        "image": "activity-4.jpg",
+        "country": "New York",
+        "content": "75 Tours & Activitie"
+    },
+    {
+        "id": "5",
+        "image": "activity-5.jpg",
+        "country": "Amsterdam",
+        "content": "60 Tours & Activitie"
+    },
+    {
+        "id": "6",
+        "image": "activity-6.jpg",
+        "country": "New Orleans",
+        "content": "120 Tours & Activitie"
+    },
+    {
+        "id": "7",
+        "image": "activity-7.jpg",
+        "country": "Rome",
+        "content": "35 Tours & Activitie"
+    },
+    {
+        "id": "8",
+        "image": "activity-1.jpg",
+        "country": "Paris",
+        "content": "75 Tours & Activitie"
+    }
+]

@@ -1,0 +1,80 @@
+<!-- Breadscrumb Section -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">Gallery</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                    </ol>
+                </nav>							
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadscrumb Section -->
+
+<!-- Gallery section-->
+<div class="gallerypage-info"> 
+    <div class="container">
+        <div class="gallery-content">
+            
+           <div class="row">
+           
+            <ng-container *ngFor="let image of albumsOne; let i = index">
+                <div class="col-lg-3 col-md-3 col-sm-3" *ngIf="i<12">
+                    <div class="gallery-widget">
+                        <img
+                        class="img-fluid"
+                        [src]="image.src"
+                        (click)="open(i, albumsOne)"
+                      /> 
+                    </div>
+                  
+                </div>
+            </ng-container>
+              
+              
+                   <!--Pagination--> 
+                <div class="blog-pagination">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item previtem">
+                                <a class="page-link" href="javascript:void(0);"><i class="fas fa-regular fa-arrow-left"></i> Prev</a>
+                            </li>
+                            <li class="justify-content-center pagination-center"> 
+                                <div class="pagelink">
+                                    <ul>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="javascript:void(0);">2 <span class="visually-hidden">(current)</span></a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">3</a>
+                                       </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">...</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">14</a>
+                                        </li>
+                                    </ul>
+                                </div>													
+                            </li>													
+                            <li class="page-item nextlink">
+                                <a class="page-link" href="javascript:void(0);">Next <i class="fas fa-regular fa-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--/Pagination-->	 
+                  
+        </div> 
+       </div> 
+    </div> 
+</div> 					  
+<!-- /Gallery section-->

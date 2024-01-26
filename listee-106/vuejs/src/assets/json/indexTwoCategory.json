@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "image": "category-01.jpg",
+        "title": "Venues",
+        "content": "Banquet Halls, Lawns / Farmhouses, Resorts, Small Function / Party Halls, Destination Wedding, Kalyan Mandapam, 4 Star & Above Hotels",
+        "explore": "Explore"
+    },
+    {
+        "id": "2",
+        "image": "category-02.jpg",
+        "title": "Photographers",
+        "content": "Engagement, Pre Wedding, Wedding, Post Wedding, Couples Shoot, Outdoor",
+        "explore": "Explore"
+    },
+    {
+        "id": "3",
+        "image": "category-03.jpg",
+        "title": "Groom and Bridal Makeup",
+        "content": "Bridal Makeup, Airbrush Makeup, Party Makeup, Engagement Makeup, Hairstyling, Draping,False Lashes",
+        "explore": "Explore"
+    }
+]

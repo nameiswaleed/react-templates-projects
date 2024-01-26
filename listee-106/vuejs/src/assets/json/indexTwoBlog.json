@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "image": "venue-01.jpg",
+        "title": "Wedding Palace Grand Resort",
+        "location": "NSW, Australia",
+        "rating": "4.9",
+        "review": "(2,012 Reviews)",
+        "price": "$620",
+        "guest": "60 Guests",
+        "food": "Pure Veg",
+        "room": "10+ Rooms"
+    },
+    {
+        "id": "2",
+        "image": "venue-02.jpg",
+        "title": "Wedding Hall Banquet",
+        "location": "Texas, USA",
+        "rating": "4.8",
+        "review": "(1,612 Reviews)",
+        "price": "$700",
+        "guest": "800 Guests",
+        "food": "Dinner",
+        "room": "20+ Rooms"
+    },
+    {
+        "id": "3",
+        "image": "venue-03.jpg",
+        "title": "Wedding Ceremony Decorations",
+        "location": "Johor, Malaysia",
+        "rating": "4.9",
+        "review": "(2,500 Reviews)",
+        "price": "$720",
+        "guest": "600 Guests",
+        "food": "Pure Veg",
+        "room": "10+ Rooms"
+    },
+    {
+        "id": "4",
+        "image": "venue-02.jpg",
+        "title": "Wedding Resort Near Beach",
+        "location": "Middlesex, UK",
+        "rating": "4.9",
+        "review": "(1,512 Reviews)",
+        "price": "$750",
+        "guest": "500 Guests",
+        "food": "Pure Veg",
+        "room": "12+ Rooms"
+    }
+]

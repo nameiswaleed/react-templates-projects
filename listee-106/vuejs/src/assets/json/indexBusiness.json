@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "image": "business-01.jpg",
+        "image2": "avatar-03.jpg",
+        "shop": "Restaurant",
+        "location": "Paris",
+        "title": "Mattone Restaurant",
+        "offer": "$350",
+        "price": "$450"
+    },
+    {
+        "id": "2",
+        "image": "business-02.jpg",
+        "image2": "avatar-02.jpg",
+        "shop": "Fitness",
+        "location": "New York",
+        "title": "Mattone Restaurant",
+        "offer": "$370",
+        "price": "$470"
+    },
+    {
+        "id": "3",
+        "image": "business-03.jpg",
+        "image2": "avatar-04.jpg",
+        "shop": "Beauty Care",
+        "location": "Australia",
+        "title": "Mattone Restaurant",
+        "offer": "$300",
+        "price": "$450"
+    },
+    {
+        "id": "4",
+        "image": "business-04.jpg",
+        "image2": "avatar-05.jpg",
+        "shop": "Shopping",
+        "location": "Texas",
+        "title": "Mattone Restaurant",
+        "offer": "$250",
+        "price": "$370"
+    },
+    {
+        "id": "5",
+        "image": "business-02.jpg",
+        "image2": "avatar-06.jpg",
+        "shop": "Gym",
+        "location": "Florida",
+        "title": "Mattone Restaurant",
+        "offer": "$330",
+        "price": "$350"
+    }
+]

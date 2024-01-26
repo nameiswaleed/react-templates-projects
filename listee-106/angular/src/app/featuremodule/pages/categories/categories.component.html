@@ -1,0 +1,38 @@
+
+		<!-- Breadscrumb Section -->
+		<div class="breadcrumb-bar">
+			<div class="container">
+				<div class="row align-items-center text-center">
+		    		<div class="col-md-12 col-12">
+			    	    <h2 class="breadcrumb-title">Listings-Categories</h2>
+				    	<nav aria-label="breadcrumb" class="page-breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Categories</li>
+							</ol>
+						</nav>							
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Breadscrumb Section -->
+		
+		<!-- Categories Section -->
+		<div class="categorieslist-section">
+            <div class="container">
+		        <div class="row">
+			       <div class="col-lg-3 col-md-4" *ngFor="let data of listingcategory">
+				    	<div class="categories-content">
+							<a href="javascript:void(0);" class="text-center aos aos-init aos-animate" data-aos="fade-up">
+		    				   <img [src]="data.img" alt="car1">
+							   <h6>{{data.headline}}</h6>
+							   <span class="ads">{{data.adcount}}</span>
+							   <span>{{data.description}}</span>
+							</a>								   
+					   </div>
+				   </div>
+			     
+				</div>
+			</div>
+		</div>
+		<!-- /Categories Section -->

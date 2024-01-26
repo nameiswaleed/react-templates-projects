@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "img": "cowork-01.png",
+        "title": "Coworking Space"
+    },
+    {
+        "id": "2",
+        "img": "cowork-02.png",
+        "title": "Meeting Room"
+    },
+    {
+        "id": "2",
+        "img": "cowork-03.png",
+        "title": "Virtual Office"
+    }
+]

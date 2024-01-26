@@ -1,0 +1,790 @@
+<app-header-four></app-header-four>
+
+	<!-- Banner Section -->
+    <section class="banner-section banner-four">
+        <div class="container">
+            <div class="home-banner">		
+                <div class="row align-items-center">					    
+                    <div class="col-lg-7">
+                        <div class="section-search aos" data-aos="fade-up" data-aos-duration="1200">
+                            <h6>Now</h6>
+                            <h1>Find perfect working space near you!</h1>
+                            <p>Affordable workspaces in the cities you love</p>
+                            <div class="search-box">
+                                <form  class="form-block d-flex"> 
+                                    <div class="search-input line">											
+                                        <div class="form-group mb-0">
+                                            <label>Find</label>
+                                            <input type="text" class="form-control" placeholder="Ex: Virutual Office">
+                                        </div>
+                                    </div>
+                                    <div class="search-input">											
+                                        <div class="form-group mb-0">
+                                            <label>Where</label>
+                                            <input type="text" class="form-control" placeholder="Your City">
+                                        </div>
+                                    </div>
+                                    <div class="search-btn">
+                                        <button (click)="path()" class="btn btn-primary" type="submit">Search Now  <i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="banner-imgs aos" data-aos="fade-up"data-aos-duration="1200">
+                              <img src="assets/img/banner/banner-img-04.png" class="img-fluid" alt="bannerimage">							
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </section>
+    <!-- /Banner Section -->
+    
+    <!-- Category Section -->
+    <section class="category-four-section">
+        <div class="container">
+            <div class="category-sec">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 d-flex aos" data-aos="fade-up">
+                        <div class="category-box flex-fill">
+                            <span><img src="assets/img/icons/category-icon-01.svg" class="img-fluid" alt="img"></span>
+                            <div class="category-info">
+                                <h6>Extraordinarily Easy</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 d-flex aos" data-aos="fade-up">
+                        <div class="category-box flex-fill">
+                            <span><img src="assets/img/icons/category-icon-02.svg" class="img-fluid" alt="img"></span>
+                            <div class="category-info">
+                                <h6>Truly Transparent</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 d-flex aos" data-aos="fade-up">
+                        <div class="category-box flex-fill">
+                            <span><img src="assets/img/icons/category-icon-03.svg" class="img-fluid" alt="img"></span>
+                            <div class="category-info">
+                                <h6>Fantastically Free</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 d-flex aos" data-aos="fade-up">
+                        <div class="category-box flex-fill">
+                            <span><img src="assets/img/icons/category-icon-02.svg" class="img-fluid" alt="img"></span>
+                            <div class="category-info">
+                                <h6>Convenient Place</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing</p>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>			   
+            </div>			   
+        </div>		
+    </section>		
+    <!-- /Category Section -->
+    
+    <!-- Cowork Section -->
+    <section class="cowork-section">
+        <div class="container">
+            <div class="cowork-sec">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="section-heading heading-four aos" data-aos="fade-up">
+                            <h2>What Are You interested in?</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing</p>
+                        </div>	
+                    </div>
+                    <div class="col-md-4 text-md-end aos" data-aos="fade-up">
+                        <div class="interset-btn">		
+                            <a [routerLink]="routes.servicedetails" class="btn btn-primary more-btn">View More <i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 aos" data-aos="fade-up">
+                        <div class="cowork-box">
+                            <a [routerLink]="routes.servicedetails">
+                                <div class="cowork-img">
+                                    <img src="assets/img/cowork-01.png" class="img-fluid" alt="img">
+                                </div>
+                            </a>
+                            <div class="cowork-info">
+                                <h5><a [routerLink]="routes.servicedetails">Coworking Space</a></h5>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-md-4 aos" data-aos="fade-up">
+                        <div class="cowork-box">
+                            <a [routerLink]="routes.servicedetails">
+                                <div class="cowork-img">
+                                    <img src="assets/img/cowork-02.png" class="img-fluid" alt="img">
+                                </div>
+                            </a>
+                            <div class="cowork-info">
+                                <h5><a [routerLink]="routes.servicedetails">Meeting Room</a></h5>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-md-4 aos" data-aos="fade-up">
+                        <div class="cowork-box">
+                            <a [routerLink]="routes.servicedetails">
+                                <div class="cowork-img">
+                                    <img src="assets/img/cowork-03.png" class="img-fluid" alt="img">
+                                </div>
+                            </a>
+                            <div class="cowork-info">
+                                <h5><a [routerLink]="routes.servicedetails">Virtual Office</a></h5>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>			   
+            </div>			   
+        </div>		
+    </section>		
+    <!-- /Cowork Section -->
+    
+    <!-- Category Section -->
+    <section class="cate-section">
+        <div class="container">
+            <div class="cate-sec">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="section-heading heading-four aos" data-aos="fade-up">
+                            <h2>What Are You interested in?</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing</p>
+                        </div>	
+                    </div>
+                    <div class="col-md-4 text-md-end">
+                        <div class="interset-btn aos" data-aos="fade-up">							
+                           <div class="mynav3"></div>
+                            <a [routerLink]="routes.categories" class="btn btn-primary more-btn">View More <i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">				
+                        <div class="cat-slider">
+                            <owl-carousel-o [options]="businesstypedataOwlOptions">
+                                <ng-container *ngFor="let slide of businesstypedata">
+                                <ng-template carouselSlide>
+                                    <div class="item" >
+                                        <div class="cat-wrap aos" data-aos="fade-up">
+                                            <div class="cat-img">
+                                                <img [src]="slide.img" class="img-fluid" alt="img">
+                                            </div>
+                                            <h5>{{slide.business}}</h5>
+                                            <span>{{slide.count}}</span>
+                                            <a [routerLink]="routes.categories"><i class="feather-arrow-right"></i></a>
+                                        </div> 
+                                    </div>
+
+                                </ng-template>
+                                </ng-container>
+                            </owl-carousel-o>	
+                           
+                           
+                        </div>
+                    </div>			   
+                </div>			   
+            </div>			   
+        </div>		
+    </section>		
+    <!-- /Category Section -->
+    
+    <!-- Space Section -->
+    <section class="space-section">
+        <div class="container">
+            <div class="space-sec">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="section-heading heading-four aos" data-aos="fade-up">
+                            <h2>Newest Flexible Office Spaces</h2>
+                            <p>Search for coworking spaces in our most popular cities</p>
+                        </div>	
+                    </div>
+                    <div class="col-md-4 text-md-end aos" data-aos="fade-up">
+                        <div class="interset-btn">	
+                            <a [routerLink]="routes.servicedetails" class="btn btn-primary more-btn">View More <i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 aos" data-aos="fade-up">
+                        <div class="space-wrap">
+                            <div class="space-img">
+                                <a [routerLink]="routes.servicedetails">
+                                    <img src="assets/img/work/work-01.jpg" class="img-fluid" alt="blog-img">
+                                </a>
+                                <div class="fav-item">
+                                    <span class="featured-text">Featured</span>
+                                </div>	
+                            </div>
+                            <div class="space-content">
+                                <div class="space-cat">
+                                    <img src="assets/img/icons/category-13.svg" class="img-fluid" alt="img">
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(10)</span>
+                                </div>
+                                <h5><a [routerLink]="routes.servicedetails">Y&M Hamburger Co.</a></h5>
+                                <ul>
+                                    <li class="addr"><i class="feather-map-pin"></i> Clarkrange, US</li>
+                                    <li><a href="javascript:void(0);" class="fav-icon"><i class="fa-solid fa-heart"></i></a></li>
+                                </ul>
+                                <div class="price">
+                                    <img src="assets/img/profiles/avatar-02.jpg" class="img-fluid" alt="img">
+                                    <span>$12/m</span>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>	
+                    <div class="col-lg-3 col-md-6 aos" data-aos="fade-up">
+                        <div class="space-wrap">
+                            <div class="space-img">
+                                <a [routerLink]="routes.servicedetails">
+                                    <img src="assets/img/work/work-02.jpg" class="img-fluid" alt="blog-img">
+                                </a>
+                                <div class="fav-item">
+                                    <span class="featured-text">Featured</span>
+                                </div>	
+                            </div>
+                            <div class="space-content">
+                                <div class="space-cat">
+                                    <img src="assets/img/icons/category-14.svg" class="img-fluid" alt="img">
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(10)</span>
+                                </div>
+                                <h5><a [routerLink]="routes.servicedetails">Mech Work Co.</a></h5>
+                                <ul>
+                                    <li class="addr"><i class="feather-map-pin"></i> NSW, London</li>
+                                    <li><a href="javascript:void(0);" class="fav-icon"><i class="fa-solid fa-heart"></i></a></li>
+                                </ul>
+                                <div class="price">
+                                    <img src="assets/img/profiles/avatar-03.jpg" class="img-fluid" alt="img">
+                                    <span>$34/m</span>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 aos" data-aos="fade-up">
+                        <div class="space-wrap">
+                            <div class="space-img">
+                                <a [routerLink]="routes.servicedetails">
+                                    <img src="assets/img/work/work-03.jpg" class="img-fluid" alt="blog-img">
+                                </a>
+                                <div class="fav-item">
+                                    <span class="featured-text">Featured</span>
+                                </div>	
+                            </div>
+                            <div class="space-content">
+                                <div class="space-cat">
+                                    <img src="assets/img/icons/category-15.svg" class="img-fluid" alt="img">
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(10)</span>
+                                </div>
+                                <h5><a [routerLink]="routes.servicedetails">Biconnect Shift</a></h5>
+                                <ul>
+                                    <li class="addr"><i class="feather-map-pin"></i> Texas, Uk</li>
+                                    <li><a href="javascript:void(0);" class="fav-icon"><i class="fa-solid fa-heart"></i></a></li>
+                                </ul>
+                                <div class="price">
+                                    <img src="assets/img/profiles/avatar-04.jpg" class="img-fluid" alt="img">
+                                    <span>$45/m</span>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 aos" data-aos="fade-up">
+                        <div class="space-wrap">
+                            <div class="space-img">
+                                <a [routerLink]="routes.servicedetails">
+                                    <img src="assets/img/work/work-04.jpg" class="img-fluid" alt="blog-img">
+                                </a>
+                                <div class="fav-item">
+                                    <span class="featured-text">Featured</span>
+                                </div>	
+                            </div>
+                            <div class="space-content">
+                                <div class="space-cat">
+                                    <img src="assets/img/icons/category-13.svg" class="img-fluid" alt="img">
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(10)</span>
+                                </div>
+                                <h5><a [routerLink]="routes.servicedetails">Worksion space</a></h5>
+                                <ul>
+                                    <li class="addr"><i class="feather-map-pin"></i> New York, USA</li>
+                                    <li><a href="javascript:void(0);" class="fav-icon"><i class="fa-solid fa-heart"></i></a></li>
+                                </ul>
+                                <div class="price">
+                                    <img src="assets/img/profiles/avatar-05.jpg" class="img-fluid" alt="img">
+                                    <span>$27/m</span>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>   
+                </div>			   
+            </div>			   
+        </div>		
+    </section>		
+    <!-- /Space Section -->
+    
+    <!-- City Section -->
+    <section class="city-section">
+        <div class="container">
+            <div class="city-sec">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="section-heading heading-four aos" data-aos="fade-up">
+                            <h2>Top Coworking Cities</h2>
+                            <p>Search for coworking spaces in our most popular cities</p>
+                        </div>	
+                    </div>
+                    <div class="col-md-4 text-md-end aos" data-aos="fade-up">
+                        <div class="interset-btn">	
+                            <a [routerLink]="routes.categories" class="btn btn-primary more-btn">View More <i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6 aos" data-aos="fade-up">
+                        <div class="city-wrap">
+                            <div class="city-img">
+                                <img src="assets/img/work/city-01.jpg" class="img-fluid" alt="blog-img">										
+                                <a [routerLink]="routes.categories">
+                                    <i class="feather-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="city-content">
+                                <h5><a [routerLink]="routes.categories">Chicago</a></h5>
+                                <p><span>65</span> Spaces</p>
+                            </div> 
+                        </div> 
+                    </div>	
+                    <div class="col-lg-2 col-sm-6 aos" data-aos="fade-up">
+                        <div class="city-wrap">
+                            <div class="city-img">
+                                <img src="assets/img/work/city-02.jpg" class="img-fluid" alt="blog-img">										
+                                <a [routerLink]="routes.categories">
+                                    <i class="feather-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="city-content">
+                                <h5><a [routerLink]="routes.categories">Atlanta</a></h5>
+                                <p><span>25</span> Spaces</p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-lg-2 col-sm-6 aos" data-aos="fade-up">
+                        <div class="city-wrap">
+                            <div class="city-img">
+                                <img src="assets/img/work/city-03.jpg" class="img-fluid" alt="blog-img">										
+                                <a [routerLink]="routes.categories">
+                                    <i class="feather-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="city-content">
+                                <h5><a [routerLink]="routes.categories">Boston</a></h5>
+                                <p><span>45</span> Spaces</p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-lg-2 col-sm-6 aos" data-aos="fade-up">
+                        <div class="city-wrap">
+                            <div class="city-img">
+                                <img src="assets/img/work/city-04.jpg" class="img-fluid" alt="blog-img">										
+                                <a [routerLink]="routes.categories">
+                                    <i class="feather-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="city-content">
+                                <h5><a [routerLink]="routes.categories">Los Angeles</a></h5>
+                                <p><span>43</span> Spaces</p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-lg-2 col-sm-6 aos" data-aos="fade-up">
+                        <div class="city-wrap">
+                            <div class="city-img">
+                                <img src="assets/img/work/city-05.jpg" class="img-fluid" alt="blog-img">										
+                                <a [routerLink]="routes.categories">
+                                    <i class="feather-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="city-content">
+                                <h5><a [routerLink]="routes.categories">San Fancisco</a></h5>
+                                <p><span>87</span> Spaces</p>
+                            </div> 
+                        </div> 
+                    </div>  
+                    <div class="col-lg-2 col-sm-6 aos" data-aos="fade-up">
+                        <div class="city-wrap">
+                            <div class="city-img">
+                                <img src="assets/img/work/city-06.jpg" class="img-fluid" alt="blog-img">										
+                                <a [routerLink]="routes.categories">
+                                    <i class="feather-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="city-content">
+                                <h5><a [routerLink]="routes.categories">New York</a></h5>
+                                <p><span>12</span> Spaces</p>
+                            </div> 
+                        </div> 
+                    </div>   
+                </div>			   
+            </div>			   
+        </div>	
+        
+    </section>		
+    <!-- /Space Section -->				
+    
+    <!-- Client Testimonilas Section -->
+    <section class="testimonial-section"> 
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section-heading heading-four aos" data-aos="fade-up">
+                        <h2>People Talking About Us</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing</p>
+                    </div>	
+                </div>
+                <div class="col-md-4 text-md-end aos" data-aos="fade-up">
+                    <div class="interset-btn">							
+                        <div class="owl-nav mynav1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testi-slider">
+                        <owl-carousel-o [options]=" peoplefeedbackOwlOptions">
+                        <ng-container  *ngFor="let slide of peoplefeedback">
+                        <ng-template carouselSlide>
+                            <div class="testimonial-info testi-four aos" data-aos="fade-up" >
+                                <div class="testimonialslider-content">
+                                    <span><i class="fa-solid fa-quote-left"></i></span>
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h6>{{slide.review}}</h6>
+                                    <p>{{slide.description}}</p>
+                                </div>
+                                <div class="testimonialslider-heading d-flex">
+                                    <div class="testi-img">
+                                        <img [src]="slide.img" class="img-fluid" alt="testi-img">
+                                     </div>
+                                     <div class="testi-author">
+                                          <h6>{{slide.name}}</h6>
+                                          <p>{{slide. position}}</p>
+                                     </div>									
+                                </div>
+                            </div>
+                        </ng-template>
+
+                        </ng-container>
+                        </owl-carousel-o>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>	
+
+        <!-- CTA Section -->
+        <div class="container">
+            <div class="list-sec">
+                <div class="row align-items-center">
+                     <div class="col-lg-7">
+                          <div class="listee-content aos" data-aos="fade-up">
+                                <h3>List your space for free</h3>
+                                <p>It's easy to list, simple to manage and, best of all, free to list!</p>
+                                <a [routerLink]="routes.addlisting" class="btn">Add your space <i class="feather-plus"></i></a>
+                          </div>
+                     </div>
+                     <div class="col-lg-5">
+                           <div class="listee-img aos" data-aos="fade-up">
+                                <img src="assets/img/space-img.png" class="img-fluid" alt="CTA">
+                           </div>
+                     </div>
+                </div>
+            </div>
+        </div>	
+        <!-- /CTA Section -->
+        
+    </section>		
+    <!-- /Client Testimonilas Section -->
+    
+    <!-- Pricing Plan Section -->
+    <section class="pricing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="section-heading heading-four aos" data-aos="fade-up">
+                            <h2>Our Pricing Plan</h2>
+                            <p>Search for coworking spaces in our most popular cities</p>
+                        </div>	
+                    </div>
+                    <div class="col-md-4 text-md-end aos" data-aos="fade-up">
+                        <div class="interset-btn">						
+                            <div class="status-toggle d-inline-flex align-items-center">
+                                Monthly
+                                <input type="checkbox" id="status_1" class="check">
+                                <label for="status_1" class="checktoggle">checkbox</label>
+                                Yearly
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-wrap">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 d-flex aos" data-aos="fade-up">
+                            <div class="price-card price-four flex-fill">
+                                    <div>
+                                <div class="price-head">
+                                    <h4>$10 <span>/ month</span></h4>	
+                                    <div class="price-level">
+                                        <h6>Starter</h6>
+                                    </div>							
+                                </div>	
+                                <div class="price-body">
+                                    <p>Unleash the power of automation.</p>
+                                    <ul>
+                                        <li class="active">Multi-step Zaps</li>
+                                        <li class="active">3 Premium Apps</li>
+                                        <li class="active">2 Users team</li>
+                                    </ul>							
+                                </div>
+                                </div>
+                                    <div>
+                                        <a [routerLink]="routes.login" class="btn viewdetails-btn">View details</a>
+                                    </div>							
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 d-flex aos" data-aos="fade-up">
+                            <div class="price-card price-four flex-fill">
+                                <div>
+                                    <div class="price-head">
+                                        <h4>$54 <span>/ month</span></h4>
+                                        <div class="price-level">
+                                            <h6>Professional</h6>
+                                        </div>									
+                                    </div>	
+                                    <div class="price-body">
+                                        <p>Advanced tools to take your work to the next level.</p>
+                                        <ul>
+                                            <li class="active">Multi-step Zaps</li>
+                                            <li class="active">3 Premium Apps</li>
+                                            <li class="active">50 Users team</li>
+                                            <li class="active">Shared Workspace</li>
+                                        </ul>						
+                                    </div>
+                                </div>
+                                <div>
+                                    <a [routerLink]="routes.login" class="btn viewdetails-btn">View details</a>
+                                </div>							
+                            </div>	
+                        </div>
+                        <div class="col-lg-3 col-md-6 aos" data-aos="fade-up">
+                            <div class="price-card price-four active">
+                                <div>
+                                    <div class="price-head">
+                                        <div class="text-end">
+                                            <span class="feature">MOST POPULAR</span>
+                                        </div>
+                                        <h4>$89 <span>/ month</span></h4>
+                                        <div class="price-level">
+                                            <h6>Company</h6>
+                                        </div>									
+                                    </div>	
+                                    <div class="price-body">
+                                        <p>Automation plus enterprise-grade features.</p>
+                                        <ul>
+                                            <li class="active">Multi-step Zap</li>
+                                            <li class="active">Unlimited Premium Apps</li>
+                                            <li class="active">Unlimited Users Team</li>
+                                            <li class="active">Advanced Admin</li>
+                                            <li class="active">Custom Data Retention</li>
+                                        </ul>							
+                                    </div>							
+                                </div>
+                                <div>
+                                    <a [routerLink]="routes.login" class="btn viewdetails-btn">View details</a>
+                                </div>							
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 d-flex aos" data-aos="fade-up">
+                             <div class="price-card price-four flex-fill">
+                                <div>
+                                    <div class="price-head">
+                                        <h4>$54 <span>/ month</span></h4>
+                                        <div class="price-level">
+                                            <h6>Professional</h6>
+                                        </div>									
+                                    </div>	
+                                    <div class="price-body">
+                                        <p>Advanced tools to take your work to the next level.</p>
+                                        <ul>
+                                            <li class="active">Multi-step Zaps</li>
+                                            <li class="active">3 Premium Apps</li>
+                                            <li class="active">50 Users team</li>
+                                            <li class="active">Shared Workspace</li>
+                                        </ul>						
+                                    </div>
+                                </div>
+                                <div>
+                                    <a [routerLink]="routes.login" class="btn viewdetails-btn">View details</a>
+                                </div>								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- /Pricing Plan Section -->
+    
+    <!-- Blog  Section -->
+    <section class="blog-section-four">
+        <div class="container">	
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section-heading heading-four aos" data-aos="fade-up">
+                        <h2>From Our Blog</h2>
+                        <p>Search for coworking spaces in our most popular cities</p>
+                    </div>	
+                </div>
+                <div class="col-md-4 text-md-end aos" data-aos="fade-up">
+                    <div class="interset-btn">	
+                        <a [routerLink]="routes.bloggrid" class="btn btn-primary more-btn">View More <i class="feather-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div> 									
+            <div class="row">
+                <div class="col-lg-3 col-md-6 d-flex aos" data-aos="fade-up">
+                    <div class="blog grid-blog blog-four flex-fill">
+                        <div class="blog-image">
+                            <a [routerLink]="routes.blogdetails"><img class="img-fluid" src="assets/img/blog/blog-12.jpg" alt="Post Image"></a>
+                        </div>
+                        <div class="blog-content">
+                             <h3 class="blog-title"><a [routerLink]="routes.blogdetails">The 8 Most Affordable Michelin Restaurants</a></h3>
+                            <ul class="entry-meta meta-item">
+                                <li>
+                                    <div class="post-author">
+                                        <div class="post-author-img">
+                                            <img src="assets/img/profiles/avatar-14.jpg" alt="Post Author">
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0);"> <span>Amara</span></a>
+                                            <p>Jan 12, 2023</p>
+                                            <h6>PARIS FOOD</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex aos" data-aos="fade-up">
+                    <div class="blog grid-blog blog-four flex-fill">
+                        <div class="blog-image">
+                            <a [routerLink]="routes.blogdetails"><img class="img-fluid" src="assets/img/blog/blog-13.jpg" alt="Post Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title"><a [routerLink]="routes.blogdetails">The 9 Best Cheap Hotels in New York City</a></h3>
+                            <ul class="entry-meta meta-item">
+                                <li>
+                                    <div class="post-author">
+                                        <div class="post-author-img">
+                                            <img src="assets/img/profiles/avatar-12.jpg" alt="Post Author">
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0);" class="mb-0"><span> Darryl </span></a>
+                                            <p>Feb 10, 2023</p>
+                                            <h6>NEW YORK Hotel</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex aos" data-aos="fade-up">
+                     <div class="blog grid-blog blog-four">
+                        <div class="blog-image">
+                            <a [routerLink]="routes.blogdetails"><img class="img-fluid" src="assets/img/blog/blog-14.jpg" alt="Post Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title"><a [routerLink]="routes.blogdetails">The 7 Best Restaurants to Try Kobe Beef in London</a></h3>
+                            <ul class="entry-meta meta-item">
+                                <li>
+                                    <div class="post-author">
+                                        <div class="post-author-img">
+                                            <img src="assets/img/profiles/avatar-13.jpg" alt="Post Author">
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0);" class="mb-0"> <span> Mary </span></a>
+                                            <p>Jan 17, 2023</p>
+                                            <h6>City Hotel</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex aos" data-aos="fade-up">
+                     <div class="blog grid-blog blog-four">
+                        <div class="blog-image">
+                            <a [routerLink]="routes.blogdetails"><img class="img-fluid" src="assets/img/blog/blog-15.jpg" alt="Post Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title"><a [routerLink]="routes.blogdetails">The 15 Best Cheap Hotels in San Fancisco City</a></h3>
+                            <ul class="entry-meta meta-item">
+                                <li>
+                                    <div class="post-author">
+                                        <div class="post-author-img">
+                                            <img src="assets/img/profiles/avatar-10.jpg" alt="Post Author">
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0);"> <span>Dasteen</span></a>
+                                            <p>Mar 10, 2023</p>
+                                            <h6>Foood Corner</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+            </div>									
+        </div>	 
+    </section>
+    <!-- /Blog  Section -->
+    <app-footer-four></app-footer-four>

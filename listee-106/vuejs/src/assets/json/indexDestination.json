@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "image": "destination-01.jpg",
+        "country": "New york",
+        "location": "New york",
+        "content": "New york is the world's second largest and second most- populous continent, being behind Asia in both.",
+        "explore": "Explore"
+    },
+    {
+        "id": "2",
+        "image": "destination-02.jpg",
+        "country": "Dubai",
+        "location": "Dubai",
+        "content": "New york is the world's second largest and second most- populous continent, being behind Asia in both.",
+        "explore": "Explore"
+    },
+    {
+        "id": "3",
+        "image": "destination-03.jpg",
+        "country": "India",
+        "location": "India",
+        "content": "New york is the world's second largest and second most- populous continent, being behind Asia in both.",
+        "explore": "Explore"
+    },
+    {
+        "id": "4",
+        "image": "destination-04.jpg",
+        "country": "London",
+        "location": "London",
+        "content": "New york is the world's second largest and second most- populous continent, being behind Asia in both.",
+        "explore": "Explore"
+    },
+    {
+        "id": "5",
+        "image": "destination-02.jpg",
+        "country": "USA",
+        "location": "USA",
+        "content": "New york is the world's second largest and second most- populous continent, being behind Asia in both.",
+        "explore": "Explore"
+    }
+]

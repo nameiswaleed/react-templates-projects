@@ -1,0 +1,382 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import "aos/dist/aos.css"; */
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth !important;
+}
+.filter-range .ngx-slider.animate .ngx-slider-bar-wrapper {
+  left: 0 !important;
+  padding-top: 8px !important;
+}
+
+.filter-range .ngx-slider .ngx-slider-pointer {
+  width: 25px;
+  height: 25px;
+  background-color: #c10037;
+  border: 3px solid #fff;
+}
+
+.filter-range .ngx-slider .ngx-slider-bar {
+  height: 13px !important;
+}
+.filter-range .ngx-slider .ngx-slider-bubble {
+  color: white;
+  font-size: 12px;
+  line-height: 1.333;
+  text-shadow: none;
+  padding: 4px 10px;
+  background-color: #c10037;
+  border-radius: 2px;
+  top: -38px;
+  margin: 0px 0px !important;
+}
+.filter-range .ngx-slider .ngx-slider-bubble {
+  color: white;
+  font-size: 12px;
+  line-height: 1.333;
+  text-shadow: none;
+  padding: 4px 10px;
+  background-color: #c10037;
+  border-radius: 2px;
+  top: -38px;
+  margin: 0px -0px !important;
+}
+.filter-range .ngx-slider .ngx-slider-bubble.ngx-slider-limit {
+  display: none !important;
+}
+.filter-range
+  .ngx-slider.animate
+  .ngx-slider-bubble.ngx-slider-limit.ngx-slider-floor {
+  display: none !important;
+}
+.filter-range
+  .ngx-slider.animate
+  .ngx-slider-bubble.ngx-slider-limit.ngx-slider-ceil {
+  display: none !important;
+}
+.filter-range .ngx-slider .ngx-slider-pointer::after {
+  display: none !important;
+}
+.filter-range .ngx-slider .ngx-slider-selection {
+  background-color: #c10037 !important;
+}
+
+.filter-range .ngx-slider-selection-bar {
+  visibility: unset !important;
+}
+
+.mat-custom-select .mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}
+.mat-custom-select {
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  background: white;
+  min-height: 46px;
+  max-height: 52px;
+  width: 18rem;
+}
+.mat-custom-select .mdc-text-field {
+  background-color: transparent !important;
+}
+.mat-custom-select .mdc-text-field :hover {
+  background-color: transparent !important;
+}
+.mat-custom-select .mat-mdc-form-field-focus-overlay {
+  background: transparent;
+}
+.mat-custom-select .mdc-line-ripple::before {
+  border: 0 !important;
+}
+.mat-custom-select .mdc-line-ripple::after {
+  border: 0 !important;
+}
+
+.mat-custom-select .mat-mdc-form-field-infix label {
+  color: #c4c4c4;
+  font-weight: 400;
+}
+.mat-custom-select
+  .mdc-text-field--focused:not(.mdc-text-field--disabled)
+  .mdc-floating-label {
+  color: #c4c4c4;
+}
+
+.mat-custom-select
+  .mat-mdc-form-field.mat-focused.mat-primary
+  .mat-mdc-select-arrow {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+.mat-custom-select .mat-mdc-select-arrow {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+.search-input-option {
+  padding: 5px !important;
+  background: transparent !important;
+}
+.search-input-option .mdc-list-item__primary-text {
+  width: 100%;
+}
+.search-input-option .search-input {
+  width: 100%;
+  height: 100%;
+}
+mdc-option-active,
+.mat-mdc-option.mdc-list-item--selected:not(.mat-mdc-option-multiple):not(
+    .mdc-list-item--disabled
+  ) {
+  background: #c10037;
+}
+.mat-mdc-option:hover:not(.mdc-list-item--disabled),
+.mat-mdc-option:focus:not(.mdc-list-item--disabled),
+.mat-mdc-option.mat-mdc-option-active,
+.mat-mdc-option.mdc-list-item--selected:not(.mat-mdc-option-multiple):not(
+    .mdc-list-item--disabled
+  ) {
+  background: #c10037;
+}
+.mat-mdc-option-active .mdc-list-item__primary-text {
+  color: white !important;
+}
+.mat-mdc-option:hover .mdc-list-item__primary-text {
+  color: white !important;
+}
+.mat-mdc-option:hover .mat-mdc-option-active {
+  background-color: #c4c4c4;
+}
+.mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
+  background: rgba(0, 0, 0, 0.12);
+}
+.mat-mdc-option {
+  min-height: 35px !important;
+}
+.mat-mdc-select-value {
+  color: #374b5c !important;
+}
+.cdk-overlay-pane {
+  /* width: auto !important; */
+}
+.selection-list .mat-mdc-select-value {
+  width: fit-content !important;
+  margin-right: 8px !important;
+  font-size: 14px;
+}
+.footercount .selection-list .mat-mdc-select-value-text {
+  color: white !important;
+}
+.footercount
+  .selection-list
+  .mat-mdc-select-arrow-wrapper
+  .mat-mdc-select-arrow {
+  color: white !important;
+}
+
+.footer-three .lang-select .select-icon {
+  top: 50%;
+  left: -26px;
+}
+
+.footer-three .selection-list .mat-mdc-select-value-text {
+  color: white !important;
+}
+
+.footer-three
+  .selection-list
+  .mat-mdc-select-arrow-wrapper
+  .mat-mdc-select-arrow {
+  color: white !important;
+}
+.footer-three .lang-select .select-icon {
+  color: white;
+}
+
+.searchbox-list .form-control.select {
+  border: 0;
+  padding: 0;
+  min-height: 30px;
+}
+.searchbox-list .mat-custom-select {
+  border: 0;
+  width: 13rem !important;
+}
+.searchbox-list .mat-custom-select .mat-mdc-form-field-infix {
+  padding: 0 !important;
+}
+.searchbox-list .mat-custom-select .mat-mdc-text-field-wrapper {
+  padding: 0 !important;
+}
+ .searchbox-list .mat-custom-select .mat-mdc-select-arrow-wrapper {
+  width: 50px!important;
+} 
+.select.drop-down {
+  padding: 9px 0px 9px 16px;
+}
+.select.drop-down .mat-mdc-select-value {
+  font-size: 15px;
+  font-family: inherit;
+  color: black !important;
+}
+ .select.drop-down .mat-mdc-select-arrow-wrapper {
+  width: 50px!important;
+} 
+.owl-stage {
+  /* width: fit-content !important; */
+}
+.owl-stage .owl-item {
+  /* width: 306px !important; */
+}
+.home-six-heading-section h2 {
+  font-size: 22px;
+}
+.home-six-heading-section p {
+  margin: 5px auto 30px auto;
+  font-size: 15px;
+}
+.trending-slider-item span {
+  font-size: 17px;
+}
+.car-class-item {
+  padding: 15px;
+}
+.business-section .owl-prev{
+  position: absolute;
+    top: 50%;
+    left:-50px;
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    box-shadow: 0px 4px 14px rgba(141, 141, 141, 0.25);
+    border-radius: 50%;
+    margin: auto;
+    
+}
+.business-section .owl-next{
+  position: absolute;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    box-shadow: 0px 4px 14px rgba(141, 141, 141, 0.25);
+    border-radius: 50%;
+    margin: auto;
+    right:-50px;
+    
+}
+.testimonial-five-section .owl-prev{
+  position: absolute;
+  top: 50%;
+  left:-50px;
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(141, 141, 141, 0.25);
+  border-radius: 50%;
+  margin: auto;
+}
+.testimonial-five-section .owl-next{
+  position: absolute;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    box-shadow: 0px 4px 14px rgba(141, 141, 141, 0.25);
+    border-radius: 50%;
+    margin: auto;
+    right:-50px;
+}
+.header-six .main-nav .has-submenu.active > a {
+  color: #ffc107;
+}
+.date-mat-datepicker1-toggle{
+  position: absolute;
+  top:22px;
+  right:9px;
+}
+.car-search-grid {
+  position:relative;
+}
+.car-list-btn span {
+  color: #c10037;
+  font-weight: 400;
+  font-size: 16px;
+}
+.home-nine .car-list-btn span {
+  color: #fff;
+}
+.home-nine .header .car-list-btn, .header .home-nine-btn .car-list-btn {
+  background-color: #c10037;
+  border-radius: 8px;
+  padding: 13px 32px;
+  gap: 8px;
+  border: 1px solid transparent;
+}
+.testimonial-section-eight  .owl-next{
+  position: absolute;
+    top: 61%;
+    right: 20px;
+    margin:auto;
+}
+.testimonial-section-eight  .owl-prev{
+  position: absolute;
+    top: 61%;
+    left: 20px;
+    margin:auto;
+}
+ .banner-five .mat-custom-select{
+  border-radius:999px
+}
+.banner-five .mdc-text-field{
+  padding-left:19px;
+}
+.business-slider .owl-nav .owl-prev{
+  background:#ffff ;
+  border-radius: 20px;
+  color:inherit
+}
+.business-slider .owl-nav .owl-next{
+  background:#ffff ;
+  border-radius: 20px;
+  color:inherit
+}
+.testimonial-five-section .owl-nav .owl-prev{
+  background:#ffff ;
+  border-radius: 20px;
+  color:inherit
+}
+.testimonial-five-section .owl-nav .owl-next{
+  background:#ffff ;
+  border-radius: 20px;
+  color:inherit;
+  border-radius:999px
+}
+.testimonial-section-eight .owl-nav .owl-prev{
+  background:#ffff ;
+  color:inherit;
+  border-radius: 10px;
+  left:-60px;
+}
+.testimonial-section-eight .owl-nav .owl-next{
+  background:#ffff ;
+  color:inherit;
+  border-radius: 10px;
+  right:-60px;
+}
+.trending-carousel .owl-dots,.trending-carousel .owl-theme .owl-nav.disabled+.owl-dots,
+.car-class-carousel .owl-nav .owl-dots,.car-class-carousel .owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 45px;
+}
+ .banner-five .mat-custom-select .mdc-text-field{
+  padding-left:36px;
+}
+.banner-seven  .mat-custom-select .mdc-text-field{
+  padding-left:36px;
+}
+.home-nine  .car-list-btn {
+  background-color: #c10037;
+  border-radius: 8px;
+  padding: 13px 32px;
+  gap: 8px;
+  border: 1px solid transparent;
+}

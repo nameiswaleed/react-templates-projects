@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "img": "category-icon-01.svg",
+        "title": "Extraordinarily Easy",
+        "text": "Lorem Ipsum is simply dummy text of the printing"
+    },
+    {
+        "id": "2",
+        "img": "category-icon-02.svg",
+        "title": "Truly Transparent",
+        "text": "Lorem Ipsum is simply dummy text of the printing"
+    },
+    {
+        "id": "3",
+        "img": "category-icon-03.svg",
+        "title": "Fantastically Free",
+        "text": "Lorem Ipsum is simply dummy text of the printing"
+    },
+    {
+        "id": "4",
+        "img": "category-icon-02.svg",
+        "title": "Convenient Place",
+        "text": "Lorem Ipsum is simply dummy text of the printing"
+    }
+]

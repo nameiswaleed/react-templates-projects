@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "image": "avatar-12.jpg",
+        "name": "Deirdre Carolyn",
+        "location": "Newyork",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+        "circle1": "testi-circle1.png",
+        "circle2": "testi-circle2.png",
+        "circle3": "testi-circle3.png",
+        "circle4": "testi-circle4.png",
+        "icon": "earth-icon.png"
+    },
+    {
+        "id": "2",
+        "image": "avatar-01.jpg",
+        "name": "Christopher Sebastian",
+        "location": "London",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+        "circle1": "testi-circle1.png",
+        "circle2": "testi-circle2.png",
+        "circle3": "testi-circle3.png",
+        "circle4": "testi-circle4.png",
+        "icon": "earth-icon.png"
+    },
+    {
+        "id": "3",
+        "image": "avatar-14.jpg",
+        "name": "Thomas Warren",
+        "location": "UAE",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+        "circle1": "testi-circle1.png",
+        "circle2": "testi-circle2.png",
+        "circle3": "testi-circle3.png",
+        "circle4": "testi-circle4.png",
+        "icon": "earth-icon.png"
+    },
+    {
+        "id": "4",
+        "image": "avatar-13.jpg",
+        "name": "Deirdre Carolyn",
+        "location": "Kenya",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+        "circle1": "testi-circle1.png",
+        "circle2": "testi-circle2.png",
+        "circle3": "testi-circle3.png",
+        "circle4": "testi-circle4.png",
+        "icon": "earth-icon.png"
+    }
+]

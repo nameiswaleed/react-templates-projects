@@ -1,0 +1,90 @@
+[
+    {
+        "id": "1",
+        "img1": "feature-9.jpg",
+        "img2": "avatar-02.jpg",
+        "text": "Education",
+        "title": "2017 Gulfsteam Ameri-lite",
+        "date": "06 Oct, 2022",
+        "offer": "$350",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "2",
+        "img1": "feature-2.jpg",
+        "img2": "avatar-03.jpg",
+        "text": "Electronics",
+        "title": "Fashion luxury Men date",
+        "date": "08 Oct, 2022",
+        "offer": "$250",
+        "price": "$350",
+        "rating": "4.6"
+    },
+    {
+        "id": "3",
+        "img1": "feature-3.jpg",
+        "img2": "avatar-04.jpg",
+        "text": "Electronics",
+        "title": "Apple Iphone 6 16GB 4G LTE",
+        "date": "09 Oct, 2022",
+        "offer": "$550",
+        "price": "$400",
+        "rating": "4.7"
+    },
+    {
+        "id": "4",
+        "img1": "feature-4.jpg",
+        "img2": "avatar-05.jpg",
+        "text": "Gadgets",
+        "title": "Customized Apple Imac",
+        "date": "10 Oct, 2022",
+        "offer": "$450",
+        "price": "$300",
+        "rating": "4.5"
+    },
+    {
+        "id": "5",
+        "img1": "feature-5.jpg",
+        "img2": "avatar-06.jpg",
+        "text": "Construction",
+        "title": "Villa 457 sq.m. In Benidorm Fully",
+        "date": "11 Oct, 2022",
+        "offer": "$650",
+        "price": "$600",
+        "rating": "4.5"
+    },
+    {
+        "id": "6",
+        "img1": "feature-6.jpg",
+        "img2": "avatar-03.jpg",
+        "text": "Jobs",
+        "title": "CDL A OTR Compnay Driver Job-N",
+        "date": "12 Oct, 2022",
+        "offer": "$550",
+        "price": "$450",
+        "rating": "4.7"
+    },
+    {
+        "id": "7",
+        "img1": "feature-7.jpg",
+        "img2": "avatar-06.jpg",
+        "text": "Electronics",
+        "title": "HP Gaming 15.6 Touchscren 12G",
+        "date": "02 Oct, 2022",
+        "offer": "$450",
+        "price": "$350",
+        "rating": "4.7"
+    },
+    {
+        "id": "8",
+        "img1": "feature-8.jpg",
+        "img2": "avatar-07.jpg",
+        "text": "Vehicle",
+        "title": "2012 AudiR8 GT Spider Convrtibile",
+        "date": "02 Oct, 2022",
+        "offer": "$450",
+        "price": "$350",
+        "rating": "4.7"
+    }
+]

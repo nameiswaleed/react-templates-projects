@@ -1,0 +1,130 @@
+<div id="map" class="map-listing">
+  <p-gmap
+    [options]="options"
+    [overlays]="overlays"
+    (onOverlayClick)="setInfo($event)"
+    [style]="{ width: '100%', height: '100%' }"
+  ></p-gmap>
+</div>
+<div class="showfilter" [class.filter-open]="showFilter">
+  <button (click)="showFilter = !showFilter" class="btn filterbtn">
+    <span class="showfilter-btn"
+      ><img src="assets/img/details-icon.svg" alt="details-icon" /> Show
+      Filters</span
+    >
+    <span class="hidefilter-btn"
+      ><i class="feather-eye-off"></i> Hide Filters</span
+    >
+  </button>
+  <div class="listings-sidebar">
+    <div class="card">
+      <h4>
+        <img src="assets/img/details-icon.svg" alt="details-icon" />
+        Filter
+      </h4>
+      <form>
+        <div class="filter-content looking-input form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="What are you looking for?"
+          />
+        </div>
+        <div class="filter-content form-group">
+          <select class="form-control select category-select">
+            <option value="">Choose Category</option>
+            <option>Computer</option>
+            <option>Electronics</option>
+            <option>Car wash</option>
+          </select>
+        </div>
+        <div class="filter-content looking-input form-group">
+          <div class="group-img">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Where to look?"
+            />
+            <i class="feather-map-pin"></i>
+          </div>
+        </div>
+        <div class="filter-content form-group region">
+          <select class="form-control select region-select">
+            <option value="">Region</option>
+            <option>Canada</option>
+            <option>USA</option>
+            <option>india</option>
+          </select>
+        </div>
+        <div class="filter-content form-group amenities">
+          <h4>Amenities</h4>
+          <ul>
+            <li>
+              <label class="custom_check">
+                <input type="checkbox" name="wireless-internet" />
+                <span class="checkmark"></span> Wireless Internet
+              </label>
+            </li>
+            <li>
+              <label class="custom_check">
+                <input type="checkbox" name="accept-credit-card" />
+                <span class="checkmark"></span> Accepts Credit Cards
+              </label>
+            </li>
+            <li>
+              <label class="custom_check">
+                <input type="checkbox" name="Coupouns" />
+                <span class="checkmark"></span> Coupouns
+              </label>
+            </li>
+            <li>
+              <label class="custom_check">
+                <input type="checkbox" name="parking-street" />
+                <span class="checkmark"></span> Parking Street
+              </label>
+            </li>
+            <li>
+              <label class="custom_check">
+                <input type="checkbox" name="bike-parking" />
+                <span class="checkmark"></span> Bike Parking
+              </label>
+            </li>
+            <li>
+              <label class="custom_check">
+                <input type="checkbox" name="Smoking-Allowed" />
+                <span class="checkmark"></span> Smoking Allowed
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-content form-group amenities radius">
+          <div class="slidecontainer">
+            <div class="slider-info">
+              <h4>Radius</h4>
+              <div class="demo"><span>50</span> Radius</div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="filter-range">
+              <input type="text" class="input-range" />
+            </div>
+          </div>
+        </div>
+        <div class="filter-content amenities mb-0">
+          <h4>Price Range</h4>
+          <div class="form-group mb-0">
+            <input type="text" class="form-control" placeholder="Min" />
+            <input type="text" class="form-control me-0" placeholder="Max" />
+          </div>
+          <div class="search-btn">
+            <button class="btn btn-primary" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i> Search
+            </button>
+            <button class="btn btn-reset mb-0" type="submit">
+              <i class="fas fa-light fa-arrow-rotate-right"></i> Reset Filters
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

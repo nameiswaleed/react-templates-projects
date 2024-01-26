@@ -1,0 +1,1359 @@
+<app-header-six></app-header-six>
+<!-- Banner Section -->
+<section class="banner-section banner-six">
+  <div class="floating-bg">
+    <img src="./assets/img/car.png" alt="" />
+  </div>
+  <div class="floating-watermark">
+    <img src="./assets/img/bg/banner-six-bg-1.png" alt="" />
+    <img src="./assets/img/bg/banner-six-bg-2.png" alt="" />
+  </div>
+  <div class="container">
+    <div class="home-banner">
+      <div class="row aos" data-aos="fade-up">
+        <div class="col-lg-6">
+          <div class="banner-contents">
+            <h1
+              class="aos"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              Find / Sell a Car with your Favourite Listee.
+            </h1>
+            <p class="aos" data-aos="fade-up" data-aos-delay="200">
+              Book better cars from local hosts Across the globe
+            </p>
+            <a [routerLink]="routes.categories">
+              <img src="./assets/img/icons/car-icon.svg" alt="" />
+              <span>List your car </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Banner Section -->
+
+<!-- Search Filter Section -->
+<section class="car-search-filter aos" data-aos="fade-up" data-aos-delay="400">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="car-filter-section">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All Conditions
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                New Cars
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Used Cars
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-certified-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-certified"
+                type="button"
+                role="tab"
+                aria-controls="pills-certified"
+                aria-selected="false"
+              >
+                Certified
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div class="search-tab-col">
+                <form action="listing-grid-sidebar.html">
+                  <div class="row align-items-center search-form">
+                    <div class="col-12 col-lg-11 datepicker-col search-group">
+                      <ul class="car-search-filter-nav gap-3 d-flex">
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-map-pin"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Location</span>
+                              <input
+                                type="text"
+                                name="name"
+                                class="border-0 text-truncate px-0 form-control"
+                                placeholder="Newyork, USA"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-pie-chart"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Make</span>
+                              <input
+                                type="text"
+                                name="checkin"
+                                class="border-0 text-truncate px-0 form-control datetimepicker"
+                                placeholder="28/12/2022"
+                                bsDatepicker
+                                [bsConfig]="{ isAnimated: true }"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-refresh-ccw"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Models</span>
+                              <input
+                                type="text"
+                                name="checkout"
+                                class="border-0 text-truncate px-0 form-control datetimepicker"
+                                placeholder="28/12/2022"
+                                bsDatepicker
+                                [bsConfig]="{ isAnimated: true }"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-tag"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Prices</span>
+                              <input
+                                type="text"
+                                name="mobile"
+                                class="border-0 text-truncate px-0 form-control"
+                                placeholder="Benz C class"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-1 car-search-btn">
+                      <button
+                        (click)="direction()"
+                        class="btn car-search-icon"
+                        type="submit"
+                      >
+                        <img src="./assets/img/icons/white-search.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div class="search-tab-col">
+                <form action="listing-grid-sidebar.html" method="post">
+                  <div class="row align-items-center search-form">
+                    <div class="col-12 col-lg-11 datepicker-col search-group">
+                      <ul class="gap-3 d-flex">
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-map-pin"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Location</span>
+                              <input
+                                type="text"
+                                name="name"
+                                class="border-0 text-truncate px-0 form-control"
+                                placeholder="Newyork, USA"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-pie-chart"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Make</span>
+                              <input
+                                type="text"
+                                name="checkin"
+                                class="border-0 text-truncate px-0 form-control datetimepicker"
+                                placeholder="28/12/2022"
+                                bsDatepicker
+                                [bsConfig]="{ isAnimated: true }"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-refresh-ccw"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Models</span>
+                              <input
+                                type="text"
+                                name="checkout"
+                                class="border-0 text-truncate px-0 form-control datetimepicker"
+                                placeholder="28/12/2022"
+                                bsDatepicker
+                                [bsConfig]="{ isAnimated: true }"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-tag"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Prices</span>
+                              <input
+                                type="text"
+                                name="mobile"
+                                class="border-0 text-truncate px-0 form-control"
+                                placeholder="Benz C class"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-1 car-search-btn">
+                      <button (click)="direction()" class="btn car-search-icon">
+                        <img src="./assets/img/icons/white-search.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div class="search-tab-col">
+                <form action="listing-grid-sidebar.html" method="post">
+                  <div class="row align-items-center search-form">
+                    <div class="col-12 col-lg-11 datepicker-col search-group">
+                      <ul class="gap-3 d-flex">
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-map-pin"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Location</span>
+                              <input
+                                type="text"
+                                name="name"
+                                class="border-0 text-truncate px-0 form-control"
+                                placeholder="Newyork, USA"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-pie-chart"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Make</span>
+                              <input
+                                type="text"
+                                name="checkin"
+                                class="border-0 text-truncate px-0 form-control datetimepicker"
+                                placeholder="28/12/2022"
+                                bsDatepicker
+                                [bsConfig]="{ isAnimated: true }"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-refresh-ccw"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Models</span>
+                              <input
+                                type="text"
+                                name="checkout"
+                                class="border-0 text-truncate px-0 form-control datetimepicker"
+                                placeholder="28/12/2022"
+                                bsDatepicker
+                                [bsConfig]="{ isAnimated: true }"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-tag"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Prices</span>
+                              <input
+                                type="text"
+                                name="mobile"
+                                class="border-0 text-truncate px-0 form-control"
+                                placeholder="Benz C class"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-1 car-search-btn">
+                      <button (click)="direction()" class="btn car-search-icon">
+                        <img src="./assets/img/icons/white-search.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-certified"
+              role="tabpanel"
+              aria-labelledby="pills-certified-tab"
+              tabindex="0"
+            >
+              <div class="search-tab-col">
+                <form action="listing-grid-sidebar.html" method="post">
+                  <div class="row align-items-center search-form">
+                    <div class="col-12 col-lg-11 datepicker-col search-group">
+                      <ul class="gap-3 d-flex">
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-map-pin"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Location</span>
+                              <input
+                                type="text"
+                                name="name"
+                                class="border-0 text-truncate px-0 form-control"
+                                placeholder="Newyork, USA"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-pie-chart"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Make</span>
+                              <input
+                                type="text"
+                                name="checkin"
+                                class="border-0 text-truncate px-0 form-control datetimepicker"
+                                placeholder="28/12/2022"
+                                bsDatepicker
+                                [bsConfig]="{ isAnimated: true }"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-refresh-ccw"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Models</span>
+                              <input
+                                type="text"
+                                name="checkout"
+                                class="border-0 text-truncate px-0 form-control datetimepicker"
+                                placeholder="28/12/2022"
+                                bsDatepicker
+                                [bsConfig]="{ isAnimated: true }"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="car-search-grid d-flex">
+                            <div
+                              class="flex-shrink-0 d-flex align-items-center"
+                            >
+                              <div class="icon-blk rounded-circle">
+                                <i class="feather-tag"></i>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <span class="label">Prices</span>
+                              <input
+                                type="text"
+                                name="mobile"
+                                class="border-0 text-truncate px-0 form-control"
+                                placeholder="Benz C class"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-1 car-search-btn">
+                      <button (click)="direction()" class="btn car-search-icon">
+                        <img src="./assets/img/icons/white-search.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Search Filter Section -->
+
+<!-- Trending Search -->
+<section class="home-six-trending-search common-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="home-six-heading-section aos" data-aos="fade-up">
+          <div
+            class="home-six-title d-flex justify-content-center align-items-center"
+          >
+            <h2>Trending Search</h2>
+            <img src="./assets/img/icons/title.svg" alt="" />
+          </div>
+          <p>
+            Rutrum ante tempus mauris facilisi, leo faucibus, egestas diamlorem
+            malesu, vitae mauris.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="trending-carousel">
+          <div class="trending-slider">
+            <owl-carousel-o [options]="trendingsearchOwlOptions">
+              <ng-container *ngFor="let slide of trendingsearch">
+                <ng-template carouselSlide>
+                  <div class="trending-slider-item aos" data-aos="fade-up">
+                    <a [routerLink]="routes.categories"
+                      ><img [src]="slide.img" alt="" />
+                      <span>{{ slide.sentance }}</span></a
+                    >
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Trending Search -->
+
+<!-- Choose a Class -->
+<section class="choose-car-class-section common-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="home-six-heading-section aos" data-aos="fade-up">
+          <div
+            class="home-six-title d-flex justify-content-center align-items-center"
+          >
+            <h2>Choose a Class</h2>
+            <img src="./assets/img/icons/title.svg" alt="" />
+          </div>
+          <p>
+            Rutrum ante tempus mauris facilisi, leo faucibus, egestas diamlorem
+            malesu, vitae mauris.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="car-class-carousel">
+          <div class="car-class-slider">
+            <owl-carousel-o [options]="choosecarOwlOptions">
+              <ng-container *ngFor="let slide of choosecar">
+                <ng-template carouselSlide>
+                  <div class="car-class-item-block aos" data-aos="fade-up">
+                    <div class="car-class-item">
+                      <a [routerLink]="routes.categories">
+                        <div class="car-class-list">
+                          <div
+                            class="car-class-title d-flex justify-content-between"
+                          >
+                            <h5>{{ slide.name }}</h5>
+                            <span>{{ slide.stock }}</span>
+                          </div>
+                          <img [src]="slide.img" class="img-fluid" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="car-class-item">
+                      <a [routerLink]="routes.categories">
+                        <div class="car-class-list">
+                          <div
+                            class="car-class-title d-flex justify-content-between"
+                          >
+                            <h5>{{ slide.name }}</h5>
+                            <span>{{ slide.stock }}</span>
+                          </div>
+                          <img [src]="slide.img" class="img-fluid" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Choose a Class -->
+
+<!-- Car Testimonial -->
+<section class="car-testimonial common-padding">
+  <div class="container">
+    <div class="row aos" data-aos="zoom-in">
+      <div class="col-lg-4 col-md-6">
+        <div class="car-testimonial-content">
+          <h3>.01</h3>
+          <h5>FIND THE CAR IN YOUR DREAM</h5>
+          <p>
+            With the function search of listee, you can find the exactly any
+            type of car that you want in a few minutes. Fast & Exactly !
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="car-testimonial-content">
+          <h3>.02</h3>
+          <h5>CHECK PRICE AND INFORMATION OF VEHICLE</h5>
+          <p>
+            Check price and informations about vehicle. You can also estimate
+            your payment with our Financial Caculator
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="car-testimonial-content">
+          <h3>.03</h3>
+          <h5>BOOK APPOINTMENTS WITH A TAP</h5>
+          <p>
+            Easy to make an appointments with agents or dealers. Agents or
+            dealers will call again for you in 24h
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Car Testimonial -->
+
+<!-- Browse By Brand -->
+<section class="browse-by-brand common-padding">
+  <div class="car-float-bg aos" data-aos="fade-down">
+    <img src="./assets/img/brand-bg.png" alt="" />
+    <img src="./assets/img/brand-bg-2.png" alt="" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="home-six-heading-section">
+          <div
+            class="home-six-title d-flex justify-content-center align-items-center"
+          >
+            <h2>Browse By Make</h2>
+            <img src="./assets/img/icons/title.svg" alt="" />
+          </div>
+          <p>
+            Rutrum ante tempus mauris facilisi, leo faucibus, egestas diamlorem
+            malesu, vitae mauris.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-md-12">
+        <div class="car-class-carousel">
+          <div class="car-brand-slider">
+            <owl-carousel-o [options]="MakecarOwlOptions">
+              <ng-container *ngFor="let slide of Makecar">
+                <ng-template carouselSlide>
+                  <a [routerLink]="routes.categories">
+                    <div class="browse-by-brand-item aos" data-aos="flip-left">
+                      <img [src]="slide.img" alt="" />
+                      <p>
+                        {{ slide.name }}<span>{{ slide.stock }}</span>
+                      </p>
+                    </div>
+                  </a>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Browse By Brand -->
+
+<!-- Top Featured Cars -->
+<section class="top-featured-car common-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="home-six-heading-section aos" data-aos="fade-up">
+          <div
+            class="home-six-title d-flex justify-content-center align-items-center"
+          >
+            <h2>Top Featured Cars</h2>
+            <img src="./assets/img/icons/title.svg" alt="" />
+          </div>
+          <p>
+            Rutrum ante tempus mauris facilisi, leo faucibus, egestas diamlorem
+            malesu, vitae mauris.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row aos" data-aos="fade-up">
+      <div class="col-lg-12">
+        <div class="car-class-carousel">
+          <div class="car-featured-slider">
+            <owl-carousel-o [options]="TopbrandOwlOptions">
+              <ng-container *ngFor="let slide of Topbrand">
+                <ng-template carouselSlide>
+                  <div class="featured-car-item">
+                    <div class="featured-car-item-list">
+                      <a
+                        class="featurecar-img"
+                        [routerLink]="routes.categories"
+                      >
+                        <img [src]="slide.img" alt="" />
+                      </a>
+                      <div class="featured-car-center">
+                        <div class="featured-car-center-list">
+                          <h5>{{ slide.centerlisth }}</h5>
+                          <p>{{ slide.centerlistp }}</p>
+                        </div>
+                        <div class="featured-car-center-list">
+                          <h5>{{ slide.centerlisth1 }}</h5>
+                          <p>{{ slide.centerlisthp }}</p>
+                        </div>
+                        <div class="featured-car-center-list">
+                          <h5>{{ slide.centerlisth2 }}</h5>
+                          <p>{{ slide.centerlisthp2 }}</p>
+                        </div>
+                        <div class="featured-car-center-list">
+                          <h5>{{ slide.centerlisth3 }}</h5>
+                          <p>{{ slide.centerlisthp3 }}</p>
+                        </div>
+                      </div>
+                      <div class="featured-car-bottom">
+                        <h6>{{ slide.brand }}</h6>
+                        <a [routerLink]="routes.categories"
+                          ><h3>{{ slide.name }}</h3></a
+                        >
+                        <p>{{ slide.bottomp }}</p>
+                      </div>
+                      <div class="featured-car-foot">
+                        <a [routerLink]="routes.profile">
+                          <div class="featured-car-foot-right">
+                            <div class="property-profile feature-owner">
+                              <img
+                                [src]="slide.img1"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <p>
+                              {{ slide.dealer }}
+                              <span>{{ slide.dealername }}</span>
+                            </p>
+                          </div>
+                        </a>
+                        <div class="featured-car-foot-left">
+                          <span>{{ slide.amount }}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Top Featured Cars -->
+
+<!-- Car Rental Slider -->
+<section class="car-rental-slider-section aos" data-aos="fade-up">
+  <div class="car-rental-carousel">
+    <div class="car-rental-slider">
+      <owl-carousel-o [options]="RentcarOwlOptions">
+        <ng-container *ngFor="let slide of Rentcar">
+          <ng-template carouselSlide>
+            <div class="car-rental-slider-item">
+              <img [src]="slide.img" class="img-fluid" alt="" />
+              <div class="container">
+                <div class="car-rental-carousel-content">
+                  <h6>{{ slide.Edition }}</h6>
+                  <h3 class="aos" data-aos="fade-up" data-aos-delay="200">
+                    {{ slide.name }}
+                  </h3>
+                  <h5 class="aos" data-aos="fade-up" data-aos-delay="300">
+                    <span>{{ slide.rentamount }}</span
+                    >{{ slide.month }}
+                  </h5>
+                  <p class="aos" data-aos="fade-up" data-aos-delay="400">
+                    {{ slide.para }}<br />{{ slide.para1 }}
+                  </p>
+                  <a [routerLink]="routes.contact">Test Drive</a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- /Car Rental Slider -->
+
+<!-- Service Section -->
+<section class="car-service-section common-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-4 col-sm-6 aos" data-aos="flip-up">
+        <div class="car-service-container">
+          <img src="./assets/img/icons/bx-wrench.svg" alt="" />
+          <h4>Auto Repair</h4>
+          <p>We buy and sale barand new car and also used car of any brand</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 aos" data-aos="flip-down">
+        <div class="car-service-container">
+          <img src="./assets/img/icons/bx-map-pin.svg" alt="" />
+          <h4>Rental Service</h4>
+          <p>We buy and sale barand new car and also used car of any brand</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 aos" data-aos="flip-up">
+        <div class="car-service-container">
+          <img src="./assets/img/icons/bx-pie-chart.svg" alt="" />
+          <h4>Tire Change</h4>
+          <p>We buy and sale barand new car and also used car of any brand</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 aos" data-aos="flip-up">
+        <div class="car-service-container">
+          <img src="./assets/img/icons/bx-planet.svg" alt="" />
+          <h4>Official Dealers</h4>
+          <p>We buy and sale barand new car and also used car of any brand</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 aos" data-aos="flip-up">
+        <div class="car-service-container">
+          <img src="./assets/img/icons/bx-gift.svg" alt="" />
+          <h4>Paint Work</h4>
+          <p>We buy and sale barand new car and also used car of any brand</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 aos" data-aos="flip-down">
+        <div class="car-service-container">
+          <img src="./assets/img/icons/bx-power-off.svg" alt="" />
+          <h4>Car Diagonostics</h4>
+          <p>We buy and sale barand new car and also used car of any brand</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 aos" data-aos="flip-up">
+        <div class="car-service-container">
+          <img src="./assets/img/icons/bx-trophy.svg" alt="" />
+          <h4>Battery Replacements</h4>
+          <p>We buy and sale barand new car and also used car of any brand</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 aos" data-aos="flip-down">
+        <div class="car-service-container">
+          <img src="./assets/img/icons/bx-repost.svg" alt="" />
+          <h4>Dry Cleaning Car</h4>
+          <p>We buy and sale barand new car and also used car of any brand</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Service Section -->
+
+<!-- Our Team -->
+<section class="our-team-car common-padding">
+  <div class="container">
+    <div class="row aos" data-aos="fade-up">
+      <div class="col-lg-12">
+        <div class="home-six-heading-section">
+          <div
+            class="home-six-title d-flex justify-content-center align-items-center"
+          >
+            <h2>Our Team</h2>
+            <img src="./assets/img/icons/title.svg" alt="" />
+          </div>
+          <p>
+            Rutrum ante tempus mauris facilisi, leo faucibus, egestas diamlorem
+            malesu, vitae mauris.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="car-class-carousel aos" data-aos="fade-up" data-aos-delay="200">
+      <div class="our-team-car-slider">
+        <owl-carousel-o [options]="TeammembersOwlOptions">
+          <ng-container *ngFor="let slide of Teammembers">
+            <ng-template carouselSlide>
+              <div class="our-team-block">
+                <div class="our-team-img">
+                  <a [routerLink]="routes.profile"
+                    ><img [src]="slide.img" class="img-fluid" alt=""
+                  /></a>
+                </div>
+                <div class="our-team-bottom">
+                  <a [routerLink]="routes.profile"
+                    ><h4>{{ slide.name }}</h4></a
+                  >
+                  <p>{{ slide.position }}</p>
+                </div>
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Our Team -->
+
+<!-- Search By Location -->
+<section class="car-location common-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="home-six-heading-section aos" data-aos="fade-up">
+          <div
+            class="home-six-title d-flex justify-content-center align-items-center"
+          >
+            <h2>Search by Locations</h2>
+            <img src="./assets/img/icons/title.svg" alt="" />
+          </div>
+          <p>
+            Rutrum ante tempus mauris facilisi, leo faucibus, egestas diamlorem
+            malesu, vitae mauris.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <a [routerLink]="routes.servicedetails"
+          ><div
+            class="car-location-img aos"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="./assets/img/city/car-location-1.png"
+              class="img-fluid"
+              alt=""
+            />
+            <span>Las Vegas</span>
+          </div></a
+        >
+      </div>
+      <div class="col-lg-5">
+        <a [routerLink]="routes.servicedetails"
+          ><div
+            class="car-location-img aos"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src="./assets/img/city/car-location-2.png"
+              class="img-fluid"
+              alt=""
+            />
+            <span>Singapore</span>
+          </div></a
+        >
+      </div>
+      <div class="col-lg-4">
+        <a [routerLink]="routes.servicedetails"
+          ><div
+            class="car-location-img aos"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <img
+              src="./assets/img/city/car-location-3.png"
+              class="img-fluid"
+              alt=""
+            />
+            <span>Denmark</span>
+          </div></a
+        >
+      </div>
+      <div class="col-lg-4">
+        <a [routerLink]="routes.servicedetails"
+          ><div
+            class="car-location-img aos"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
+            <img
+              src="./assets/img/city/car-location-4.png"
+              class="img-fluid"
+              alt=""
+            />
+            <span>France</span>
+          </div></a
+        >
+      </div>
+      <div class="col-lg-5">
+        <a [routerLink]="routes.servicedetails"
+          ><div
+            class="car-location-img aos"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+          >
+            <img
+              src="./assets/img/city/car-location-5.png"
+              class="img-fluid"
+              alt=""
+            />
+            <span>Indonesia</span>
+          </div></a
+        >
+      </div>
+      <div class="col-lg-3">
+        <a [routerLink]="routes.servicedetails"
+          ><div
+            class="car-location-img aos"
+            data-aos="fade-up"
+            data-aos-delay="1200"
+          >
+            <img
+              src="./assets/img/city/car-location-6.png"
+              class="img-fluid"
+              alt=""
+            />
+            <span>New York</span>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Search By Location -->
+
+<!-- Clients Testimonials -->
+<section class="car-clients common-padding">
+  <div class="container">
+    <div class="row aos" data-aos="fade-up">
+      <div class="col-lg-12">
+        <div class="home-six-heading-section">
+          <div
+            class="home-six-title d-flex justify-content-center align-items-center"
+          >
+            <h2>Clients Testimonials</h2>
+            <img src="./assets/img/icons/title.svg" alt="" />
+          </div>
+          <p>
+            Rutrum ante tempus mauris facilisi, leo faucibus, egestas diamlorem
+            malesu, vitae mauris.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="car-class-carousel aos" data-aos="fade-up" data-aos-delay="200">
+      <div class="client-testimonial-slider">
+        <owl-carousel-o [options]="clienttestimonialsOwlOptions">
+          <ng-container *ngFor="let slide of clienttestimonials">
+            <ng-template carouselSlide>
+              <div class="car-client-item">
+                <div class="car-client-review">
+                  <img [src]="slide.img" alt="" />
+                  <h3>{{ slide.name }}</h3>
+                  <h5>{{ slide.from }}</h5>
+                  <p class="m-0">{{ slide.para }}</p>
+                  <div class="car-client-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="car-client-user">
+                  <img [src]="slide.img2" />
+                </div>
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Clients Testimonials -->
+
+<!-- Blog  Section -->
+<section class="blog-section">
+  <div class="container">
+    <div class="row aos" data-aos="fade-up">
+      <div class="col-lg-12">
+        <div class="home-six-heading-section">
+          <div
+            class="home-six-title d-flex justify-content-center align-items-center"
+          >
+            <h2>News & Information</h2>
+            <img src="./assets/img/icons/title.svg" alt="" />
+          </div>
+          <p>
+            Rutrum ante tempus mauris facilisi, leo faucibus, egestas diamlorem
+            malesu, vitae mauris.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row aos" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+        <div class="blog grid-blog">
+          <div class="blog-image">
+            <a [routerLink]="routes.blogdetails"
+              ><img
+                class="img-fluid"
+                src="assets/img/blog/blog-six-1.png"
+                alt="Post Image"
+            /></a>
+          </div>
+          <div class="blog-content">
+            <p class="blog-category">
+              <a href="javascript:void(0);"><span>Health</span></a
+              ><a href="javascript:void(0);"><span>Care</span></a>
+            </p>
+            <ul class="entry-meta meta-item">
+              <li>
+                <div class="post-author">
+                  <div class="post-author-img">
+                    <img
+                      src="assets/img/profiles/avatar-14.jpg"
+                      alt="Post Author"
+                    />
+                  </div>
+                  <a href="javascript:void(0);" class="mb-0">
+                    <span> Amara </span></a
+                  >
+                </div>
+              </li>
+              <li class="date-icon">
+                <i class="fa-solid fa-calendar-days"></i> October 4, 2023
+              </li>
+            </ul>
+            <h3 class="blog-title">
+              <a [routerLink]="routes.blogdetails"
+                >Three Powerful Tricks for Online Advertising</a
+              >
+            </h3>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur em
+              adipiscing elit,
+            </p>
+            <p class="viewlink">
+              <a [routerLink]="routes.blogdetails"
+                >View Details <i class="feather-arrow-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+        <div class="blog grid-blog">
+          <div class="blog-image">
+            <a [routerLink]="routes.blogdetails"
+              ><img
+                class="img-fluid"
+                src="assets/img/blog/blog-six-2.png"
+                alt="Post Image"
+            /></a>
+          </div>
+          <div class="blog-content">
+            <p class="blog-category">
+              <a href="javascript:void(0);"><span>Care & Tips</span></a>
+            </p>
+            <ul class="entry-meta meta-item">
+              <li>
+                <div class="post-author">
+                  <div class="post-author-img">
+                    <img
+                      src="assets/img/profiles/avatar-12.jpg"
+                      alt="Post Author"
+                    />
+                  </div>
+                  <a href="javascript:void(0);" class="mb-0"
+                    ><span> Darryl </span></a
+                  >
+                </div>
+              </li>
+              <li class="date-icon">
+                <i class="fa-solid fa-calendar-days"></i> October 6, 2023
+              </li>
+            </ul>
+            <h3 class="blog-title">
+              <a [routerLink]="routes.blogdetails"
+                >Three Powerful Tricks For Online Advertising</a
+              >
+            </h3>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur em
+              adipiscing elit,
+            </p>
+            <p class="viewlink">
+              <a [routerLink]="routes.blogdetails"
+                >View Details <i class="feather-arrow-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+        <div class="blog grid-blog">
+          <div class="blog-image">
+            <a [routerLink]="routes.blogdetails"
+              ><img
+                class="img-fluid"
+                src="assets/img/blog/blog-six-3.png"
+                alt="Post Image"
+            /></a>
+          </div>
+          <div class="blog-content">
+            <p class="blog-category">
+              <a href="javascript:void(0);"><span>Health</span></a
+              ><a href="javascript:void(0);"><span>Care</span></a>
+            </p>
+            <ul class="entry-meta meta-item">
+              <li>
+                <div class="post-author">
+                  <div class="post-author-img">
+                    <img
+                      src="assets/img/profiles/avatar-13.jpg"
+                      alt="Post Author"
+                    />
+                  </div>
+                  <a href="javascript:void(0);" class="mb-0">
+                    <span> Mary </span></a
+                  >
+                </div>
+              </li>
+              <li class="date-icon">
+                <i class="fa-solid fa-calendar-days"></i> October 10, 2023
+              </li>
+            </ul>
+            <h3 class="blog-title">
+              <a [routerLink]="routes.blogdetails"
+                >Competitive Analysis for Enterprerneurs in 20232</a
+              >
+            </h3>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur em
+              adipiscing elit,
+            </p>
+            <p class="viewlink">
+              <a [routerLink]="routes.blogdetails"
+                >View Details <i class="feather-arrow-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-center align-items-center">
+        <div class="car-more-blog">
+          <a [routerLink]="routes.bloglist">More Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Blog  Section -->
+
+<!-- Join Us -->
+<section class="join-us-dealer common-padding">
+  <div class="join-us-dealer-bg">
+    <img src="./assets/img/become-dealer-bg.png" alt="" />
+  </div>
+  <div class="container">
+    <div class="row align-items-center aos" data-aos="fade-up">
+      <div class="col-lg-6 col-md-12">
+        <div class="joinus-dealer-content">
+          <h3 class="aos" data-aos="fade-up" data-aos-delay="200">
+            Become a Dealer with Listee?
+          </h3>
+          <p class="aos" data-aos="fade-up" data-aos-delay="300">
+            Sell your car Free with Listee and earn commision up to 70%.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="join-as-dealer-btn">
+          <a [routerLink]="routes.signup"
+            >Create an Account <i class="feather-arrow-right ms-2"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Join Us -->
+<app-footer-six></app-footer-six>

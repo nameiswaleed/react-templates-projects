@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "img": "category-13.svg",
+        "title": "Restaurants",
+        "count": "20"
+    },
+    {
+        "id": "2",
+        "img": "category-14.svg",
+        "title": "Job & Feeds",
+        "count": "08"
+    },
+    {
+        "id": "3",
+        "img": "category-15.svg",
+        "title": "Gym & Sports",
+        "count": "12"
+    },
+    {
+        "id": "4",
+        "img": "category-16.svg",
+        "title": "Game & Field",
+        "count": "05"
+    },
+    {
+        "id": "5",
+        "img": "category-17.svg",
+        "title": "Parking",
+        "count": "10"
+    },
+    {
+        "id": "6",
+        "img": "category-13.svg",
+        "title": "Restaurants",
+        "count": "20"
+    },
+    {
+        "id": "7",
+        "img": "category-15.svg",
+        "title": "Gym & Sports",
+        "count": "12"
+    }
+]

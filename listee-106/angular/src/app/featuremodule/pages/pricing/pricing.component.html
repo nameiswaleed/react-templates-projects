@@ -1,0 +1,57 @@
+<!-- Breadscrumb Section -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">Pricing Plan</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.home1">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Pricing Plan</li>
+                    </ol>
+                </nav>							
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadscrumb Section -->
+         
+<!-- Pricing Plan Section -->
+<section class="pricingplan-section pricing-page">
+         <div class="section-heading">
+                <div class="container">				
+                     <div class="row text-center">
+                            <h2>Our Pricing <span>Pla</span>n</h2>
+                            <p>checkout these latest cool ads from our members</p>
+                     </div>									 
+                </div>	 
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-flex col-md-6" *ngFor="let slide of pricing">
+                    <div class="price-card flex-fill">
+                        <div class="price-head">
+                            <div class="price-level">
+                                <h6>{{slide.title}}</h6>
+                            </div>
+                            <h4>{{slide. pricedate}} <span>{{slide.pricemonth}}</span></h4>								
+                        </div>	
+                        <div class="price-body">
+                            <p>{{slide.pricebody}}</p>
+                            <ul>
+                                <li class="active">{{slide.pricebodyList}}</li>
+                                <li class="active">{{slide.pricebodyList1}}</li>
+                                <li class="active">{{slide.pricebodyList2}}</li>
+                                <li class="inactive">{{slide.pricebodyList3}}</li>
+                                <li class="inactive">{{slide.pricebodyList4}}</li>
+                            </ul>
+                            <div>
+                                <a [routerLink]="routes.login" class="btn viewdetails-btn">View details</a>
+                            </div>							
+                        </div>							
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- /Pricing Plan Section -->

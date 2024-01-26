@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "img1": "blog-1.jpg",
+        "img2": "avatar-14.jpg",
+        "name": "Amara",
+        "date": "October 4, 2023",
+        "title": "The Best Spa Saloons for your relaxations?"
+    },
+    {
+        "id": "2",
+        "img1": "blog-2.jpg",
+        "img2": "avatar-12.jpg",
+        "name": "Darryl",
+        "date": "October 6, 2023",
+        "title": "Three Powerful Tricks For Online Advertising"
+    },
+    {
+        "id": "3",
+        "img1": "blog-3.jpg",
+        "img2": "avatar-13.jpg",
+        "name": "Mary",
+        "date": "October 10, 2023",
+        "title": "Competitive Analysis for Enterprerneurs in 20222"
+    }
+]
